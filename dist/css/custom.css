@@ -934,3 +934,109 @@ box.box-danger .circle-logo {
     .direct-chat-info {
         font-size: inherit;
     }
+
+
+/*  Onboard Pages  */
+.logo-onboard {
+    max-width: 300px;
+}
+.onboard-screen .content-wrapper, .onboard-screen .right-side, .onboard-screen .main-footer, .onboard-screen .main-header .navbar {
+    margin-left: 0;
+}
+.onboard-screen .navbar-static-top {
+    border-bottom: 2px solid #FFF;
+}
+.tab-wrapper {
+    background: #e3e8e9;
+}
+.onboard-screen .form-control{
+    background: #f5f7f7;
+    border: 1px solid #c5c5c5;
+    border-radius: 3px;
+    color: #808080;
+}
+.onboard-screen .nav-tabs-custom{
+    box-shadow: none;
+    margin-top: -70px;
+}
+.onboard-screen .main-footer {
+    background: #d3dcdd;
+}
+.onboard-screen .content-section {
+    background: #FFF;
+    padding-top: 70px;
+}
+.onboard-screen .nav-tabs-custom {
+    background: inherit;
+}
+.onboard-screen .nav-tabs-custom>.nav-tabs>li.active>a, .onboard-screen .nav-tabs-custom>.nav-tabs>li.active:hover>a {
+    color: #4d4d4d;
+    font-weight: bold;
+}
+.onboard-screen .nav-tabs-custom>.nav-tabs>li>a {
+    font-size: 1.3em;
+    margin: 0 3em;
+    padding: 21px;
+    color: #999999;
+}
+.onboard-screen .nav-tabs-custom .tab-content {
+    margin-top: 55px;
+    padding: 15px 45px;
+}
+.onboard-screen .nav-tabs-custom>.nav-tabs>li.active {
+    border-bottom: 4px solid #29abe2;
+}
+.button-holder .next-btn {
+    background: rgb(38,198,255); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(38,198,255,1) 0%, rgba(77,164,173,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(38,198,255,1) 0%,rgba(77,164,173,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(38,198,255,1) 0%,rgba(77,164,173,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#26c6ff', endColorstr='#4da4ad',GradientType=0 ); /* IE6-9 */
+    border: 0;
+    color: #FFF;
+}
+.button-holder .back-btn {
+    background: #f2f2f2;
+    border: 1px solid #e6e6e6;
+    color: #b3b3b3;
+    margin-right: 20px;
+}
+.button-holder .custom-btn {
+    padding: 6px 45px;
+}
+.tab-confirmed, .tab-number {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border: 2px solid #FFF;
+    color: #FFF;
+    border-radius: 50%;
+    left: 50%;
+    bottom: -16px;
+    text-align: center;
+    font-weight: bold;
+    line-height: 26px;
+    margin-left: -15px;
+}
+.tab-number {
+    background:#cccccc;
+}
+.tab-confirmed {
+    background: #8cc63f;
+}
+.onboard-screen .nav-tabs-custom>.nav-tabs>li.active .tab-number {
+    display: none;
+}
+.onboard-screen .nav-tabs-custom>.nav-tabs>li.active .tab-confirmed {
+    display: block;
+}
+.onboard-screen .radio.radio-inline {
+    margin: 3px 0 3px 12px;
+    min-width: 194px;
+}
+.border-r {
+    border-right: 1px solid #f5f5f5;
+}
+.onboard-screen .checkbox-inline+.checkbox-inline  {
+    margin-left: 15px;
+}
