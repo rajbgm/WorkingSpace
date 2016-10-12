@@ -381,7 +381,7 @@ body .btn-default {
 }
 .score-icon {
     display: inline-block;
-    margin: 0 15px;
+    margin-left: 15px;
 }
 .skin-blue .sidebar-menu>li:hover>a, .skin-blue .sidebar-menu>li.active>a {
     background: #27465c;
@@ -545,6 +545,9 @@ box.box-danger .circle-logo {
 }
 .chat .item>.message>.name {
     color: #595959;
+}
+.chat .item > .message {
+    padding-right: 10px;
 }
 .nav-tabs-custom>.nav-tabs>li:first-of-type {
     margin-left: 20px;
@@ -732,7 +735,7 @@ box.box-danger .circle-logo {
 .radius-50{
     border-radius: 50%;
 }
-.goal-progress .chat .item img, .recommendations .chat .item img { 
+.goal-progress .chat .item img, .recommendations .chat .item img {
     width: 50px;
     height: 50px;
     border: 2px solid transparent;
@@ -855,8 +858,8 @@ box.box-danger .circle-logo {
         outline: 0;
     }
 
-    .radio-warning input[type="radio"]:checked + label::after, 
-    .radio-danger input[type="radio"]:checked + label::after, 
+    .radio-warning input[type="radio"]:checked + label::after,
+    .radio-danger input[type="radio"]:checked + label::after,
     .radio-success input[type="radio"]:checked + label::after {
         background-color: inherit;
     }
