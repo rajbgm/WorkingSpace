@@ -546,6 +546,9 @@ box.box-danger .circle-logo {
 .chat .item>.message>.name {
     color: #595959;
 }
+.chat .item > .message {
+    padding-right: 10px;
+}
 .nav-tabs-custom>.nav-tabs>li:first-of-type {
     margin-left: 20px;
 }
