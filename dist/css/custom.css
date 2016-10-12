@@ -978,7 +978,7 @@ box.box-danger .circle-logo {
 }
 .onboard-screen .nav-tabs-custom>.nav-tabs>li>a {
     font-size: 1.3em;
-    margin: 0 3em;
+    margin: 0 2.8em;
     padding: 21px;
     color: #999999;
 }
@@ -1042,4 +1042,18 @@ box.box-danger .circle-logo {
 }
 .onboard-screen .checkbox-inline+.checkbox-inline  {
     margin-left: 15px;
+}
+.onboard-screen .content-area {
+    padding: 3em 4em;
+    margin-top: -15px;
+    background: #FFF;
+}
+.text-blue {
+    color: #25aae1;
+}
+.text-gray-light{
+    color: #676766;
+}
+.right-section h1 {
+    margin: 5px 0;
 }
