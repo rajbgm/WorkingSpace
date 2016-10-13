@@ -724,7 +724,7 @@ box.box-danger .circle-logo {
     margin-top: 25px;
 }
 .height-value {
-    font-size: 3em;
+    font-size: 2em;
     color: #4d4d4e;
     line-height: 180px;
     white-space: nowrap;
@@ -1259,4 +1259,18 @@ box.box-danger .circle-logo {
 }
 .editable-icons i {
     font-size: 2em;
+}
+.display-none {
+    display: none;
+}
+.relative {
+    position: relative;
+}
+.clinical-notes-container {
+    width: 1000px;
+    height: 700px;
+    background: whitesmoke;
+    padding: 50px;
+    position: absolute;
+    top: 10%;
 }
