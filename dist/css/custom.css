@@ -1274,3 +1274,7 @@ box.box-danger .circle-logo {
     position: absolute;
     top: 10%;
 }
+.p-y-15 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
