@@ -1320,3 +1320,13 @@ box.box-danger .circle-logo {
     font-weight: 600;
     font-size: 26px;
 }
+.p-y-15 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.b-r-0 {
+    border-radius: 0    ;
+}
+.b-r-7 {
+    border-radius: 7px;
+}
