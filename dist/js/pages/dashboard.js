@@ -119,7 +119,7 @@ $(function () {
 
   //SLIMSCROLL FOR CHAT WIDGET
   $('#chat-box, #pod-casts').slimScroll({
-      height: '150px',
+      height: '80px',
       alwaysVisible: true,
       railVisible: true
   });
