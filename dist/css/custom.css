@@ -1196,7 +1196,7 @@ box.box-danger .circle-logo {
 .campaign-dashboard.sidebar-mini.sidebar-collapse .sidebar-menu>li>a {
     height: 130px;
     line-height: 105px;
-    font-size: 2.5em;
+    font-size: 2em;
     text-align: center;
 }
 .campaign-dashboard .sidebar-mini.sidebar-collapse .sidebar-menu>li.active:before {
@@ -1206,7 +1206,7 @@ box.box-danger .circle-logo {
     border-bottom: 60px solid transparent;
     border-left: 60px solid green;
 }
-.skin-blue .sidebar-menu>li.active span {
+.skin-blue .sidebar-menu>li.active span.arrow-right {
     background: url(/dist/img/right_arrow.png) no-repeat;
     width: 30px;
     height: 30px;
@@ -1244,7 +1244,7 @@ box.box-danger .circle-logo {
 }
 .campaign-dashboard .sidebar-menu>li:hover>a>span:not(.pull-right), 
 .campaign-dashboard .sidebar-mini.sidebar-collapse .sidebar-menu>li:hover>.treeview-menu {
-    width: 220px !important;
+    width: 140px !important;
     left: 90px !important;
     font-size: 18px;
     height: 68px;
@@ -1257,8 +1257,13 @@ box.box-danger .circle-logo {
     padding: 15px;
     border-top: 1px solid #CCC;
 }
+.segment-item h3 {
+    font-weight: 600;
+}
 .editable-icons i {
-    font-size: 2em;
+    font-size: 1.6em;
+    cursor: pointer;
+    margin-top: 8px;
 }
 .display-none {
     display: none;
@@ -1273,4 +1278,45 @@ box.box-danger .circle-logo {
     padding: 50px;
     position: absolute;
     top: 10%;
+}
+.border-left-right {
+    border-right: 1px solid #CCC;
+    border-left: 1px solid #CCC;
+}
+.conditional-attributes {
+    padding: 15px 0;
+    border-top: 1px solid #CCC;
+}
+.border-right {
+    border-right: 1px solid #CCC;
+}
+.apply-segment {
+    margin: 0;
+    padding: 0;
+}
+.apply-segment li {
+    list-style-type: none;
+    background: url(/dist/img/bullet.jpg) no-repeat 6px 22px;
+    padding-left: 25px;
+    border-top: 1px solid #CCC;
+}
+.apply-segment .item-field {
+    display: inline-block;
+    width: 100%;
+    padding: 5px 0;
+}
+.apply-segment li:last-child .item-field {
+    border-bottom: 1px solid #CCC;
+}
+.button-wrapper {
+    margin: 20px 0;
+}
+.campaign-dashboard .form-control {
+    background: #f3f1f1;
+    border: 2px solid #CCC;
+    border-radius: 4px;
+}
+.campaign-dashboard .page-header{
+    font-weight: 600;
+    font-size: 26px;
 }
