@@ -724,11 +724,12 @@ box.box-danger .circle-logo {
     margin-top: 25px;
 }
 .height-value {
-    font-size: 2em;
+    font-size: 1.3em;
     color: #4d4d4e;
-    line-height: 180px;
+    line-height: 17px;
     white-space: nowrap;
     margin-left: -14px;
+    padding-top: 70px;
 }
 .height-value .value-in{
     font-size: 24px;
