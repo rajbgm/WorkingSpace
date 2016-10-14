@@ -1273,12 +1273,18 @@ box.box-danger .circle-logo {
     position: relative;
 }
 .clinical-notes-container {
-    width: 1000px;
+    width: 700px;
     height: 700px;
     background: whitesmoke;
     padding: 50px;
     position: absolute;
     top: 10%;
+    border-radius: 5px;
+    border: 2px solid lightgrey;
+}
+.clinical-note {
+  width: 580px;
+  height: 200px;
 }
 .border-left-right {
     border-right: 1px solid #CCC;
