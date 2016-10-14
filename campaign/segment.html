@@ -20,6 +20,7 @@
        folder instead of downloading all of them to reduce the load. -->
   <link rel="stylesheet" href="../dist/css/skins/_all-skins.min.css">
   <link href="../dist/css/custom.css" rel="stylesheet" />
+  <link href="../dist/css/angular-csp.css" rel="stylesheet" />
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -28,8 +29,8 @@
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
 </head>
-<body class="hold-transition skin-blue sidebar-mini sidebar-collapse campaign-dashboard">
-<div class="wrapper">
+<body class="hold-transition skin-blue sidebar-mini sidebar-collapse campaign-dashboard" data-ng-app="olh-lps-campaign">
+<div class="wrapper" data-ng-cloak="">
 
   <header class="main-header">
 
@@ -148,12 +149,12 @@
     
 
     <!-- Main content -->
-    <section class="content">
+    <section class="content" data-ng-controller="SegmentController">
           <div class="row">
               <div class="col-sm-12">
                   <div class="row">
                       <div class="col-sm-6">
-                          <h2 class="page-header">Segments (4)</h2>
+                          <h2 class="page-header">Segments (8)</h2>
                       </div>
                       <div class="col-sm-6 text-right">
                           <span>
@@ -164,147 +165,55 @@
                   </div>
               </div>
               <div class="col-sm-12">
-                  <div class="segment-item">
+                <div class="segment-item" data-ng-repeat="segment in segments">
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <h3 style="margin: 3px 0;">{{segment.category}}</h3>
+                      <h4 style="margin: 3px 0;">
+                        <small>
+                          {{segment.gender}}, {{segment.ageGroup}}, {{segment.race}}, {{segment.behavior}},
+                          {{segment.lifestyle}}
+                        </small>
+                      </h4>
+                      <h4 style="margin: 3px 0;">Health Categories: {{segment.healthCategories}};</h4>
+                    </div>
+                    <div class="col-sm-6">
                       <div class="row">
-                          <div class="col-sm-6">
-                              <h3 style="margin: 3px 0;">Segment 1</h3>
-                              <h4 style="margin: 3px 0;">Segment description goes here...</h4>
-                              <h4 style="margin: 3px 0;">Age Groups: 18-24 Years; 25-39 Years;</h4>
-                              <h4 style="margin: 3px 0;">Health Categories: Tobacco;</h4>
+                        <div class="col-sm-2">
+                          <h2 style="margin: 0;">{{segment.users.count}} K</h2>
+                          <p>Users</p>
+                        </div>
+                        <div class="col-sm-5">
+                          <div class="row">
+                            <div class="col-xs-6"><strong>With email</strong></div>
+                            <div class="col-xs-6">{{segment.users.withEmail}}</div>
                           </div>
-                          <div class="col-sm-6">
+                          <div class="row">
+                            <div class="col-xs-6"><strong>With phone</strong></div>
+                            <div class="col-xs-6">{{segment.users.withPhone}}</div>
+                          </div>
+                        </div>
+                        <div class="col-sm-5 editable-icons">
+                          <div class="row">
+                            <div class="col-xs-8 border-left-right">
                               <div class="row">
-                                  <div class="col-sm-7">
-                                      <h1 style="margin: 0;">2.1 K</h1>
-                                      <p>Users</p>
-                                  </div>
-                                  <div class="col-sm-5 editable-icons">
-                                      <div class="row">
-                                          <div class="col-xs-8 border-left-right">
-                                              <div class="row">
-                                                  <div class="col-sm-6 text-center">
-                                                      <i class="fa fa-edit"></i>
-                                                  </div>
-                                                  <div class="col-sm-6 text-center">
-                                                      <i class="fa fa-mail-forward"></i>
-                                                  </div>
-                                              </div>
-                                          </div>
-                                          <div class="col-xs-4 text-center">
-                                              <i class="fa fa-trash"></i>
-                                          </div>
-                                      </div>
-                                  </div>
+                                <div class="col-sm-6 text-center">
+                                  <i class="fa fa-edit"></i>
+                                </div>
+                                <div class="col-sm-6 text-center">
+                                  <i class="fa fa-mail-forward"></i>
+                                </div>
                               </div>
+                            </div>
+                            <div class="col-xs-4 text-center">
+                              <i class="fa fa-trash"></i>
+                            </div>
                           </div>
+                        </div>
                       </div>
+                    </div>
                   </div>
-                  <div class="segment-item">
-                      <div class="row">
-                          <div class="col-sm-6">
-                              <h3 style="margin: 3px 0;">Segment 1</h3>
-                              <h4 style="margin: 3px 0;">Segment description goes here...</h4>
-                              <h4 style="margin: 3px 0;">Age Groups: 18-24 Years; 25-39 Years;</h4>
-                              <h4 style="margin: 3px 0;">Health Categories: Tobacco;</h4>
-                          </div>
-                          <div class="col-sm-6">
-                              <div class="row">
-                                  <div class="col-sm-7">
-                                      <h1 style="margin: 0;">1.7 K</h1>
-                                      <h4>Users</h4>
-                                  </div>
-                                  <div class="col-sm-5 editable-icons">
-                                      <div class="row">
-                                          <div class="col-xs-8 border-left-right">
-                                              <div class="row">
-                                                  <div class="col-sm-6 text-center">
-                                                      <i class="fa fa-edit"></i>
-                                                  </div>
-                                                  <div class="col-sm-6 text-center">
-                                                      <i class="fa fa-mail-forward"></i>
-                                                  </div>
-                                              </div>
-                                          </div>
-                                          <div class="col-xs-4 text-center">
-                                              <i class="fa fa-trash"></i>
-                                          </div>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="segment-item">
-                      <div class="row">
-                          <div class="col-sm-6">
-                              <h3 style="margin: 3px 0;">Segment 2</h3>
-                              <h4 style="margin: 3px 0;">Segment description goes here...</h4>
-                              <h4 style="margin: 3px 0;">Age Groups: 18-24 Years; 25-39 Years;</h4>
-                              <h4 style="margin: 3px 0;">Health Categories: Tobacco;</h4>
-                          </div>
-                          <div class="col-sm-6">
-                              <div class="row">
-                                  <div class="col-sm-7">
-                                      <h1 style="margin: 0;">5 K</h1>
-                                      <h4 style="margin: 0;">Users</h4>
-                                  </div>
-                                  <div class="col-sm-5 editable-icons">
-                                      <div class="row">
-                                          <div class="col-xs-8 border-left-right">
-                                              <div class="row">
-                                                  <div class="col-sm-6 text-center">
-                                                      <i class="fa fa-edit"></i>
-                                                  </div>
-                                                  <div class="col-sm-6 text-center">
-                                                      <i class="fa fa-mail-forward"></i>
-                                                  </div>
-                                              </div>
-                                          </div>
-                                          <div class="col-xs-4 text-center">
-                                              <i class="fa fa-trash"></i>
-                                          </div>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="segment-item">
-                      <div class="row">
-                          <div class="col-sm-6">
-                              <h3 style="margin: 3px 0;">Segment 3</h3>
-                              <h4 style="margin: 3px 0;">Segment description goes here...</h4>
-                              <h4 style="margin: 3px 0;">Age Groups: 18-24 Years; 25-39 Years;</h4>
-                              <h4 style="margin: 3px 0;">Health Categories: Tobacco;</h4>
-                          </div>
-                          <div class="col-sm-6">
-                              <div class="row">
-                                  <div class="col-sm-7">
-                                      <h1 style="margin: 0;">12 K</h1>
-                                      <h4 style="margin: 0;">Users</h4>
-                                  </div>
-                                  <div class="col-sm-5 editable-icons">
-                                      <div class="row">
-                                          <div class="col-xs-8 border-left-right">
-                                              <div class="row">
-                                                  <div class="col-sm-6 text-center">
-                                                      <i class="fa fa-edit"></i>
-                                                  </div>
-                                                  <div class="col-sm-6 text-center">
-                                                      <i class="fa fa-mail-forward"></i>
-                                                  </div>
-                                              </div>
-                                          </div>
-                                          <div class="col-xs-4 text-center">
-                                              <i class="fa fa-trash"></i>
-                                          </div>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-                  
+                </div>
               </div>
           </div>
     </section>
@@ -524,6 +433,7 @@
     <script src="../bootstrap/js/bootstrap.min.js"></script>
     <!-- Morris.js charts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+    <script src="../plugins/angular/angular.min.js"></script>
     <script src="../plugins/morris/morris.min.js"></script>
     <!-- Sparkline -->
     <script src="../plugins/sparkline/jquery.sparkline.min.js"></script>
@@ -547,6 +457,8 @@
     <script src="../dist/js/app.min.js"></script>
     <!-- Onlife dashboard demo (This is only for demo purposes) -->
     <script src="../dist/js/pages/dashboard.js"></script>
+    <script src="../dist/js/angular/campaign/app.js"></script>
+    <script src="../dist/js/angular/campaign/segmentController.js"></script>
     <!-- Onlife for demo purposes -->
     <script src="../dist/js/demo.js"></script>
 </body>
