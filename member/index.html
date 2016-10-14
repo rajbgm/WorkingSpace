@@ -229,15 +229,31 @@
                             </ul>
                             <div class="tab-content p-y-15">
                                 <div class="tab-pane active" id="viewNotes">
-                                    <div class="col-xs-12"></div>
+                                    <div class="col-xs-12">
+                                        <p>
+                                            <strong>Wayne [Coach]:</strong>
+                                            Advised member with long term effects of obesity. Suggested weight reduction goal.
+
+                                            <p><small><i class="fa fa-clock-o"></i> Oct 13, 3 pm </small></p>
+                                        </p>
+                                        <p>
+                                            <strong>Wayne [Coach]:</strong>
+                                            Telephone call with member indicates moderate motivation level to reduce weight. Recommended few articles from Healthwise.
+
+                                            <p><small><i class="fa fa-clock-o"></i> Oct 10, 3:30 pm </small></p>
+                                        </p>
+                                    </div>
                                 </div>
                                 <div class="tab-pane" id="addNotes">
                                     <div class="col-xs-12">
                                         <div class="form-group">
                                             <label for="note">
                                                 Subject
-                                                <input type="text" id="note" class="form-control">
+                                                <textarea id="note" class="clinical-note"></textarea>
                                             </label>
+                                        </div>
+                                        <div class="form-group">
+                                            <button class="btn btn-primary">Add</button>
                                         </div>
                                     </div>
                                 </div>
@@ -511,11 +527,11 @@
                                     </div>
                                     <div class="nav-tabs-custom">
                                         <ul class="nav nav-tabs">
-                                            <li class="active"><a href="#activity" data-toggle="tab">Contexual</a></li>
-                                            <li><a href="#timeline" data-toggle="tab">others</a></li>
+                                            <li class="active"><a href="#contextual" data-toggle="tab">Contexual</a></li>
+                                            <li><a href="#others" data-toggle="tab">Others</a></li>
                                         </ul>
                                         <div class="tab-content">
-                                            <div class="active tab-pane" id="activity">
+                                            <div class="active tab-pane" id="contextual">
                                                 <!-- Chat box -->
                                                 <div class="box-body chat" id="chat-box3">
                                                     <!-- chat item -->
@@ -527,33 +543,9 @@
                                                             <div class="col-sm-5 trim-left">
                                                                 <p class="message">
                                                                     <a href="#" class="name">
-                                                                        Invitation: Health Camp
+                                                                        Prehypertension
                                                                     </a>
-                                                                    Lorem Ipsum is simply dummy text of<br />
-                                                                    <a href="javascript:void(0)">www.dummytext.invite.com</a>
-                                                                </p>
-                                                            </div>
-                                                            <div class="col-sm-5 text-center">
-                                                                <span class="icons-right">
-                                                                    <span class="icon-wellness green-color right-icon"></span>
-                                                                </span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <!-- /.item -->
-                                                    <!-- chat item -->
-                                                    <div class="item">
-                                                        <div class="row">
-                                                            <div class="col-sm-2">
-                                                                <img src="../dist/img/user4-128x128.jpg" alt="user image" class="img-responsive radius-50">
-                                                            </div>
-                                                            <div class="col-sm-5 trim-left">
-                                                                <p class="message">
-                                                                    <a href="#" class="name">
-                                                                        Article Title
-                                                                    </a>
-                                                                    Lorem Ipsum is simply dummy text of<br />
-                                                                    <a href="javascript:void(0)">www.dummytext.invite.com</a>
+                                                                    Covers blood pressure that is higher than normal, which could lead to high blood pressure. Looks at lowering...<br />
                                                                 </p>
                                                             </div>
                                                             <div class="col-sm-5  text-center">
@@ -573,61 +565,58 @@
                                                             <div class="col-sm-5 trim-left">
                                                                 <p class="message">
                                                                     <a href="#" class="name">
-                                                                        Pod Cast Title
+                                                                        Fitness and Exercise
                                                                     </a>
-                                                                    Lorem Ipsum is simply dummy text of<br />
-                                                                    <a href="javascript:void(0)">www.dummytext.invite.com</a>
+                                                                    Provides links to how-to information about physical activity for everyone. Includes...<br />
+                                                                </p>
+                                                            </div>
+                                                            <div class="col-sm-5 text-center">
+                                                                <span class="icons-right">
+                                                                    <span class="icon-wellness green-color right-icon"></span>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- /.item -->
+                                                    <!-- chat item -->
+                                                    <div class="item">
+                                                        <div class="row">
+                                                            <div class="col-sm-2">
+                                                                <img src="../dist/img/user4-128x128.jpg" alt="user image" class="img-responsive radius-50">
+                                                            </div>
+                                                            <div class="col-sm-5 trim-left">
+                                                                <p class="message">
+                                                                    <a href="#" class="name">
+                                                                        Guide for a Balanced Diet
+                                                                    </a>
+                                                                    Here is a brief guide for making healthy food choices using the USDA food guide. Healthy choices...<br />
+                                                                </p>
+                                                            </div>
+                                                            <div class="col-sm-5 text-center">
+                                                                <span class="icons-right">
+                                                                    <span class="icon-wellness green-color right-icon"></span>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- /.item -->
+                                                    <!-- chat item -->
+                                                    <div class="item">
+                                                        <div class="row">
+                                                            <div class="col-sm-2">
+                                                                <img src="../dist/img/user4-128x128.jpg" alt="user image" class="img-responsive radius-50">
+                                                            </div>
+                                                            <div class="col-sm-5 trim-left">
+                                                                <p class="message">
+                                                                    <a href="#" class="name">
+                                                                        Weight Loss by Limiting Calories
+                                                                    </a>
+                                                                    Losing weight safely means balancing protein, fat, and carbohydrate...<br />
                                                                 </p>
                                                             </div>
                                                             <div class="col-sm-5  text-center">
                                                                 <span class="icons-right">
                                                                     <span class="icon-mic yellow-color right-icon"></span>
-                                                                </span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <!-- /.item -->
-                                                    <!-- chat item -->
-                                                    <div class="item">
-                                                        <div class="row">
-                                                            <div class="col-sm-2">
-                                                                <img src="../dist/img/user4-128x128.jpg" alt="user image" class="img-responsive radius-50">
-                                                            </div>
-                                                            <div class="col-sm-5 trim-left">
-                                                                <p class="message">
-                                                                    <a href="#" class="name">
-                                                                        Invitation: Health Camp
-                                                                    </a>
-                                                                    Lorem Ipsum is simply dummy text of<br />
-                                                                    <a href="javascript:void(0)">www.dummytext.invite.com</a>
-                                                                </p>
-                                                            </div>
-                                                            <div class="col-sm-5 text-center">
-                                                                <span class="icons-right">
-                                                                    <span class="icon-wellness green-color right-icon"></span>
-                                                                </span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <!-- /.item -->
-                                                    <!-- chat item -->
-                                                    <div class="item">
-                                                        <div class="row">
-                                                            <div class="col-sm-2">
-                                                                <img src="../dist/img/user4-128x128.jpg" alt="user image" class="img-responsive radius-50">
-                                                            </div>
-                                                            <div class="col-sm-5 trim-left">
-                                                                <p class="message">
-                                                                    <a href="#" class="name">
-                                                                        Atricle Title
-                                                                    </a>
-                                                                    Lorem Ipsum is simply dummy text of<br />
-                                                                    <a href="javascript:void(0)">www.dummytext.invite.com</a>
-                                                                </p>
-                                                            </div>
-                                                            <div class="col-sm-5  text-center">
-                                                                <span class="icons-right">
-                                                                    <span class="icon-contexual_1 blue-color right-icon"></span>
                                                                 </span>
                                                             </div>
                                                         </div>
@@ -643,7 +632,7 @@
                                                 <!-- /.box (chat box) -->
                                             </div>
                                             <!-- /.tab-pane -->
-                                            <div class="tab-pane" id="timeline">
+                                            <div class="tab-pane" id="others">
                                                 <!-- Chat box -->
                                                 <div class="box-body chat" id="pod-casts3">
                                                     <!-- chat item -->
@@ -655,10 +644,9 @@
                                                             <div class="col-sm-5 trim-left">
                                                                 <p class="message">
                                                                     <a href="#" class="name">
-                                                                        Other Articles 1
+                                                                        Guide for a Balanced Diet
                                                                     </a>
-                                                                    Lorem Ipsum is simply dummy text of<br />
-                                                                    <a href="javascript:void(0)">www.dummytext.invite.com</a>
+                                                                    Here is a brief guide for making healthy food choices using the USDA food guide. Healthy choices...<br />
                                                                 </p>
                                                             </div>
                                                             <div class="col-sm-5 text-center">
@@ -678,33 +666,9 @@
                                                             <div class="col-sm-5 trim-left">
                                                                 <p class="message">
                                                                     <a href="#" class="name">
-                                                                        Other Articles 2
+                                                                        Weight Loss by Limiting Calories
                                                                     </a>
-                                                                    Lorem Ipsum is simply dummy text of<br />
-                                                                    <a href="javascript:void(0)">www.dummytext.invite.com</a>
-                                                                </p>
-                                                            </div>
-                                                            <div class="col-sm-5  text-center">
-                                                                <span class="icons-right">
-                                                                    <span class="icon-contexual_1 blue-color right-icon"></span>
-                                                                </span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <!-- /.item -->
-                                                    <!-- chat item -->
-                                                    <div class="item">
-                                                        <div class="row">
-                                                            <div class="col-sm-2">
-                                                                <img src="../dist/img/user4-128x128.jpg" alt="user image" class="img-responsive radius-50">
-                                                            </div>
-                                                            <div class="col-sm-5 trim-left">
-                                                                <p class="message">
-                                                                    <a href="#" class="name">
-                                                                        Other Pod Cast Title
-                                                                    </a>
-                                                                    Lorem Ipsum is simply dummy text of<br />
-                                                                    <a href="javascript:void(0)">www.dummytext.invite.com</a>
+                                                                    Losing weight safely means balancing protein, fat, and carbohydrate...<br />
                                                                 </p>
                                                             </div>
                                                             <div class="col-sm-5  text-center">
@@ -724,15 +688,14 @@
                                                             <div class="col-sm-5 trim-left">
                                                                 <p class="message">
                                                                     <a href="#" class="name">
-                                                                        Other Articles 2
+                                                                        Prehypertension
                                                                     </a>
-                                                                    Lorem Ipsum is simply dummy text of<br />
-                                                                    <a href="javascript:void(0)">www.dummytext.invite.com</a>
+                                                                    Covers blood pressure that is higher than normal, which could lead to high blood pressure. Looks at lowering...<br />
                                                                 </p>
                                                             </div>
-                                                            <div class="col-sm-5 text-center">
+                                                            <div class="col-sm-5  text-center">
                                                                 <span class="icons-right">
-                                                                    <span class="icon-wellness green-color right-icon"></span>
+                                                                    <span class="icon-contexual_1 blue-color right-icon"></span>
                                                                 </span>
                                                             </div>
                                                         </div>
@@ -747,15 +710,14 @@
                                                             <div class="col-sm-5 trim-left">
                                                                 <p class="message">
                                                                     <a href="#" class="name">
-                                                                        Other Articles 3
+                                                                        Fitness and Exercise
                                                                     </a>
-                                                                    Lorem Ipsum is simply dummy text of<br />
-                                                                    <a href="javascript:void(0)">www.dummytext.invite.com</a>
+                                                                    Provides links to how-to information about physical activity for everyone. Includes...<br />
                                                                 </p>
                                                             </div>
-                                                            <div class="col-sm-5  text-center">
+                                                            <div class="col-sm-5 text-center">
                                                                 <span class="icons-right">
-                                                                    <span class="icon-contexual_1 blue-color right-icon"></span>
+                                                                    <span class="icon-wellness green-color right-icon"></span>
                                                                 </span>
                                                             </div>
                                                         </div>
