@@ -1338,10 +1338,6 @@ box.box-danger .circle-logo {
 .navbar-custom-menu>.navbar-nav>li>.dropdown-menu {
     right: auto !important;
 }
-.img-responsive{
-    border: 1px solid #ccc;
-    margin-top:2px;
-}
 .list-style {
     list-style-type: disc !important;
 }
