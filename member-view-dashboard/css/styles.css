@@ -1,0 +1,337 @@
+﻿/*  header  */
+body {
+    background: #e3e8e9;
+}
+header {
+    background: #FFF;
+    display: block;
+    min-height: 100px;
+    -webkit-box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.16);
+    -moz-box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.16);
+    box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.16);
+}
+.sidebar-toggle {
+    color: #000;
+}
+.main-header .sidebar-toggle {
+    padding: 0;
+    font-size: 3em;
+    line-height: 15px;
+    margin-top: 28px;
+}
+.main-header .sidebar-toggle .menu-text {
+    font-size: 12px;
+    font-weight: bold;
+}
+.sidebar-toggle:hover {
+    color: #3c8dbc !important;
+}
+.logo-onlife {
+    padding: 10px 0;
+    border-right: 1px solid #CCC;
+    margin-top: 5px;
+}
+.header-portal {
+    padding-top: 6px;
+}
+.announcement-notification ul {
+    margin: 0;
+    padding: 0;
+}
+.announcement-notification li .announcement-text {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #4d4d4d;
+}
+.announcement-notification li{
+    list-style-type: none;
+    padding: 20px 0;
+    color: #999999;
+}
+.top-menu {
+    color: #666666;
+    font-size: 3em;
+    line-height: 10px;
+    text-align: center;
+    padding: 9px 0;
+    cursor: pointer;
+    display: block;
+}
+.top-menu span {
+    font-size: 12px;
+    text-transform: uppercase;
+}
+.top-menu:hover {
+    color: #0d76b7;
+    border-radius: 5px;
+    background: #eaeaea;
+}
+.top-menu .count-number {
+    display: block;
+    position: absolute;
+    min-width: 30px;
+    height: 30px;
+    top: 0;
+    right: 12px;
+    background: #f75757;
+    color: #FFF;
+    border-radius: 50%;
+    font-size: 18px;
+    padding-top: 9px;
+}
+.user-login {
+    background: #f4f4f4;
+    border-right: 1px solid #3095ce;
+    border-left: 1px solid #3095ce;
+    margin: -6px 0 0 0;
+    padding-left: 10px;
+    height: 100px;
+}
+
+.points-icon .points-value {
+    color: #3095ce;
+    font-size: 3em;
+    margin: 15px 0 0 0;
+}
+.points-icon .points-label {
+    color: #3095ce;
+    font-size: 1em;
+    margin: 0;
+}
+.user-image {
+    width: 48px;
+    padding: 26px 0 0 0;
+    float: left;
+}
+.user-image img {
+    border-radius: 50%;
+}
+.username-logged {
+    color: #477384;
+    float: right;
+    text-align: right;
+    padding-top: 30px;
+    padding-right: 7px;
+}
+.user-signout {
+    color: #3095ce;
+    float: right;
+    text-align:right;
+}
+.content-area {
+    margin-top: 20px;
+}
+.search-section {
+    
+}
+.content-area .nav-tabs-custom a.text-muted {
+    display: inline-block;
+    background: #efefef;
+    border-radius: 50%;
+    margin-bottom: 3px;
+    color: #666666;
+    padding: 9px 14px;
+    width: 39px;
+    height: 39px;
+}
+.search-tab {
+    border-radius: 3px;
+}
+.content-area .input-group {
+    margin-top: 3px;
+}
+
+.input-group #search-btn{
+    background: #FFF;
+    border-right: 1px solid #CCC;
+    border-bottom: 1px solid #CCC;
+    border-top: 1px solid #CCC;
+    color: #3095ce;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+.content-area .nav-tabs-custom>.tab-content {
+    background: #d8ddde;
+}
+.content-area #wellnessFeeds, .content-area #profile {
+    padding: 20px;
+}
+.liked-section {
+    background: #f2f2f2;
+    padding: 10px 15px;
+    color: #999999;
+}
+.description-area {
+    background: #FFF;
+    padding: 20px 15px;
+    border-bottom: 4px solid #ffc033;
+    margin-bottom: 20px;
+}
+.description-area h3, .description-area p {
+    margin: 0;
+}
+.description-area h3 {
+    font-weight: 600;
+    color: #666666;
+}
+.description-area p {
+    font-size: 1.2em;
+}
+.description-area.zero-border {
+    border: 0;
+}
+.profile-strength {
+    background: #69ccd1;
+    text-align: center;
+    padding-top: 5px;
+}
+.profile-footer {
+    background: #5bbcbc;
+    padding: 12px;
+}
+.profile-footer .btn-primary, .profile-footer .btn-secondary {
+    border: 1px solid #FFF;
+    color: #FFF;
+}
+.profile-strength h4 {
+    font-weight: 600; 
+    margin-top: 60px;
+}
+.profile-strength .percentage {
+    font-size: 49px;
+    line-height: 45px;
+    margin-bottom: 5px;
+}
+.profile-strength .progress {
+    background: #FFF;
+    border-radius: 10px;
+    margin-bottom: 8px;
+}
+.profile-strength .progress-bar {
+    border-radius: 10px;
+    background: #0799a0;
+}
+.family-friends h3 {
+    margin-bottom: 30px;
+    font-size: 2em;
+}
+.family-friends {
+    padding-top: 40px;
+}
+.points-top {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    width: 50px;
+    height: 50px;
+    background: #51afac;
+    color: #FFF;
+    padding: 14px;
+    font-size: 17px;
+}
+.modal-header {
+    background: #3095ce;
+    color: #FFF;
+}
+
+
+/*Code for member dashboard - priya*/
+.m-dashboard .member-img{
+    width:70px!important;
+    height:70px!important;
+    margin-top:5px;
+}
+.m-dashboard .message{
+    margin-left: 80px!important;
+    margin-top: -70px!important;
+    margin-right:250px;
+}
+.m-dashboard .item{
+    min-height: 80px;
+    margin-bottom:0;
+}
+.m-dashboard .chat{
+    padding: 0 9px 0 10px;
+}
+.m-dashboard .progress{
+    width:200px!important;
+    height:52px!important;
+    float:right;
+    border-radius: 0!important;
+    margin-top:10px;
+    margin-right:10px;
+    border:0!important;
+}
+.m-dashboard .member-icon{
+    width:40px!important;
+    height:40px!important;
+    float:right;
+    border-radius: 0!important;
+    margin-top:20px;
+    margin-right:50px;
+    border:0!important;
+}
+.char-detail{
+    position:relative;
+    min-height: 130px;
+    background: #ffffff;
+    border-top: 5px solid #d2d6de;
+    margin-bottom: 20px;
+    width: 100%;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+}
+.device-detail{
+    min-height: 130px;
+    background: #ffffff;
+}
+.device-detail img{
+    width:205px;
+    height:77px;
+    margin-top: 25px;
+}
+.char-detail .detail-lbl{
+    position:absolute;
+    bottom:0;
+    height:40px;
+    padding: 10px;
+    background-color:#f5f7f7;
+    width:100%;
+    margin-bottom:0;
+    text-align: center;
+    color: #4d4d4d;
+}
+.detail-value{
+    text-align: center;
+}
+.detail-value img{
+    width:133px;
+    height:30px;
+}
+.char-detail.box-blue{
+    border-top-color:#8ccaec;
+}
+.char-detail.box-red {
+    border-top-color: #d89ca8;
+}
+.char-detail.box-green {
+    border-top-color:#bad7ab;
+}
+.char-detail.box-yellow {
+    border-top-color:#fcd79f;
+}
+.m-dashboard .button-wrapper{
+    margin:20px 0 10px 0;
+}
+.separator {
+    border:1px solid #b3b3b3;
+}
+.filter-icon {
+    display: inline-block;
+    background: #efefef;
+    border-radius: 50%;
+    margin-bottom: 3px;
+    color: #666666;
+    padding: 9px 14px;
+    width: 39px;
+    height: 39px;
+}

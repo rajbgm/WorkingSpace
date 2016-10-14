@@ -28,13 +28,16 @@
 .icon-contexual_1:before{content:'\0044';}
 .icon-dashboard:before{content:'\0045';}
 .icon-location:before{content:'\0046';}
-.icon-women:before{content:'\0047';}
+.icon-member:before{content:'\0047';}
 .icon-members:before{content:'\0048';}
-.icon-mic:before{content:'\0049';}
-.icon-phone:before{content:'\004a';}
-.icon-reports:before{content:'\004b';}
-.icon-setting:before{content:'\004c';}
-.icon-wellness:before{content:'\004d';}
+.icon-messages:before{content:'\0049';}
+.icon-mic:before{content:'\004a';}
+.icon-people:before{content:'\004b';}
+.icon-phone:before{content:'\004c';}
+.icon-reports:before{content:'\004d';}
+.icon-setting:before{content:'\004e';}
+.icon-wellness:before{content:'\004f';}
+.icon-women:before{content:'\0050';}
 
 /* Checkboxes */
 .checkbox {
@@ -1330,4 +1333,27 @@ box.box-danger .circle-logo {
 }
 .b-r-7 {
     border-radius: 7px;
+}
+/*  Saravanan changes 10/14/2016  */
+.navbar-custom-menu>.navbar-nav>li>.dropdown-menu {
+    right: auto !important;
+}
+.img-responsive{
+    border: 1px solid #ccc;
+    margin-top:2px;
+}
+.list-style {
+    list-style-type: disc !important;
+}
+.list-style li{
+    margin-left: 27px;
+    padding:5px;
+}
+.small-box h3{
+    font-weight: normal;
+}
+.campaign-dashboard .page-header{
+    font-weight: 600;
+    font-size: 26px;
+    font-size: 22px;
 }
