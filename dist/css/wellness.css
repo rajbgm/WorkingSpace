@@ -1,0 +1,75 @@
+@font-face {
+    font-family: roboto;
+    src: url("../fonts/Roboto-Regular.ttf");
+}
+.wrapper-wellness{
+
+    background-color: #e3e8e9;
+}
+.padding-top-bottom{
+    padding: 10px 0 10px 0;
+}
+.heading{
+    color: #4d4d4e;
+    font-size: 18px;
+    font-weight: 900;
+}
+.container{
+    font-family: roboto;
+}
+
+.section-box{
+    background-color: #fff;
+    padding: 0px;
+    width: 18%;
+    float: left;
+    margin-right: 15px;
+    min-height: 215px;
+}
+
+.section-box-heading{
+    background-color: #f1f2f3;
+
+}
+.section-box-heading h4{
+    margin: 0;
+    font-family: roboto;
+    padding: 10px 0px 10px 10px;
+}
+.section-box-content{
+    padding: 10px;
+}
+.section-box-content p{
+    color: #808282;
+    font-size: 13px;
+}
+.section-box-content ul li{
+    list-style-type: circle;
+    color:  #25aae1;
+}
+.section-box-content a{
+    color: #25aae1;
+    font-size: 12px;
+}
+.section-box-content a:hover{
+    text-decoration: underline;
+}
+h4{
+    font-weight: 900;
+    color: #5a5a5a;
+}
+.date{
+    color: #0b77b8;
+    padding-left: 10px;
+
+}
+.add-new-section{
+    background-color: #25aae1;
+}
+/* mediq queries*/
+@media only screen and (max-width: 768px) {
+    .section-box {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
