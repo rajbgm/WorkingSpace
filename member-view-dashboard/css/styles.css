@@ -246,6 +246,9 @@ header {
     margin-top: -70px!important;
     margin-right:250px;
 }
+.content-area #profile .tab-content {
+    padding:0;
+}
 .m-dashboard .item{
     min-height: 80px;
     margin-bottom:0;
