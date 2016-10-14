@@ -20,6 +20,7 @@
        folder instead of downloading all of them to reduce the load. -->
   <link rel="stylesheet" href="../dist/css/skins/_all-skins.min.css">
   <link href="../dist/css/custom.css" rel="stylesheet" />
+  <link href="../dist/css/angular-csp.css" rel="stylesheet" />
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -28,8 +29,8 @@
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
 </head>
-<body class="hold-transition skin-blue sidebar-mini">
-<div class="wrapper">
+<body class="hold-transition skin-blue sidebar-mini" data-ng-app="olh-lps-coach">
+<div class="wrapper" data-ng-cloak="">
 
   <header class="main-header">
 
@@ -478,15 +479,14 @@
                                             </li>
                                         </ul>
                                 </li>
-                                <li class="footer"><a href="#">View all</a></li>
                             </ul>
                         </li>
                         <!-- Tasks-->
-                        <li class="dropdown tasks-menu  col-sm-4">
+                        <li class="dropdown tasks-menu  col-sm-4" data-ng-controller="TaskController">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                 <div class="box box-default">
                                     <div class="box-header">
-                                        <h3 class="box-title">Tasks</h3>
+                                        <h3 class="box-title">Tasks {{taskName}}</h3>
                                     </div>
                                     <!-- /.box-header -->
                                     <div class="box-body no-padding">
@@ -514,71 +514,15 @@
                                 <li class="header">You have 32 tasks</li>
                                 <li>
                                     <!-- inner menu-->
-                                        <ul class="menu">
-                                            <li>
-                                                <!-- Task item -->
-                                                <a href="#">
-                                                    <h3>
-                                                        Task 1
-                                                    </h3>
-                                                    <p>Lorem ipsum dummy text...</p>
-                                                </a>
-                                            </li>
-                                            <!-- end task item -->
-                                            <li>
-                                                <!-- Task item -->
-                                                <a href="#">
-                                                    <h3>
-                                                        Task 2
-                                                    </h3>
-                                                    <p>Lorem ipsum dummy text...</p>
-                                                </a>
-                                            </li>
-                                            <!-- end task item -->
-                                            <li>
-                                                <!-- Task item -->
-                                                <a href="#">
-                                                    <h3>
-                                                        Task 3
-                                                    </h3>
-                                                    <p>Lorem ipsum dummy text...</p>
-                                                </a>
-                                            </li>
-                                            <!-- end task item -->
-                                            <li>
-                                                <!-- Task item -->
-                                                <a href="#">
-                                                    <h3>
-                                                        Task 4
-                                                    </h3>
-                                                    <p>Lorem ipsum dummy text...</p>
-                                                </a>
-                                            </li>
-                                            <!-- end task item -->
-                                            <li>
-                                                <!-- Task item -->
-                                                <a href="#">
-                                                    <h3>
-                                                        Task 5
-                                                    </h3>
-                                                    <p>Lorem ipsum dummy text...</p>
-                                                </a>
-                                            </li>
-                                            <!-- end task item -->
-                                            <li>
-                                                <!-- Task item -->
-                                                <a href="#">
-                                                    <h3>
-                                                        Task 6
-                                                    </h3>
-                                                    <p>Lorem ipsum dummy text...</p>
-                                                </a>
-                                            </li>
-                                            <!-- end task item -->
-                                        </ul>
-                                </li>
-                                <li class="footer">
-                                    <a href="#">View all tasks</a>
+                                    <ul class="menu">
+                                        <li data-ng-repeat="task in pendingTasks">
+                                            <a href="javascript:void(0);">
+                                                <p class="task-description">
+                                                    {{task.description}} <i data-ng-if="task.isCall" class="fa fa-play-circle"></i>
+                                                </p>
+                                            </a>
+                                        </li>
+                                    </ul>
                                 </li>
                             </ul>
                         </li>
@@ -993,6 +937,7 @@
     <script src="../bootstrap/js/bootstrap.min.js"></script>
     <!-- Morris.js charts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+    <script src="../plugins/angular/angular.min.js"></script>
     <script src="../plugins/morris/morris.min.js"></script>
     <!-- Sparkline -->
     <script src="../plugins/sparkline/jquery.sparkline.min.js"></script>
@@ -1016,6 +961,8 @@
     <script src="../dist/js/app.min.js"></script>
     <!-- Onlife dashboard demo (This is only for demo purposes) -->
     <script src="../dist/js/pages/dashboard.js"></script>
+    <script src="../dist/js/angular/coach/app.js"></script>
+    <script src="../dist/js/angular/coach/taskController.js"></script>
     <!-- Onlife for demo purposes -->
     <script src="../dist/js/demo.js"></script>
 </body>
