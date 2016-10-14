@@ -252,7 +252,7 @@
                 <div class="navbar-custom-menu">
                     <ul class="nav navbar-nav row">
                         <!-- Messages-->
-                        <li class="dropdown messages-menu col-sm-4">
+                        <li class="dropdown messages-menu col-sm-4" data-ng-controller="MessageController">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown"> 
                                 <!-- DIRECT CHAT -->
                                 <div class="box box-warning direct-chat direct-chat-warning">
@@ -284,105 +284,17 @@
                                 <!--/.direct-chat -->
                             </a>
                             <ul class="dropdown-menu">
-                                <li class="header">You have 3 calls and 7 messages </li>
+                                <li class="header">You have 3 calls and 7 messages</li>
                                 <li>
                                     <!-- inner messages -->
                                     <ul class="menu">
-                                        <li>
-                                            <!-- start message -->
-                                            <a href="#">
+                                        <li data-ng-repeat="message in messages">
+                                            <a href="javascript:void(0);">
                                                 <h4>
-                                                    Louis <span class="fa fa-play-circle"></span>
-                                                    <small><i class="fa fa-clock-o"></i> 5 mins</small>
+                                                    {{message.memberName}} <i data-ng-if="message.isCall" class="fa fa-play-circle"></i>
+                                                    <small><i class="fa fa-clock-o"></i> {{message.duration}} {{message.durationType}}</small>
                                                 </h4>
-                                                <p>Voice Message from Member...</p>
-                                            </a>
-                                        </li>
-                                        <!-- end message -->
-                                        <li>
-                                            <a href="#">
-                                                <h4>
-                                                    Harrell, Marcelino
-                                                    <small><i class="fa fa-clock-o"></i> 2 hours</small>
-                                                </h4>
-                                                <p>Secured message from Member: hi..</p>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <h4>
-                                                    Talley, Jacob <span class="fa fa-play-circle"></span>
-                                                    <small><i class="fa fa-clock-o"></i> Today</small>
-                                                </h4>
-                                                <p>Secured message from Member: hi..</p>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <h4>
-                                                    Astair, Fred
-                                                    <small><i class="fa fa-clock-o"></i> Yesterday</small>
-                                                </h4>
-                                                <p>Secured message from Member: hi..</p>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <h4>
-                                                    Mattingley, Scott
-                                                    <small><i class="fa fa-clock-o"></i> 2 days</small>
-                                                </h4>
-                                                <p>Secured message from Member: hi..</p>
-                                            </a>
-                                        </li>
-
-                                        <li>
-                                            <a href="#">
-                                                <h4>
-                                                    Aagard, Darin
-                                                    <small><i class="fa fa-clock-o"></i> 2 days</small>
-                                                </h4>
-                                                <p>Secured message from Member: hi..</p>
-                                            </a>
-                                        </li>
-
-                                        <li>
-                                            <a href="#">
-                                                <h4>
-                                                    Aaron, Jennifer
-                                                    <small><i class="fa fa-clock-o"></i> 2 days</small>
-                                                </h4>
-                                                <p>Secured message from Member: hi..</p>
-                                            </a>
-                                        </li>
-
-                                        <li>
-                                            <a href="#">
-                                                <h4>
-                                                    Abbott, Robert
-                                                    <small><i class="fa fa-clock-o"></i> 2 days</small>
-                                                </h4>
-                                                <p>Secured message from Member: hi...</p>
-                                            </a>
-                                        </li>
-
-                                        <li>
-                                            <a href="#">
-                                                <h4>
-                                                    Zyzda, Lisa
-                                                    <small><i class="fa fa-clock-o"></i> 2 days</small>
-                                                </h4>
-                                                <p>Secured message from Member: hi...</p>
-                                            </a>
-                                        </li>
-
-                                        <li>
-                                            <a href="#">
-                                                <h4>
-                                                    Zurek, Brandon
-                                                    <small><i class="fa fa-clock-o"></i> 2 days</small>
-                                                </h4>
-                                                <p>Secured message from Member: hi...</p>
+                                                <p class="white-space-normal">{{message.description}}</p>
                                             </a>
                                         </li>
                                     </ul>
@@ -486,7 +398,7 @@
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                 <div class="box box-default">
                                     <div class="box-header">
-                                        <h3 class="box-title">Tasks {{taskName}}</h3>
+                                        <h3 class="box-title">Tasks</h3>
                                     </div>
                                     <!-- /.box-header -->
                                     <div class="box-body no-padding">
@@ -517,7 +429,7 @@
                                     <ul class="menu">
                                         <li data-ng-repeat="task in pendingTasks">
                                             <a href="javascript:void(0);">
-                                                <p class="task-description">
+                                                <p class="white-space-normal">
                                                     {{task.description}} <i data-ng-if="task.isCall" class="fa fa-play-circle"></i>
                                                 </p>
                                             </a>
@@ -963,6 +875,7 @@
     <script src="../dist/js/pages/dashboard.js"></script>
     <script src="../dist/js/angular/coach/app.js"></script>
     <script src="../dist/js/angular/coach/taskController.js"></script>
+    <script src="../dist/js/angular/coach/messageController.js"></script>
     <!-- Onlife for demo purposes -->
     <script src="../dist/js/demo.js"></script>
 </body>
