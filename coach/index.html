@@ -20,6 +20,7 @@
        folder instead of downloading all of them to reduce the load. -->
   <link rel="stylesheet" href="../dist/css/skins/_all-skins.min.css">
   <link href="../dist/css/custom.css" rel="stylesheet" />
+  <link href="../dist/css/angular-csp.css" rel="stylesheet" />
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -28,8 +29,8 @@
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
 </head>
-<body class="hold-transition skin-blue sidebar-mini">
-<div class="wrapper">
+<body class="hold-transition skin-blue sidebar-mini" data-ng-app="olh-lps-coach">
+<div class="wrapper" data-ng-cloak="">
 
   <header class="main-header">
 
@@ -251,7 +252,7 @@
                 <div class="navbar-custom-menu">
                     <ul class="nav navbar-nav row">
                         <!-- Messages-->
-                        <li class="dropdown messages-menu col-sm-4">
+                        <li class="dropdown messages-menu col-sm-4" data-ng-controller="MessageController">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown"> 
                                 <!-- DIRECT CHAT -->
                                 <div class="box box-warning direct-chat direct-chat-warning">
@@ -283,105 +284,17 @@
                                 <!--/.direct-chat -->
                             </a>
                             <ul class="dropdown-menu">
-                                <li class="header">You have 3 calls and 7 messages </li>
+                                <li class="header">You have 3 calls and 7 messages</li>
                                 <li>
                                     <!-- inner messages -->
                                     <ul class="menu">
-                                        <li>
-                                            <!-- start message -->
-                                            <a href="#">
+                                        <li data-ng-repeat="message in messages">
+                                            <a href="javascript:void(0);">
                                                 <h4>
-                                                    Louis <span class="fa fa-play-circle"></span>
-                                                    <small><i class="fa fa-clock-o"></i> 5 mins</small>
+                                                    {{message.memberName}} <i data-ng-if="message.isCall" class="fa fa-play-circle"></i>
+                                                    <small><i class="fa fa-clock-o"></i> {{message.duration}} {{message.durationType}}</small>
                                                 </h4>
-                                                <p>Voice Message from Member...</p>
-                                            </a>
-                                        </li>
-                                        <!-- end message -->
-                                        <li>
-                                            <a href="#">
-                                                <h4>
-                                                    Harrell, Marcelino
-                                                    <small><i class="fa fa-clock-o"></i> 2 hours</small>
-                                                </h4>
-                                                <p>Secured message from Member: hi..</p>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <h4>
-                                                    Talley, Jacob <span class="fa fa-play-circle"></span>
-                                                    <small><i class="fa fa-clock-o"></i> Today</small>
-                                                </h4>
-                                                <p>Secured message from Member: hi..</p>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <h4>
-                                                    Astair, Fred
-                                                    <small><i class="fa fa-clock-o"></i> Yesterday</small>
-                                                </h4>
-                                                <p>Secured message from Member: hi..</p>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <h4>
-                                                    Mattingley, Scott
-                                                    <small><i class="fa fa-clock-o"></i> 2 days</small>
-                                                </h4>
-                                                <p>Secured message from Member: hi..</p>
-                                            </a>
-                                        </li>
-
-                                        <li>
-                                            <a href="#">
-                                                <h4>
-                                                    Aagard, Darin
-                                                    <small><i class="fa fa-clock-o"></i> 2 days</small>
-                                                </h4>
-                                                <p>Secured message from Member: hi..</p>
-                                            </a>
-                                        </li>
-
-                                        <li>
-                                            <a href="#">
-                                                <h4>
-                                                    Aaron, Jennifer
-                                                    <small><i class="fa fa-clock-o"></i> 2 days</small>
-                                                </h4>
-                                                <p>Secured message from Member: hi..</p>
-                                            </a>
-                                        </li>
-
-                                        <li>
-                                            <a href="#">
-                                                <h4>
-                                                    Abbott, Robert
-                                                    <small><i class="fa fa-clock-o"></i> 2 days</small>
-                                                </h4>
-                                                <p>Secured message from Member: hi...</p>
-                                            </a>
-                                        </li>
-
-                                        <li>
-                                            <a href="#">
-                                                <h4>
-                                                    Zyzda, Lisa
-                                                    <small><i class="fa fa-clock-o"></i> 2 days</small>
-                                                </h4>
-                                                <p>Secured message from Member: hi...</p>
-                                            </a>
-                                        </li>
-
-                                        <li>
-                                            <a href="#">
-                                                <h4>
-                                                    Zurek, Brandon
-                                                    <small><i class="fa fa-clock-o"></i> 2 days</small>
-                                                </h4>
-                                                <p>Secured message from Member: hi...</p>
+                                                <p class="white-space-normal">{{message.description}}</p>
                                             </a>
                                         </li>
                                     </ul>
@@ -425,64 +338,63 @@
                                             <li>
                                                 <a href="#">
                                                     <h4>
-                                                        Client Name 
+                                                        Louis
                                                         <small><i class="fa fa-clock-o"></i> Oct 20, 3 pm </small>
                                                     </h4>
-                                                    <p>+1670 999 99</p>
+                                                    <p>(267) 862-9806  <i class="fa fa-phone blue-color"></i></p>
                                                 </a>
                                             </li>
                                             <li>
                                                 <a href="#">
                                                     <h4>
-                                                        Client Name 2
+                                                        Harrell, Marcelino
                                                         <small><i class="fa fa-clock-o"></i> Oct 20, 3 pm </small>
                                                     </h4>
-                                                    <p>+1670 999 99</p>
+                                                    <p>(329) 999-6428  <i class="fa fa-phone blue-color"></i></p>
                                                 </a>
                                             </li>
                                             <li>
                                                 <a href="#">
                                                     <h4>
-                                                        Client Name 3
+                                                        Talley, Jacob
                                                         <small><i class="fa fa-clock-o"></i> Oct 21, 3 pm </small>
                                                     </h4>
-                                                    <p>+1670 999 99</p>
+                                                    <p>(557) 768-1059  <i class="fa fa-phone blue-color"></i></p>
                                                 </a>
                                             </li>
                                             <li>
                                                 <a href="#">
                                                     <h4>
-                                                        Client Name 4
+                                                        Astair, Fred
                                                         <small><i class="fa fa-clock-o"></i> Oct 21, 3 pm </small>
                                                     </h4>
-                                                    <p>+1670 999 99</p>
+                                                    <p>(897) 181-5152  <i class="fa fa-phone blue-color"></i></p>
                                                 </a>
                                             </li>
                                             <li>
                                                 <a href="#">
                                                     <h4>
-                                                        Client Name 5
+                                                        Mattingley, Scott
                                                         <small><i class="fa fa-clock-o"></i> Oct 25, 3 pm </small>
                                                     </h4>
-                                                    <p>+1670 999 99</p>
+                                                    <p>(265) 238-7651  <i class="fa fa-phone blue-color"></i></p>
                                                 </a>
                                             </li>
                                             <li>
                                                 <a href="#">
                                                     <h4>
-                                                        Client Name 6
+                                                        Aagard, Darin
                                                         <small><i class="fa fa-clock-o"></i> Oct 25, 3 pm </small>
                                                     </h4>
-                                                    <p>+1670 999 99</p>
+                                                    <p>(954) 169-5936  <i class="fa fa-phone blue-color"></i></p>
                                                 </a>
                                             </li>
                                         </ul>
                                 </li>
-                                <li class="footer"><a href="#">View all</a></li>
                             </ul>
                         </li>
                         <!-- Tasks-->
-                        <li class="dropdown tasks-menu  col-sm-4">
+                        <li class="dropdown tasks-menu  col-sm-4" data-ng-controller="TaskController">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                 <div class="box box-default">
                                     <div class="box-header">
@@ -514,71 +426,15 @@
                                 <li class="header">You have 32 tasks</li>
                                 <li>
                                     <!-- inner menu-->
-                                        <ul class="menu">
-                                            <li>
-                                                <!-- Task item -->
-                                                <a href="#">
-                                                    <h3>
-                                                        Task 1
-                                                    </h3>
-                                                    <p>Lorem ipsum dummy text...</p>
-                                                </a>
-                                            </li>
-                                            <!-- end task item -->
-                                            <li>
-                                                <!-- Task item -->
-                                                <a href="#">
-                                                    <h3>
-                                                        Task 2
-                                                    </h3>
-                                                    <p>Lorem ipsum dummy text...</p>
-                                                </a>
-                                            </li>
-                                            <!-- end task item -->
-                                            <li>
-                                                <!-- Task item -->
-                                                <a href="#">
-                                                    <h3>
-                                                        Task 3
-                                                    </h3>
-                                                    <p>Lorem ipsum dummy text...</p>
-                                                </a>
-                                            </li>
-                                            <!-- end task item -->
-                                            <li>
-                                                <!-- Task item -->
-                                                <a href="#">
-                                                    <h3>
-                                                        Task 4
-                                                    </h3>
-                                                    <p>Lorem ipsum dummy text...</p>
-                                                </a>
-                                            </li>
-                                            <!-- end task item -->
-                                            <li>
-                                                <!-- Task item -->
-                                                <a href="#">
-                                                    <h3>
-                                                        Task 5
-                                                    </h3>
-                                                    <p>Lorem ipsum dummy text...</p>
-                                                </a>
-                                            </li>
-                                            <!-- end task item -->
-                                            <li>
-                                                <!-- Task item -->
-                                                <a href="#">
-                                                    <h3>
-                                                        Task 6
-                                                    </h3>
-                                                    <p>Lorem ipsum dummy text...</p>
-                                                </a>
-                                            </li>
-                                            <!-- end task item -->
-                                        </ul>
-                                </li>
-                                <li class="footer">
-                                    <a href="#">View all tasks</a>
+                                    <ul class="menu">
+                                        <li data-ng-repeat="task in pendingTasks">
+                                            <a href="javascript:void(0);">
+                                                <p class="white-space-normal">
+                                                    {{task.description}} <i data-ng-if="task.isCall" class="fa fa-play-circle"></i>
+                                                </p>
+                                            </a>
+                                        </li>
+                                    </ul>
                                 </li>
                             </ul>
                         </li>
@@ -622,7 +478,7 @@
                                             <div class="item">
                                                 <img src="../dist/img/user4-128x128.jpg" alt="user image" class="">
                                                 <p class="message">
-                                                    <a href="javascript:void(0)" class="name">
+                                                    <a href="javascript:void(0)" class="name like-btn">
                                                         Article 1
                                                         <i class="ion ion-ios-heart-outline pull-right"></i>
                                                     </a>
@@ -634,7 +490,7 @@
                                             <div class="item">
                                                 <img src="../dist/img/user3-128x128.jpg" alt="user image" class="">
                                                 <p class="message">
-                                                    <a href="javascript:void(0)" class="name">
+                                                    <a href="javascript:void(0)" class="name like-btn">
                                                         Article 2
                                                         <i class="ion ion-ios-heart-outline pull-right"></i>
                                                     </a>
@@ -646,7 +502,7 @@
                                             <div class="item">
                                                 <img src="../dist/img/user2-160x160.jpg" alt="user image" class="">
                                                 <p class="message">
-                                                    <a href="javascript:void(0)" class="name">
+                                                    <a href="javascript:void(0)" class="name like-btn">
                                                         Article 3
                                                         <i class="ion ion-ios-heart-outline pull-right"></i>
                                                     </a>
@@ -658,7 +514,7 @@
                                             <div class="item">
                                                 <img src="../dist/img/user2-160x160.jpg" alt="user image" class="">
                                                 <p class="message">
-                                                    <a href="javascript:void(0)" class="name">
+                                                    <a href="javascript:void(0)" class="name like-btn">
                                                         Article 4
                                                         <i class="ion ion-ios-heart-outline pull-right"></i>
                                                     </a>
@@ -670,7 +526,7 @@
                                             <div class="item">
                                                 <img src="../dist/img/user2-160x160.jpg" alt="user image" class="">
                                                 <p class="message">
-                                                    <a href="javascript:void(0)" class="name">
+                                                    <a href="javascript:void(0)" class="name like-btn">
                                                         Article 5
                                                         <i class="ion ion-ios-heart-outline pull-right"></i>
                                                     </a>
@@ -696,7 +552,7 @@
                                         <div class="item">
                                             <img src="../dist/img/user4-128x128.jpg" alt="user image" class="">
                                             <p class="message">
-                                                <a href="javascript:void(0);" class="name">
+                                                <a href="javascript:void(0);" class="name like-btn">
                                                     Pod Casts 1
                                                     <i class="ion ion-ios-heart-outline pull-right"></i>
                                                 </a>
@@ -708,7 +564,7 @@
                                         <div class="item">
                                             <img src="../dist/img/user3-128x128.jpg" alt="user image" class="">
                                             <p class="message">
-                                                <a href="javascript:void(0);" class="name">
+                                                <a href="javascript:void(0);" class="name like-btn">
                                                     Pod Casts 2
                                                     <i class="ion ion-ios-heart-outline pull-right"></i>
                                                 </a>
@@ -720,7 +576,7 @@
                                         <div class="item">
                                             <img src="../dist/img/user2-160x160.jpg" alt="user image" class="">
                                             <p class="message">
-                                                <a href="javascript:void(0);" class="name">
+                                                <a href="javascript:void(0);" class="name like-btn">
                                                     Pod Casts 3
                                                     <i class="ion ion-ios-heart-outline pull-right"></i>
                                                 </a>
@@ -732,7 +588,7 @@
                                         <div class="item">
                                             <img src="../dist/img/user2-160x160.jpg" alt="user image" class="">
                                             <p class="message">
-                                                <a href="javascript:void(0);" class="name">
+                                                <a href="javascript:void(0);" class="name like-btn">
                                                     Pod Casts 4
                                                     <i class="ion ion-ios-heart-outline pull-right"></i>
                                                 </a>
@@ -744,7 +600,7 @@
                                         <div class="item">
                                             <img src="../dist/img/user2-160x160.jpg" alt="user image" class="">
                                             <p class="message">
-                                                <a href="javascript:void(0);" class="name">
+                                                <a href="javascript:void(0);" class="name like-btn">
                                                     Pod Casts 5
                                                     <i class="ion ion-ios-heart-outline pull-right"></i>
                                                 </a>
@@ -993,6 +849,7 @@
     <script src="../bootstrap/js/bootstrap.min.js"></script>
     <!-- Morris.js charts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+    <script src="../plugins/angular/angular.min.js"></script>
     <script src="../plugins/morris/morris.min.js"></script>
     <!-- Sparkline -->
     <script src="../plugins/sparkline/jquery.sparkline.min.js"></script>
@@ -1016,6 +873,9 @@
     <script src="../dist/js/app.min.js"></script>
     <!-- Onlife dashboard demo (This is only for demo purposes) -->
     <script src="../dist/js/pages/dashboard.js"></script>
+    <script src="../dist/js/angular/coach/app.js"></script>
+    <script src="../dist/js/angular/coach/taskController.js"></script>
+    <script src="../dist/js/angular/coach/messageController.js"></script>
     <!-- Onlife for demo purposes -->
     <script src="../dist/js/demo.js"></script>
 </body>

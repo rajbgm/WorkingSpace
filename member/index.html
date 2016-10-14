@@ -30,7 +30,7 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-<body class="hold-transition skin-blue sidebar-mini">
+<body class="hold-transition skin-blue sidebar-mini" data-ng-app="olh-lps-member">
     <div class="wrapper">
 
         <header class="main-header">
@@ -252,7 +252,7 @@
         </aside>
 
         <!-- Content Wrapper. Contains page content -->
-        <div class="content-wrapper member-view">
+        <div class="content-wrapper member-view" data-ng-controller="MemberController">
             <!-- Main content -->
             <section class="content">
                 <div class="row">
@@ -268,10 +268,12 @@
                                         <div class="col-xs-2">
                                             <span class="icon-location custom-icon"></span>
                                         </div>
-                                        <div class="col-xs-10 address">
+                                        <div class="col-xs-10 address" data-ng-init="verified = false">
                                             <p>995 Arlington Lane</p>
                                             <p>East Brunswick, NJ</p>
                                             <p>08816</p>
+                                            <a href="javascript:void(0);" class="btn btn-warning btn-xs" data-ng-click="verified = !verified" data-ng-hide="verified">Verify</a>
+                                            <a href="javascript:void(0);" class="btn btn-success btn-xs" data-ng-click="verified = !verified" data-ng-show="verified">Verified</a>
                                         </div>
                                     </div>
                                     <div class="row">
@@ -398,7 +400,7 @@
                                                     <div class="col-sm-5 trim-left">
                                                         <p class="message">
                                                             <a href="#" class="name">
-                                                                Reduce Weight : 180 lbs
+                                                                Weight Management goal, Reduce weight from 200lbs(BMI 27.9) to 178lbs (24.9 BMI).
                                                             </a>
                                                         </p>
                                                     </div>
@@ -435,7 +437,7 @@
                                                     <div class="col-sm-5 trim-left">
                                                         <p class="message">
                                                             <a href="#" class="name">
-                                                                Reduce Weight 
+                                                                Reduce stress goal.
                                                             </a>
                                                         </p>
                                                     </div>
@@ -466,6 +468,41 @@
                                             </span>
                                         </div>
                                         <!-- /.box (chat box) -->
+                                    </div>
+                                </div>
+                                <div class="row white-bg account-wrapper recommendations">
+                                    <div class="col-sm-12">
+                                        <h2 class="page-header">Concierge Information</h2>
+                                    </div>
+                                    <div class="col-xs-12">
+                                      <div class="col-xs-4">
+                                          <img src="../dist/img/bcbst_logo.png" alt="bcbst logo" class="img-responsive">
+                                      </div>
+                                      <div class="col-xs-8">
+                                        <ul>
+                                            <li>
+                                                <strong>Program Name:</strong> Well@Work
+                                            </li>
+                                            <li>
+                                                <strong>Program Phone Number:</strong> 1-877-620-2232
+                                            </li>
+                                            <li>
+                                                <strong>Time Zones:</strong> Primarily Central (CST) and Eastern (EST) Time Zones
+                                            </li>
+                                            <li>
+                                                <strong>Web Address:</strong> <a href="http://www.bcbst.com" target="_blank">www.bcbst.com</a>
+                                            </li>
+                                            <li>
+                                                <strong>Account Manager:</strong> Alaina Bissett
+                                            </li>
+                                            <li>
+                                                <strong>Implementation Manager:</strong> Tony Vaughn
+                                            </li>
+                                            <li>
+                                                <strong>Program Tag Line:</strong> Thank you for calling the BlueCross BlueShield of Tennessee Well @ Work Program
+                                            </li>
+                                        </ul>
+                                      </div>
                                     </div>
                                 </div>
                                 <div class="row white-bg account-wrapper recommendations">
@@ -1162,6 +1199,7 @@
     <script src="../bootstrap/js/bootstrap.min.js"></script>
     <!-- Morris.js charts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+    <script src="../plugins/angular/angular.min.js"></script>
     <script src="../plugins/morris/morris.min.js"></script>
     <!-- Sparkline -->
     <script src="../plugins/sparkline/jquery.sparkline.min.js"></script>
@@ -1187,6 +1225,8 @@
     <script src="../dist/js/app.min.js"></script>
     <!-- Onlife dashboard demo (This is only for demo purposes) -->
     <script src="../dist/js/pages/dashboard.js"></script>
+    <script src="../dist/js/angular/member/app.js"></script>
+    <script src="../dist/js/angular/member/memberController.js"></script>
     <!-- Onlife for demo purposes -->
     <script src="../dist/js/demo.js"></script>
     <script>
