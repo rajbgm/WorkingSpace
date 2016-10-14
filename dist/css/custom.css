@@ -1330,6 +1330,9 @@ box.box-danger .circle-logo {
     font-weight: 600;
     font-size: 26px;
 }
+.m-l-10 {
+  margin-left: 10px;
+}
 .p-y-15 {
     padding-top: 15px;
     padding-bottom: 15px;
