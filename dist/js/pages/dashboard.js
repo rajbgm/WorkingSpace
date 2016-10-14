@@ -526,3 +526,8 @@ $(".clinical-notes").click(function () {
 
   $('#clinicalNotesDiv').toggle(effect, options, duration);
 });
+
+$('.like-btn').click(function () {
+  $(this).children('i').toggleClass('ion-ios-heart');
+  $(this).children('i').toggleClass('ion-ios-heart-outline');
+});

@@ -1326,8 +1326,11 @@ box.box-danger .circle-logo {
     padding-bottom: 15px;
 }
 .b-r-0 {
-    border-radius: 0    ;
+    border-radius: 0;
 }
 .b-r-7 {
     border-radius: 7px;
+}
+.task-description {
+  white-space: normal;
 }
