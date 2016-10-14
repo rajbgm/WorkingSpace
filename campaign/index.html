@@ -112,7 +112,7 @@
         <li class="active">
           <a href="index.html">
               <i class="icon-dashboard"></i> 
-              <span class="">Campaign</span>
+              <!-- <span class="">Campaign</span> -->
           </a>
             <span class="arrow-right"></span>
         </li>
@@ -199,11 +199,17 @@
                    <!-- ./col -->
                    <div class="col-sm-12 campaign-section">
                        <div class="row">
-                           <div class="col-sm-6">
+                           <div class="col-sm-8">
                                <h2 class="page-header">TOP CAMPAIGNS/ REACH</h2>
                            </div>
-                           <div class="col-sm-6 text-right">
-                               Period: 10/05/2016 – 10/12/2016 <span class="fa fa-caret-down"></span>
+
+                           <div class="col-sm-4 text-right">
+                               <span class="input-group">
+                                   <div class="input-group-addon">
+                                       <i class="fa fa-calendar"></i>
+                                   </div>
+                                   <input value="Period: 10/05/2016 – 10/12/2016" type="text" class="form-control pull-right" id="dateRange">
+                               </span>
                            </div>
                            <div class="col-sm-12">
                                <img src="../dist/img/campaign_graph.png" alt="campaign graph" class="img-responsive" />
@@ -212,11 +218,16 @@
                    </div>
                    <div class="col-sm-12 campaign-section">
                        <div class="row">
-                           <div class="col-sm-6">
+                           <div class="col-sm-8">
                                <h2 class="page-header">CAMPAIGNS PER SEGMENT</h2>
                            </div>
-                           <div class="col-sm-6 text-right">
-                               Period: 10/05/2016 – 10/12/2016 <span class="fa fa-caret-down"></span>
+                           <div class="col-sm-4 text-right">
+                               <span class="input-group">
+                                   <div class="input-group-addon">
+                                       <i class="fa fa-calendar"></i>
+                                   </div>
+                                   <input value="Period: 10/05/2016 – 10/12/2016" type="text" class="form-control pull-right" id="dateRange2">
+                               </span>
                            </div>
                            <div class="col-sm-12">
                                <img src="../dist/img/campaign_graph_2.png" alt="campaign graph" class="img-responsive" />
@@ -234,24 +245,11 @@
                    
                    <!-- /.box-body -->
                    <div class="box-footer no-padding">
-                       <div class="checkbox checkbox-primary">
-                           <input id="newCampaign" class="styled" type="checkbox">
-                           <label for="newCampaign">
-                               Create New Campaign
-                           </label> 
-                       </div>
-                       <div class="checkbox checkbox-primary">
-                           <input id="newSegment" class="styled" type="checkbox">
-                           <label for="newSegment">
-                               Add New Segment
-                           </label>
-                       </div>
-                       <div class="checkbox checkbox-primary">
-                           <input id="newProgram" class="styled" type="checkbox">
-                           <label for="newProgram">
-                               Create New Program
-                           </label>
-                       </div>
+                       <ul class="list-group list-style">
+                           <li><a href="">Create New Campaign</a></li>
+                           <li><a href="">Add New Segment</a></li>
+                           <li><a href="">Create New Program</a></li>
+                       </ul>
                    </div>
                    <!-- /.footer -->
                </div>
@@ -262,24 +260,11 @@
                    <!-- /.box-header -->
                    <!-- /.box-body -->
                    <div class="box-footer no-padding">
-                       <div class="checkbox checkbox-primary">
-                           <input id="segment1" class="styled" type="checkbox">
-                           <label for="segment1">
-                               Segment 1
-                           </label>
-                       </div>
-                       <div class="checkbox checkbox-primary">
-                           <input id="segment2" class="styled" type="checkbox">
-                           <label for="segment2">
-                               Segment 2
-                           </label>
-                       </div>
-                       <div class="checkbox checkbox-primary">
-                           <input id="segment3" class="styled" type="checkbox">
-                           <label for="segment3">
-                               Segment 3
-                           </label>
-                       </div>
+                       <ul class="list-group list-style">
+                           <li><a href="">Segment 1</a></li>
+                           <li><a href="">Segment 2</a></li>
+                           <li><a href="">Segment 3</a></li>
+                       </ul>
                    </div>
                    <!-- /.footer -->
                </div>
