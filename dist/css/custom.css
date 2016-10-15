@@ -1345,7 +1345,7 @@ box.box-danger .circle-logo {
 }
 /*  Saravanan changes 10/14/2016  */
 .navbar-custom-menu>.navbar-nav>li>.dropdown-menu {
-    right: auto !important;
+    /*right: auto !important;*/
 }
 .list-style {
     list-style-type: disc !important;
