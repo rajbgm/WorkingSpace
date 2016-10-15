@@ -152,7 +152,7 @@
                                 <li><a href="#familyFriends" data-toggle="tab">Family &amp; Friends</a></li>
                                 
                                 <li class="pull-right col-sm-6">
-                                    <div class="col-sm-9 text-right trim-right">
+                                    <div class="col-sm-12 text-right trim-right">
                                         <div class="filter-icon">
                                             <a href="#" class="dropdown-toggle" id="drop5" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true"> <i class="fa fa-filter"></i></a>
                                             <ul class="dropdown-menu pull-right" id="menu2" aria-labelledby="drop5">
@@ -163,17 +163,18 @@
                                                 <li><a href="#">Separated link</a></li> </ul>
                                         </div>
                                     </div>
-                                    <div class="col-sm-3 text-right">
-                                        View <a href="#" class="text-muted " id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-navicon"></i></a>
-                                        <ul class="dropdown-menu" id="menu1" aria-labelledby="drop4">
-                                            <li><a id="listview" href="#">List</a></li>
-                                            <li><a href="#" id="tileview">Tile</a></li>
-                                        </ul>
-                                    </div>
+
                                 </li>
                             </ul>
                             <div class="tab-content " style="float: left;width: 100%;">
-                                <div class="tab-pane active" id="wellnessFeeds">
+
+                                <div class="tab-pane active listviewbox" id="wellnessFeeds">
+                                    <div class="row margin-bottom">
+                                        <div class="col-sm-12 text-left wellness-box">
+                                            View <a href="#" class="text-muted list-view-click"><i class="fa fa-navicon"></i></a>
+
+                                        </div>
+                                    </div>
                                     <div class="row">
                                         <div class="col-sm-3">
                                             <div class="row">
@@ -447,7 +448,13 @@
                                     </div>
                                 </div>
                                 <!-- start member list view -->
-                                <div class="col-sm-12 tab-pane" id="listviewbox">
+                                <div class="col-sm-12 tab-pane listviewbox" id="listviewbox">
+                                    <div class="row margin-bottom margin-top-20">
+                                        <div class="col-sm-12 text-left wellness-box">
+                                            View <a href="#" class="text-muted list-view-click"><i class="fa fa-navicon"></i></a>
+
+                                        </div>
+                                    </div>
                                     <ul class="timeline">
 
 
@@ -992,19 +999,19 @@
                                                                     <div class="col-sm-8">
                                                                         <p class="btn-group" data-toggle="buttons">
                                                                             <label class="btn btn-default">
-                                                                                <input type="radio" id="" name="quality[25]" value="0"> 0
+                                                                                <input type="radio"  name="quality[25]" value="0"> 0
                                                                             </label>
                                                                             <label class="btn btn-default">
-                                                                                <input type="radio" id="" name="quality[25]" value="1-5"> 1-5
+                                                                                <input type="radio"  name="quality[25]" value="1-5"> 1-5
                                                                             </label>
                                                                             <label class="btn btn-default">
-                                                                                <input type="radio" id="" name="quality[25]" value="6-10"> 6-10
+                                                                                <input type="radio" name="quality[25]" value="6-10"> 6-10
                                                                             </label>
                                                                             <label class="btn btn-default">
-                                                                                <input type="radio" id="" name="quality[25]" value="10-20"> 10-20
+                                                                                <input type="radio" name="quality[25]" value="10-20"> 10-20
                                                                             </label>
                                                                             <label class="btn btn-default active">
-                                                                                <input type="radio" id="" name="quality[25]" checked="checked" value="20+"> 20+
+                                                                                <input type="radio"  name="quality[25]" checked="checked" value="20+"> 20+
                                                                             </label>
                                                                         </p>
                                                                     </div>
@@ -1879,17 +1886,25 @@
     <script src="js/scripts.js"></script>
 
 <script type="text/javascript">
-    $("#listview").click(function(){
+
+    $('.list-view-click').click(function(){
+
+            $('.listviewbox').toggleClass("active");
+        
+        icon = $(this).find("i");
+        icon.toggleClass("fa-navicon fa-th-large")
+    })
+
+
+
+   /* $("#listview").click(function(){
         $("#listviewbox").addClass( "active" );
         $("#wellnessFeeds").removeClass( "active" );
     });
     $("#tileview").click(function(){
         $("#wellnessFeeds").addClass( "active" );
         $("#listviewbox").removeClass( "active" );;
-    });
-
-
-
+    });*/
 </script>
 </body>
 </html>
