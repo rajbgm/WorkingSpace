@@ -1,0 +1,501 @@
+.patient-info {
+    border-radius: 15px 15px 0 0;
+    background-color: #FFF;
+    float: left;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.patient-info img.rounded-image {
+    text-align: center;
+    background: #6a8db3;
+    color: #fff;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    z-index: 99999;
+    float: left;
+}
+
+.patient-info label {
+    font-size: 25px;
+    color: #0C76B6;
+    margin-top: 30px;
+    margin-left: 14px;
+
+    font-weight: normal;
+}
+
+.patient-info label > b {
+    font-weight: bold;
+}
+
+.patient-info > div:first-child.patient-info-box {
+    border-left: 0;
+}
+
+.patient-info > div.patient-info-box {
+    border-left: 1px dashed #333;
+    padding: 0;
+}
+
+.patient-details,
+.patient-details.family-lbl-details {
+    height: 130px;
+    padding: 25px 15px;
+}
+
+.patient-bottom-lbl {
+    background-color: #E0E5E5;
+    height: 90px;
+    text-align: center;
+}
+
+.patient-cnt-bottom-lbl {
+    background-color: #F2F2F2;
+    height: 90px;
+    text-align: left;
+}
+
+.patient-bottom-lbl > small {
+    margin: 25px;
+    display: inline-block;
+    color: #9D9F9F;
+}
+
+.patient-bottom-lbl > small > strong {
+    font-weight: bold;
+}
+
+
+a.facebook, a.g-plus{
+    width: 24px;
+    height: 24px;
+    margin-top: -4px;
+    display: block;
+}
+.margin-top-132 {
+    margin-top: -132px;
+}
+.margin-15-top{
+    margin-top: -15px;
+}
+.btn-primary{
+    background: #0C76B6;
+    border-radius: 0
+}
+.patient-info img.rounded-content-image {
+    text-align: center;
+    background: #6a8db3;
+    color: #fff;
+    width: 150px;
+    height: 150px;
+    line-height: 150px;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    z-index: 99999;
+    float: left;
+    position: relative;
+    border: 3px solid #fff;
+    margin-top: 5px;
+}
+
+.patient-info label.family-admin-lbl {
+    float: right;
+    margin-right: 10px;
+}
+.patient-info label.username-content {
+    color: #0c76b6;
+    font-size: 32px;
+    margin-left: 0;
+    margin-top: 40px;
+    margin-bottom: 5px;
+    line-height:30px;
+}
+
+.dob-lbl {
+    font-size: 14px;
+}
+
+.margin-top-40 {
+    margin-top: 40px !important;
+}
+
+.patient-cnt-bottom-lbl div.admin-wrap {
+    font-size: 13px;
+    margin-top: 4px;
+    float: left;
+}
+
+.patient-cnt-bottom-lbl div.admin-wrap ul{
+    list-style: none;
+    padding-left: 0;
+}
+
+.patient-cnt-bottom-lbl div.admin-wrap ul li {
+    padding: 0;
+    margin: 4px 0;
+}
+
+.mail-link {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.mail-link a {
+    color: #0c76b6 !important;
+    margin-left: 10px;
+}
+
+.mail-link a.facebook,
+.mail-link a.g-plus{
+    float: left;
+    margin-right: 10px;
+}
+
+.mail-link-position {
+    float: right;
+    line-height: 11px;
+}
+.mail-link-position p{
+    margin-bottom: 5px;
+    height: 10px;
+    clear:both;
+}
+
+.patient-cnt-bottom-lbl div.add-linked-devices {
+    padding: 0;
+    float: left;
+}
+
+.linked-devices {
+    float: right;
+}
+
+.linked-devices div {
+    text-align: right;
+    float: left;
+    padding: 7px 22px 7px 35px;;
+    width: auto;
+    font-weight: bold;
+}
+
+.linked-devices button {
+    float: left;
+    padding: 7px 20px;
+    width: auto;
+    background-color: #0C76B6;
+    border: 1px solid #0C76B6;
+    color: #fff;
+}
+.mail-link small {
+    margin-right: 15px;
+    float: left;
+}
+
+.patient-details .Seperator {
+    color: #0C76B6;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.margin-top-20 {
+    margin-top: 20px !important;
+}
+
+.tracker-box.profile-tracker-box {
+    background-color: transparent;
+    margin-top: 5px;
+    color: #333;
+}
+
+.patient-cnt-bottom-lbl.profile-content-btm-lbl {
+    height: 150px;
+}
+
+.margin-top-80 {
+    margin-top: -80px;
+}
+
+.profile-content-btm-lbl .pro-patient-info {
+    margin-bottom: 15px;
+    float: left;
+    margin: 8px;
+}
+
+.admin-wrap .radio label{
+    font-size: 12px;
+    margin:0;
+    padding: 0;
+    line-height: 18px;
+}
+.admin-wrap .radio{
+    margin: 5px 0;
+}
+.radio {
+    padding-left: 20px;
+}
+
+.radio label {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    padding-left: 5px;
+}
+
+.radio label::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    left: 0;
+    margin-left: -20px;
+    border: 1px solid #cccccc;
+    border-radius: 50%;
+    background-color: #fff;
+    -webkit-transition: border 0.15s ease-in-out;
+    -o-transition: border 0.15s ease-in-out;
+    transition: border 0.15s ease-in-out;
+}
+
+.radio label::after {
+    display: inline-block;
+    position: absolute;
+    content: " ";
+    width: 11px;
+    height: 11px;
+    left: 3px;
+    top: 3px;
+    margin-left: -20px;
+    border-radius: 50%;
+    background-color: #555555;
+    -webkit-transform: scale(0, 0);
+    -ms-transform: scale(0, 0);
+    -o-transform: scale(0, 0);
+    transform: scale(0, 0);
+    -webkit-transition: -webkit-transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33);
+    -moz-transition: -moz-transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33);
+    -o-transition: -o-transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33);
+    transition: transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33);
+}
+
+.radio input[type="radio"] {
+    opacity: 0;
+    z-index: 1;
+}
+
+.radio input[type="radio"]:focus + label::before {
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+}
+
+.radio input[type="radio"]:checked + label::after {
+    -webkit-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -o-transform: scale(1, 1);
+    transform: scale(1, 1);
+}
+
+.radio input[type="radio"]:disabled + label {
+    opacity: 0.65;
+}
+
+.radio input[type="radio"]:disabled + label::before {
+    cursor: not-allowed;
+}
+
+.radio.radio-inline {
+    margin-top: 0;
+}
+.radio-primary input[type="radio"] + label::after {
+    background-color: #337ab7;
+}
+
+.radio-primary input[type="radio"]:checked + label::before {
+    border-color: #337ab7;
+}
+
+.radio-primary input[type="radio"]:checked + label::after {
+    background-color: #337ab7;
+}
+
+.radio-danger input[type="radio"] + label::after {
+    background-color: #d9534f;
+}
+
+.radio-danger input[type="radio"]:checked + label::before {
+    border-color: #d9534f;
+}
+
+.radio-danger input[type="radio"]:checked + label::after {
+    background-color: #d9534f;
+}
+
+.radio-info input[type="radio"] + label::after {
+    background-color: #5bc0de;
+}
+
+.radio-info input[type="radio"]:checked + label::before {
+    border-color: #5bc0de;
+}
+
+.radio-info input[type="radio"]:checked + label::after {
+    background-color: #5bc0de;
+}
+
+.radio-warning input[type="radio"] + label::after {
+    background-color: #f0ad4e;
+}
+
+.radio-warning input[type="radio"]:checked + label::before {
+    border-color: #f0ad4e;
+}
+
+.radio-warning input[type="radio"]:checked + label::after {
+    background-color: #f0ad4e;
+}
+
+.radio-success input[type="radio"] + label::after {
+    background-color: #5cb85c;
+}
+
+.radio-success input[type="radio"]:checked + label::before {
+    border-color: #5cb85c;
+}
+
+.radio-success input[type="radio"]:checked + label::after {
+    background-color: #5cb85c;
+}
+
+input[type="checkbox"].styled:checked + label:after,
+input[type="radio"].styled:checked + label:after {
+    font-family: 'FontAwesome';
+    content: "\f00c";
+}
+
+input[type="checkbox"] .styled:checked + label::before,
+input[type="radio"] .styled:checked + label::before {
+    color: #fff;
+}
+
+input[type="checkbox"] .styled:checked + label::after,
+input[type="radio"] .styled:checked + label::after {
+    color: #fff;
+}
+/* Checkbox and radio buttons ends   */
+/** media queries **/
+@media (max-width: 991px) {
+
+    .mail-link-position {
+        float: left;
+    }
+
+    .patient-cnt-bottom-lbl div.add-linked-devices {
+        padding: 10px 0;
+    }
+
+    .patient-details.family-lbl-details {
+        height: 20px;
+    }
+
+    .family-admin-lbl.margin-top-40 {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 700px) {
+
+    .margin-top-132, .margin-top-80 {
+        margin-top: 0;
+    }
+
+    .mail-link-position {
+        float: left;
+    }
+
+    .patient-cnt-bottom-lbl div.add-linked-devices {
+        padding: 10px 0;
+    }
+
+    .patient-details.family-lbl-details {
+        height: 20px;
+    }
+
+    .family-admin-lbl.margin-top-40 {
+        margin-top: 0;
+    }
+}
+
+
+/* Tablet screens */
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .linked-devices div {
+        padding: 7px 10px;
+    }
+
+    .patient-info > div.patient-info-box {
+        border-left: 0;
+    }
+
+    .patient-details.family-lbl-details label {
+        display: none;
+    }
+
+    .patient-info img.rounded-content-image {
+        height: 120px;
+    }
+
+    .patient-details, .patient-details.family-lbl-details {
+        padding: 10px 15px;
+    }
+}
+
+@media (max-width: 640px) {
+    .linked-devices div {
+        padding: 7px 10px;
+    }
+
+    .patient-info > div.patient-info-box {
+        border-left: 0;
+    }
+
+    .patient-details.family-lbl-details label {
+        display: none;
+    }
+
+    .patient-info img.rounded-content-image {
+        height: 120px;
+        width: 120px;
+    }
+
+    .patient-details, .patient-details.family-lbl-details {
+        padding: 10px 15px;
+    }
+}
+
+@media (min-width: 768px) {
+    .patient-cnt-bottom-lbl.profile-content-btm-lbl {
+        height: 180px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .patient-info > div.patient-info-box {
+        border-left: 0;
+    }
+}
+
+@media (min-width:1025px) {
+    .patient-cnt-bottom-lbl.profile-content-btm-lbl {
+        height: 150px;
+    }
+}

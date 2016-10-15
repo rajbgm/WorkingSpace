@@ -260,7 +260,7 @@ header .header-right-buttons ul li:last-child span {
     list-style: none;
     padding: 2em;
     position: relative;
-    background: #e0e5e5;
+    background: #d8ddde;
 }
 
 .timeline:before {
@@ -445,7 +445,7 @@ header .header-right-buttons ul li:last-child span {
     left: 1%;
     padding: 5px 10px;
     text-align: center;
-    background: #e0e5e5;
+    background: #d8ddde;
     min-width: 110px;
     word-wrap: break-word;
 }
@@ -833,7 +833,7 @@ a:hover.read-more, .tl-main-content a:hover,
     color: #99cc99;
 }
 .patient-info label.username-content {
-    color: #761413;
+    color: #0c76b6;
     font-size: 32px;
     margin-left: 0;
     margin-top: 40px;
@@ -1031,7 +1031,7 @@ a:hover.read-more, .tl-main-content a:hover,
 }
 
 .interest-box {
-    background-color: #D2D8D8;
+    background-color: #d8ddde;
     padding: 0 10px 10px;
 }
 .interest-box .btn{
@@ -1895,7 +1895,7 @@ a:hover.read-more, .tl-main-content a:hover,
 }
 
 .interest-box {
-    background-color: #D2D8D8;
+    background-color: #d8ddde;
     padding: 0 10px 10px;
 }
 .interest-box .btn{
@@ -2412,4 +2412,47 @@ ul li{
     margin: 0;
     padding: 0;
     list-style-type: none;
+}
+
+/* Health Details Styles start here */
+
+.health-details {
+    background-color: #f0f2f2;
+    margin: 0;
+    width: 100%;
+    float: left;
+}
+.health-details .btn{
+    margin: 10px 0;
+    border-radius: 0;
+}
+.health-details .btn-default{
+    min-width:90px;
+    margin-left:-4px;
+}
+.health-details .btn-default:hover,
+.health-details .btn-default:focus,
+.health-details .btn-default:active{
+    background:#FFF;
+    color: #000;
+    outline:none;
+    opacity: 1.0;
+}
+
+.health-details-box {
+    margin: 10px 0 10px 0;
+    float: left;
+    padding: 0;
+}
+
+.inner-box {
+    margin: 0 5px;
+    float: left;
+    border: 1px solid #FFF;
+    padding: 10px 5px;
+    width: 99%;
+    min-height: 42px;
+}
+.profile-health{
+    width: 1080px;
 }
