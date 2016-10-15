@@ -66,6 +66,9 @@ h4{
 .add-new-section{
     background-color: #25aae1;
 }
+.padding-bottom{
+    padding-bottom: 10px;
+}
 /* mediq queries*/
 @media only screen and (max-width: 768px) {
     .section-box {
