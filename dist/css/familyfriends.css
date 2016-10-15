@@ -1,0 +1,2415 @@
+
+.health-assessment .layer .score {
+    margin-bottom: 10px;
+}
+.tracker-tabs {
+    padding: 0.5em 1em;
+    width: 100%;
+    float: left;
+}
+img.my-trackers {
+    width: 24px;
+    height: 32px;
+    float: left;
+}
+img.my-health {
+    width: 36px;
+    height: 32px;
+    float: left;
+}
+.tracker-lbl {
+    float: left;
+    font-size: 24px;
+    margin-left: 10px;
+    margin-top: 6px;
+    font-weight: normal;
+    color: #007bce;
+}
+.tracker-lbl > b {
+    font-size: 26px;
+    font-weight: bold;
+}
+.tracker-box {
+    background-color: #F1F2F2;
+}
+.green-bottom-border {
+    border-bottom: 4px solid #761413;
+}
+.blue-bottom-border {
+    border-bottom: 4px solid #761413;
+}
+.trackers-section {
+    clear: left;
+    margin: 20px 0;
+    float: left;
+    width: 100%;
+}
+
+.patient-info {
+    background-color: #FFF;
+    float: left;
+    width: 100%;
+    margin-bottom: 15px;
+    border: 1px solid #CCC;
+}
+
+.patient-info img.rounded-image {
+    text-align: center;
+    background: #6a8db3;
+    color: #fff;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    z-index: 99999;
+    float: left;
+}
+
+.patient-info label {
+    font-size: 24px;
+    color: #761413;
+    margin-top: 22px;
+    margin-left: 6px;
+}
+
+.patient-info label > b {
+    font-weight: bold;
+}
+
+.patient-info > div:first-child.patient-info-box {
+    border-left: 0;
+}
+
+.patient-info > div.patient-info-box {
+    border-left: 1px dashed #333;
+    padding: 0;
+}
+
+.patient-details,
+.patient-details.family-lbl-details {
+    height: 130px;
+    padding: 25px 15px;
+}
+
+.patient-bottom-lbl {
+    background-color: #E0E5E5;
+    height: 90px;
+    text-align: center;
+}
+
+.patient-cnt-bottom-lbl {
+    background-color: #F2F2F2;
+    height: 90px;
+    text-align: left;
+}
+
+.patient-bottom-lbl > small {
+    margin: 25px;
+    display: inline-block;
+    color: #9D9F9F;
+}
+
+.patient-bottom-lbl > small > strong {
+    font-weight: bold;
+}
+
+.number-big {
+    color: #761413;
+    font-size: 60px;
+}
+.number-big.red-txt{
+    color: #f44a4a;
+}
+.number-big.green-txt{
+    color: #75db8a;
+}
+
+.trophy-img {
+    width: 60px;
+}
+
+.family-status-section {
+    background-color: #E0E5E5;
+    margin-bottom: 35px;
+    float: left;
+    width: 100%;
+    border: 1px solid #CCC;
+}
+
+.fs-heading {
+    font-size: 15px;
+    padding: 7px;
+    color: #666666;
+    background-color: #fff;
+    font-weight: bold;
+}
+
+.family-status-section img {
+    text-align: center;
+    background: #6a8db3;
+    color: #fff;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    z-index: 99999;
+    float: left;
+    border: 2px solid #fff;
+}
+
+.fs-box-group div:first-child.fs-box {
+    border-left: 0;
+}
+
+.fs-box-group {
+    padding: 10px;
+}
+
+div.fs-box {
+    padding: 10px 20px;
+    border-left: 1px solid #fff;
+    width: 20%;
+}
+
+.fs-box > label {
+    margin-top: 22px;
+    font-size: 14px;
+    float: left;
+    width: 85px;
+    white-space: nowrap;
+    margin-left: 2px;
+}
+
+.circle-small-lbl {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 5px;
+    border: 1px solid #FFF;
+    margin-top: 5px;
+    clear: left;
+    float: left;
+    margin-left: 25px;
+}
+
+.red {
+    background-color: #f44a4a !important;
+}
+
+.blue {
+    background-color: #0c76b6 !important;
+}
+
+.green {
+    background-color: #75db8a !important;
+}
+
+.orange {
+    background-color: #f9a243 !important;
+}
+.badge-boot {
+    width: 65px;
+    clear: left;
+}
+a.facebook, a.g-plus{
+    width: 24px;
+    height: 24px;
+    margin-top: -4px;
+    display: block;
+}
+.margin-top-132 {
+    margin-top: -132px;
+}
+.margin-15-top{
+    margin-top: -15px;
+}
+
+.family-status-section a.patient-btn {
+    background-color: #848484 !important;
+    width: 46px;
+    height: 34px;
+    margin: -7px -7px 0 0;
+    outline: none;
+}
+
+.family-status-section a:hover.patient-btn {
+    background-color: #0c76b6 !important;
+}
+
+.family-status-section a.patient-btn img {
+    border-radius: 0 !important;
+    background-color: transparent !important;
+    border: 0 !important;
+    width: 42px;
+    height: 26px;
+    margin-left: 3px;
+    margin-top: 5px;
+}
+header .header-right-buttons ul li:last-child span {
+    border-right: 0;
+}
+
+/*  Timeline Starts  */
+.timeline {
+    list-style: none;
+    padding: 2em;
+    position: relative;
+    background: #e0e5e5;
+}
+
+.timeline:before {
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    content: " ";
+    width: 3px;
+    background-color: #c3c3c3;
+    left: 8%;
+    margin-left: -1.5px;
+}
+.tldate {
+    display: block;
+    width: 120px;
+    border: 1px solid #cccccc;
+    background-color: #FFF;
+    padding: 8px 0;
+    text-align: center;
+    border-radius: 25px;
+    font-size: 18px;
+}
+
+.timeline li {
+    margin-bottom: 25px;
+    position: relative;
+}
+
+
+
+.timeline li:before, .timeline li:after {
+    content: " ";
+    display: table;
+}
+
+.timeline li:after {
+    clear: both;
+}
+
+.timeline li:before, .timeline li:after {
+    content: " ";
+    display: table;
+}
+
+.family-status-section a:hover.patient-btn {
+    background-color: #0c76b6 !important;
+}
+
+/** timeline panels **/
+.timeline-panel .form-inline .form-group{
+    margin-bottom: 10px;
+    width: 100%;
+}
+.timeline-panel .form-inline .form-group .questions{
+    width:55%;
+}
+.timeline-panel .form-inline .form-group p.btn-group{
+    width:407px;
+}
+.timeline-panel .form-inline .form-group .btn-default {
+    padding: 0.5em 0;
+    width: 82px;
+    text-align: center;
+}
+.border-bottom{
+    border-bottom: 1px solid #dcdcdc;
+}
+.timeline li .timeline-panel {
+    width: 85%;
+    float: left;
+    background: #fff;
+    border: 1px solid #D2D3D3;
+    padding: 20px;
+    position: relative;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
+}
+
+/** panel arrows **/
+.timeline li .timeline-panel:before {
+    position: absolute;
+    top: 26px;
+    right: -15px;
+    display: inline-block;
+    border-top: 15px solid transparent;
+    border-left: 15px solid #ccc;
+    border-right: 0 solid #ccc;
+    border-bottom: 15px solid transparent;
+    content: " ";
+}
+
+.timeline li .timeline-panel:after {
+    position: absolute;
+    top: 27px;
+    right: -14px;
+    display: inline-block;
+    border-top: 14px solid transparent;
+    border-left: 14px solid #fff;
+    border-right: 0 solid #fff;
+    border-bottom: 14px solid transparent;
+    content: " ";
+}
+
+.timeline li .timeline-panel.noarrow:before, .timeline li .timeline-panel.noarrow:after {
+    top: 0;
+    right: 0;
+    display: none;
+    border: 0;
+}
+
+.timeline li.timeline-inverted .timeline-panel {
+    float: right;
+    border-radius: 5px;
+    margin-top: 15px;
+    position: relative;
+}
+
+.timeline li.timeline-inverted .timeline-panel:before {
+    border-left-width: 0;
+    border-right-width: 15px;
+    left: -15px;
+    right: auto;
+}
+
+.timeline li.timeline-inverted .timeline-panel:after {
+    border-left-width: 0;
+    border-right-width: 14px;
+    left: -14px;
+    right: auto;
+}
+
+
+/** timeline circle icons **/
+.timeline li .tl-circ {
+    position: absolute;
+    top: 130px;
+    left: 8.5%;
+    text-align: center;
+    background: #FFF;
+    color: #fff;
+    width: 25px;
+    height: 25px;
+    line-height: 35px;
+    margin-left: -40px;
+    border: 3px solid #cccccc;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    z-index: 99999;
+}
+
+/** timeline user icons **/
+.timeline li .tl-user img {
+    position: absolute;
+    top: 0;
+    left: 1%;
+    text-align: center;
+    background: #6a8db3;
+    color: #fff;
+    width: 120px;
+    height: 120px;
+    line-height: 120px;
+    margin-left: -16px;
+    border: 3px solid #ffffff;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    z-index: 99999;
+}
+
+.tl-patient-name,
+.tl-icon-wrapper {
+    font-size: 16px;
+    position: absolute;
+    top: 160px;
+    left: 1%;
+    padding: 5px 10px;
+    text-align: center;
+    background: #e0e5e5;
+    min-width: 110px;
+    word-wrap: break-word;
+}
+
+.tl-icon-wrapper {
+    top: 185px;
+    width: 100px;
+    left: 1.5%;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+/** timeline content **/
+.topbar .dropdown-menu > li > a {
+    padding: 3px 39px;
+}
+
+.tl-heading {
+    width: 100%;
+    border-bottom: 1px solid #dcdcdc;
+    float: left;
+}
+
+.tl-heading h4 {
+    margin: 0;
+    padding-bottom: 15px;
+    float: left;
+    font-size: 18px;
+}
+
+
+.tl-body {
+    margin: 10px 0;
+    float: left;
+    width: 100%;
+}
+
+.tl-body p, .tl-body ul {
+    margin-bottom: 0;
+}
+
+.tl-body > p + p {
+    margin-top: 5px;
+}
+
+.tl-date {
+    float: right;
+    margin: 0;
+    padding-top: 5px;
+}
+
+.tl-footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.tl-footer ul li {
+    margin-bottom: 0;
+    float: left;
+    margin-right: 20px;
+    margin-top: 5px;
+}
+
+.tl-icon-wrapper {
+    text-align: center;
+}
+
+.tl-icon-wrapper ul li {
+    float: left;
+    margin-bottom: 0;
+}
+
+.tl-footer ul li a > span + span {
+    float: left;
+    font-size: 15px;
+    color: #666666;
+    margin-top: 2px;
+}
+
+.tl-footer ul li a:hover > span + span,
+.tl-footer ul li a.active > span + span {
+    color: #0c76b6;
+}
+
+.tl-footer ul li a > span.like-icon,
+.tl-footer ul li a > span.comment-icon,
+.tl-footer ul li a > span.share-icon,
+.tl-footer ul li a > span.Favourite-icon,
+.tl-footer ul li a > span.care-icon,
+.tl-footer ul li a > span.phone-icon,
+.tl-footer ul li a > span.sign-up,
+.tl-footer ul li a > span.calendar-icon,
+.tl-icon-wrapper ul li a > span.like-icon,
+.tl-icon-wrapper ul li a > span.comment-icon,
+.tl-icon-wrapper ul li a > span.share-icon,
+.tl-icon-wrapper ul li a > span.Favourite-icon,
+.tl-icon-wrapper ul li a > span.care-icon,
+.tl-icon-wrapper ul li a > span.phone-icon,
+.tl-icon-wrapper ul li a > span.sign-up,
+.tl-icon-wrapper ul li a > span.calendar-icon {
+    background: url('../img/like.png') no-repeat left top transparent;
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin-right: 5px;
+}
+
+.tl-footer ul li a:hover > span.like-icon,
+.tl-footer ul li a.active > span.like-icon,
+.tl-icon-wrapper ul li a:hover > span.like-icon,
+.tl-icon-wrapper ul li a.active > span.like-icon {
+    background: url('../img/liked.png') no-repeat left top transparent;
+}
+.tl-icon-wrapper ul li a > span.sign-up,
+.tl-footer ul li a > span.sign-up {
+    background: url('../img/sign_up.png') no-repeat left top transparent;
+}
+.tl-footer ul li a:hover > span.sign-up ,
+.tl-footer ul li a.active > span.sign-up ,
+.tl-icon-wrapper ul li a:hover > span.sign-up ,
+.tl-icon-wrapper ul li a.active > span.sign-up {
+    background: url('../img/sign_up_hover.png') no-repeat left top transparent;
+}
+.tl-footer ul li a > span.comment-icon,
+.tl-icon-wrapper ul li a > span.comment-icon {
+    background: url('../img/comment.png') no-repeat left top transparent;
+    width: 28px;
+    margin-top: 1px;
+}
+
+.tl-footer ul li a > span.phone-icon,
+.tl-icon-wrapper ul li a > span.phone-icon {
+    background: url('../img/phone-icon.png') no-repeat left top transparent;
+    width: 22px;
+    height: 22px;
+}
+
+.tl-footer ul li a:hover > span.phone-icon,
+.tl-footer ul li a.active > span.phone-icon,
+.tl-icon-wrapper ul li a:hover > span.phone-icon,
+.tl-icon-wrapper ul li a.active > span.phone-icon {
+    background: url('../img/phone-hover.png') no-repeat left top transparent;
+}
+.tl-footer ul li a > span.calendar-icon,
+.tl-icon-wrapper ul li a > span.calendar-icon{
+    background: url('../img/calendar_2-24.png') no-repeat left top transparent;
+    background-size: 100%;
+}
+.tl-footer ul li a > span.calendar-icon:hover,
+.tl-icon-wrapper ul li a > span.calendar-icon:hover{
+    background: url('../img/calendar_24x24_hover.png') no-repeat left top transparent;
+    background-size: 100%;
+}
+
+.tl-footer ul li a > span.care-icon,
+.tl-icon-wrapper ul li a > span.care-icon {
+    background: url('../img/care-icon.png') no-repeat left top transparent;
+    width: 22px;
+    height: 22px;
+}
+
+.tl-footer ul li a:hover > span.care-icon,
+.tl-footer ul li a.active > span.care-icon,
+.tl-icon-wrapper ul li a:hover > span.care-icon,
+.tl-icon-wrapper ul li a.active > span.care-icon {
+    background: url('../img/care-hover.png') no-repeat left top transparent;
+}
+
+.tl-footer ul li a:hover > span.comment-icon,
+.tl-footer ul li a.active > span.comment-icon,
+.tl-icon-wrapper ul li a:hover > span.comment-icon,
+.tl-icon-wrapper ul li a.active > span.comment-icon {
+    background: url('../img/commented.png') no-repeat left top transparent;
+}
+
+
+.tl-footer ul li a > span.share-icon,
+.tl-icon-wrapper ul li a > span.share-icon {
+    background: url('../img/share.png') no-repeat left top transparent;
+    width: 30px;
+    margin-top: 1px;
+}
+
+.tl-footer ul li a:hover > span.share-icon,
+.tl-footer ul li a.active > span.share-icon,
+.tl-icon-wrapper ul li a:hover > span.share-icon,
+.tl-icon-wrapper ul li a.active > span.share-icon {
+    background: url('../img/shared.png') no-repeat left top transparent;
+}
+
+.tl-footer ul li a > span.Favourite-icon,
+.tl-icon-wrapper ul li a > span.Favourite-icon {
+    background: url('../img/favourite.png') no-repeat left top transparent;
+    width: 22px;
+    margin-top: 1px;
+}
+
+.tl-footer ul li a:hover > span.Favourite-icon,
+.tl-footer ul li a.active > span.Favourite-icon,
+.tl-icon-wrapper ul li a:hover > span.Favourite-icon,
+.tl-icon-wrapper ul li a.active > span.Favourite-icon {
+    background: url('../img/favourite-hover.png') no-repeat left top transparent;
+}
+
+.tl-content-heading h4,
+.tl-content-heading p {
+    margin-top: 10px;
+}
+
+.tl-content-heading p {
+    line-height: 21px;
+    color: #8B8B8B;
+}
+
+.tl-main-content {
+    height: 150px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.tl-main-content .btn-group .btn-default {
+    padding: 0.5em 1em;
+}
+
+.btn-default:hover,
+.btn-default:focus,
+.btn-default:active,
+.btn-default.active,
+.open .dropdown-toggle.btn-default {
+    background: #0C76B6;
+    color: #FFF;
+}
+a.read-more {
+    margin: 0 1em;
+}
+
+a.redeem {
+    margin: 0.5em 0em 0.5em 1em;
+    display: inline-block;
+}
+
+a.read-more, .tl-main-content a,
+.health-care-content a, .like-content a, a.redeem {
+    color: #0c76b6;
+}
+
+a:hover.read-more, .tl-main-content a:hover,
+.health-care-content a:hover, .like-content a:hover {
+    text-decoration: underline;
+}
+
+
+.timeline li.wellness-lbl {
+    margin-left: 55px;
+    background-color: #FFF;
+    width: 350px;
+    font-size: 22px;
+}
+
+.timeline li.wellness-lbl > span:first-child {
+    margin: 15px 20px 14px 120px;
+    float: left;
+}
+
+/* Family Page style starts here */
+
+.patient-info img.rounded-content-image {
+    text-align: center;
+    background: #6a8db3;
+    color: #fff;
+    width: 150px;
+    height: 150px;
+    line-height: 150px;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    z-index: 99999;
+    float: left;
+    position: relative;
+    border: 3px solid #fff;
+    margin-top: 5px;
+}
+
+.patient-info label.family-admin-lbl {
+    float: right;
+    margin-right: 10px;
+}
+.bg-wrapper {
+    background: url(/images/Desktop-2.png) no-repeat;
+    background-size:100%;
+}
+.bg-wrapper .profile-title h4{
+    color: #FFF;
+}
+.calendar-wrapper.one .calendar-title{
+    border-left:5px solid #990033;
+    color: #990033;
+    border-top: 1px solid #CCC;
+    border-right: 1px solid #CCC;
+}
+.calendar-wrapper.two .calendar-title{
+    border-left:5px solid #663366;
+    color: #663366;
+    border-top: 1px solid #CCC;
+    border-right: 1px solid #CCC;
+}
+.calendar-wrapper.three .calendar-title{
+    border-left:5px solid #66cc66;
+    color: #66cc66;
+    border-top: 1px solid #CCC;
+    border-right: 1px solid #CCC;
+}
+
+.calendar-row.one .date-lbl{
+    background: #cc6666;
+}
+.calendar-row.one .holiday-lbl{
+    color: #cc6666;
+}
+.calendar-row.one .event-lbl span{
+    color: #996699;
+}
+
+.calendar-row.two .date-lbl{
+    background: #996699;
+}
+.calendar-row.two .holiday-lbl{
+    color: #996699;
+}
+.calendar-row.two .event-lbl span{
+    color: #996699;
+}
+
+.calendar-row.three .date-lbl{
+    background: #99cc99;
+}
+.calendar-row.three .holiday-lbl{
+    color: #99cc99;
+}
+.calendar-row.three .event-lbl span{
+    color: #99cc99;
+}
+
+.calendar-row.four .date-lbl{
+    background: #B8C4C4;
+}
+.calendar-row.four .holiday-lbl{
+    color: #B8C4C4;
+}
+.calendar-row.four .event-lbl span{
+    color: #B8C4C4;
+}
+
+.calendar-row.five .date-lbl{
+    background: #E0E0E0;
+}
+.calendar-row.five .holiday-lbl{
+    color: #E0E0E0;
+}
+.calendar-row.five .event-lbl span{
+    color: #989595;
+}
+.calendar-row .event-lbl .one,
+.calendar-row .event-lbl .two,
+.calendar-row .event-lbl .three{
+    padding:0 10px;
+    border-right: 1px solid #CCC;
+}
+
+.calendar-row.four .event-lbl .one{
+    color: #cc6666;
+}
+.calendar-row.four .event-lbl .two{
+    color: #996699;
+}
+.calendar-row.four .event-lbl span.three{
+    color: #99cc99;
+}
+.patient-info label.username-content {
+    color: #761413;
+    font-size: 32px;
+    margin-left: 0;
+    margin-top: 40px;
+    margin-bottom: 5px;
+}
+
+.dob-lbl {
+    font-size: 14px;
+}
+
+.margin-top-40 {
+    margin-top: 40px !important;
+}
+
+.patient-cnt-bottom-lbl div.admin-wrap {
+    font-size: 13px;
+    margin-top: 4px;
+    float: left;
+}
+
+.patient-cnt-bottom-lbl div.admin-wrap ul li {
+    padding: 0;
+    margin: 4px 0;
+}
+
+.mail-link {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.mail-link a {
+    color: #0c76b6 !important;
+}
+
+.mail-link-position {
+    float: right;
+}
+.mail-link-position p{
+    margin-bottom: 5px;
+    height: 10px;
+}
+
+.patient-cnt-bottom-lbl div.add-linked-devices {
+    padding: 0;
+    float: left;
+}
+
+.linked-devices {
+    float: right;
+}
+
+.linked-devices div {
+    text-align: right;
+    float: left;
+    padding: 7px 22px 7px 35px;;
+    width: auto;
+    font-weight: bold;
+}
+
+.linked-devices button {
+    float: left;
+    padding: 7px 20px;
+    width: auto;
+    background-color: #0C76B6;
+    border: 1px solid #0C76B6;
+    color: #fff;
+}
+
+.clear-both {
+    clear: both;
+}
+
+.mail-link small {
+    margin-right: 15px;
+    float: left;
+}
+.calendar-schedule {
+    background: #FFF;
+    width: 600px;
+    position: fixed;
+    top:30px;
+    left:50%;
+    margin-left:-300px;
+    overflow: hidden;
+    height: 500px;
+    border-radius: 5px;
+}
+.calendar-schedule .modal-header{
+    background: #66cc66;
+    color: #FFF;
+}
+/* Profile Page */
+
+.patient-details .Seperator {
+    color: #0C76B6;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.margin-top-20 {
+    margin-top: 20px !important;
+}
+
+.tracker-box.profile-tracker-box {
+    background-color: transparent;
+    margin-top: 5px;
+    color: #333;
+}
+
+.patient-cnt-bottom-lbl.profile-content-btm-lbl {
+    height: 150px;
+}
+
+.margin-top-80 {
+    margin-top: -36px;
+}
+
+.profile-content-btm-lbl .pro-patient-info {
+    margin-bottom: 15px;
+    float: left;
+    margin: 8px;
+}
+
+.img-profile-med {
+    width: auto;
+    height: auto;
+    clear: left;
+    float: left;
+}
+
+.img-txt {
+    float: left;
+    margin-left: 15px;
+}
+
+.img-txt h6 {
+    font-size: 13px;
+    color: #0C76B6;
+    margin: 10px 0;
+}
+
+.icon-box {
+    background-color: #FFF;
+    border-radius: 7px;
+    padding: 15px 10px;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+}
+
+.icon-box img {
+    width: 60px;
+}
+.calender-thumbnail {
+    width: 230px;
+}
+.patient-bottom-lbl.profile-content-btm-lbl {
+    background-color: #f2f2f2;
+}
+
+.profile-title h4 {
+    margin: 10px 0 15px;
+}
+
+.guide-section {
+    background-color: #fff;
+    float: left;
+    border-radius: 0;
+}
+
+.guide-title,
+.guide-content {
+    padding: 10px;
+}
+
+.guide-title img {
+    width: 26px;
+    height: 26px;
+    float: left;
+    margin-right: 10px;
+}
+
+.guide-title h4 {
+    margin: 5px;
+}
+
+.guide-content {
+    height: 150px;
+}
+
+.guide-content p {
+    color: #666666;
+    line-height: 30px;
+    font-weight: normal;
+}
+
+.interest-box {
+    background-color: #D2D8D8;
+    padding: 0 10px 10px;
+}
+.interest-box .btn{
+    margin: 11px 6px 0 0;
+    font-size: inherit;
+}
+.interest {
+    background-color: #FFF;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #0C76B6;
+    display: inline-block;
+    margin-left: 5px;
+    margin-top: 10px;
+}
+
+.add-btn {
+    color: #fff;
+    background-color: #0c76b6;
+    float: right;
+    padding: 10px 20px;
+    border: 0;
+    margin-top: 10px;
+}
+
+.health-interest {
+    background-color: #fff;
+    padding: 10px;
+    float: left;
+    width: 100%;
+}
+
+.graph-img,
+.graph-wrapper h2 {
+    padding: 10px;
+    color: #666;
+}
+
+.graph-wrapper {
+    margin-top: 15px;
+    float: left;
+}
+
+.tl-main-content.tl-explain-content {
+    height: 175px;
+}
+
+.menu-wrapper {
+    background-color: #0d6ea4;
+    height: 51px;
+    margin-top: 1px;
+}
+
+.calendar-wrapper {
+    margin: 0 0 15px;
+    float: left;
+    background-color: #FFF;
+    width: 100%;
+}
+
+.calendar-title {
+    padding: 10px;
+    font-size: 25px;
+    color: #0c76b6;
+}
+
+.calendar-content {
+    padding: 20px;
+    font-size: 17px;
+    background-color: #F2F2F2;
+    float: left;
+    width: 100%;
+}
+
+.date-lbl {
+    background-color: #B8C4C4;
+    padding: 10px;
+    color: #FFF;
+    font-size: 27px;
+    text-align: center;
+}
+
+.holiday-lbl {
+    background-color: #FFF;
+    padding: 10px;
+    color: #0c76b6;
+    text-align: left;
+    line-height: 27px;
+    font-size: 15px;
+}
+
+.event-lbl {
+    padding-left: 5px;
+    border: 0;
+    font-size: 15px;
+}
+
+.event-lbl span {
+    margin-left: 0;
+    float: left;
+    background-color: #FFF;
+    padding: 10px;
+    color: #0c76b6;
+    text-align: left;
+    line-height: 27px;
+}
+
+.calendar-row {
+    margin-bottom: 5px;
+    float: left;
+    width: 100%;
+}
+.admin-wrap .radio label{
+    font-size: 12px;
+    margin:0;
+    padding: 0;
+    line-height: 18px;
+}
+.admin-wrap .radio,
+.admin-wrap .checkbox{
+    margin: 5px 0;
+}
+
+
+.modal-body {
+    padding-top: 27px;
+}
+
+.tabHead {
+    -webkit-box-shadow: 0px 0px 5px 4px rgba(211,2112,222,.3);
+    box-shadow: 0px 0px 5px 4px rgba(211,211,222,.3);
+    overflow: hidden;
+    position: relative;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+}
+
+.tabHead > div > div.title {
+    padding: 15px;
+    position: relative;
+    color: #fff;
+}
+
+.scApp {
+    color: #000;
+    font-weight: 400;
+    font-size: 12px;
+    position: relative;
+    height: 70px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+.scApp > p > span:nth-child(2) {
+    margin-right: 10px;
+    float: right;
+}
+
+.scApp > div {
+    padding: 5px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+    border-radius: 3px 3px 3px 3px;
+    background-color: #fff;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    -webkit-box-shadow: inset 3px 3px 5px 4px rgba(222,222,222,.3);
+    box-shadow: inset 3px 3px 5px 4px rgba(222,222,222,.3);
+}
+
+.scApp > div:hover {
+    background-color: #0d6ea4;
+    -webkit-box-shadow: inset 3px 3px 5px 4px rgba(222,222,222,.0);
+    box-shadow: inset 3px 3px 5px 4px rgba(222,222,222,.0);
+    -webkit-box-shadow: 0px 0px 5px 4px rgba(111,111,111,.1);
+    box-shadow: 0px 0px 5px 4px rgba(111,111,111,.1);
+    cursor: pointer;
+    color: #fff;
+    font-weight: 600;
+}
+
+
+.heading-arrow {
+    width: 0;
+    height: 0;
+    border-top: 27px solid transparent;
+    border-bottom: 27px solid transparent;
+    float: right;
+    border-right: 27px solid #e0e5e5;
+}
+
+
+/** timeline content **/
+.topbar .dropdown-menu > li > a {
+    padding: 3px 39px;
+}
+
+.tl-body {
+    margin: 10px 0;
+    float: left;
+    width: 100%;
+}
+
+.tl-body p, .tl-body ul {
+    margin-bottom: 0;
+}
+
+.tl-body > p + p {
+    margin-top: 5px;
+}
+
+.tl-date {
+    float: right;
+    margin: 0;
+    padding-top: 5px;
+}
+
+.tl-footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.tl-footer ul li {
+    margin-bottom: 0;
+    float: left;
+    margin-right: 20px;
+    margin-top: 5px;
+}
+
+.tl-icon-wrapper {
+    text-align: center;
+}
+
+.tl-icon-wrapper ul li {
+    float: left;
+    margin-bottom: 0;
+}
+
+.tl-footer ul li a > span + span {
+    float: left;
+    font-size: 15px;
+    color: #666666;
+    margin-top: 2px;
+}
+
+.tl-footer ul li a:hover > span + span,
+.tl-footer ul li a.active > span + span {
+    color: #0c76b6;
+}
+
+.tl-footer ul li a > span.like-icon,
+.tl-footer ul li a > span.comment-icon,
+.tl-footer ul li a > span.share-icon,
+.tl-footer ul li a > span.Favourite-icon,
+.tl-footer ul li a > span.care-icon,
+.tl-footer ul li a > span.phone-icon,
+.tl-footer ul li a > span.sign-up,
+.tl-footer ul li a > span.calendar-icon,
+.tl-icon-wrapper ul li a > span.like-icon,
+.tl-icon-wrapper ul li a > span.comment-icon,
+.tl-icon-wrapper ul li a > span.share-icon,
+.tl-icon-wrapper ul li a > span.Favourite-icon,
+.tl-icon-wrapper ul li a > span.care-icon,
+.tl-icon-wrapper ul li a > span.phone-icon,
+.tl-icon-wrapper ul li a > span.sign-up,
+.tl-icon-wrapper ul li a > span.calendar-icon {
+    background: url('../img/like.png') no-repeat left top transparent;
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin-right: 5px;
+}
+
+.tl-footer ul li a:hover > span.like-icon,
+.tl-footer ul li a.active > span.like-icon,
+.tl-icon-wrapper ul li a:hover > span.like-icon,
+.tl-icon-wrapper ul li a.active > span.like-icon {
+    background: url('../img/liked.png') no-repeat left top transparent;
+}
+.tl-icon-wrapper ul li a > span.sign-up,
+.tl-footer ul li a > span.sign-up {
+    background: url('../img/sign_up.png') no-repeat left top transparent;
+}
+.tl-footer ul li a:hover > span.sign-up ,
+.tl-footer ul li a.active > span.sign-up ,
+.tl-icon-wrapper ul li a:hover > span.sign-up ,
+.tl-icon-wrapper ul li a.active > span.sign-up {
+    background: url('../img/sign_up_hover.png') no-repeat left top transparent;
+}
+.tl-footer ul li a > span.comment-icon,
+.tl-icon-wrapper ul li a > span.comment-icon {
+    background: url('../img/comment.png') no-repeat left top transparent;
+    width: 28px;
+    margin-top: 1px;
+}
+
+.tl-footer ul li a > span.phone-icon,
+.tl-icon-wrapper ul li a > span.phone-icon {
+    background: url('../img/phone-icon.png') no-repeat left top transparent;
+    width: 22px;
+    height: 22px;
+}
+
+.tl-footer ul li a:hover > span.phone-icon,
+.tl-footer ul li a.active > span.phone-icon,
+.tl-icon-wrapper ul li a:hover > span.phone-icon,
+.tl-icon-wrapper ul li a.active > span.phone-icon {
+    background: url('../img/phone-hover.png') no-repeat left top transparent;
+}
+.tl-footer ul li a > span.calendar-icon,
+.tl-icon-wrapper ul li a > span.calendar-icon{
+    background: url('../img/calendar_2-24.png') no-repeat left top transparent;
+    background-size: 100%;
+}
+.tl-footer ul li a > span.calendar-icon:hover,
+.tl-icon-wrapper ul li a > span.calendar-icon:hover{
+    background: url('../img/calendar_24x24_hover.png') no-repeat left top transparent;
+    background-size: 100%;
+}
+
+.tl-footer ul li a > span.care-icon,
+.tl-icon-wrapper ul li a > span.care-icon {
+    background: url('../img/care-icon.png') no-repeat left top transparent;
+    width: 22px;
+    height: 22px;
+}
+
+.tl-footer ul li a:hover > span.care-icon,
+.tl-footer ul li a.active > span.care-icon,
+.tl-icon-wrapper ul li a:hover > span.care-icon,
+.tl-icon-wrapper ul li a.active > span.care-icon {
+    background: url('../img/care-hover.png') no-repeat left top transparent;
+}
+
+.tl-footer ul li a:hover > span.comment-icon,
+.tl-footer ul li a.active > span.comment-icon,
+.tl-icon-wrapper ul li a:hover > span.comment-icon,
+.tl-icon-wrapper ul li a.active > span.comment-icon {
+    background: url('../img/commented.png') no-repeat left top transparent;
+}
+
+
+.tl-footer ul li a > span.share-icon,
+.tl-icon-wrapper ul li a > span.share-icon {
+    background: url('../img/share.png') no-repeat left top transparent;
+    width: 30px;
+    margin-top: 1px;
+}
+
+.tl-footer ul li a:hover > span.share-icon,
+.tl-footer ul li a.active > span.share-icon,
+.tl-icon-wrapper ul li a:hover > span.share-icon,
+.tl-icon-wrapper ul li a.active > span.share-icon {
+    background: url('../img/shared.png') no-repeat left top transparent;
+}
+
+.tl-footer ul li a > span.Favourite-icon,
+.tl-icon-wrapper ul li a > span.Favourite-icon {
+    background: url('../img/favourite.png') no-repeat left top transparent;
+    width: 22px;
+    margin-top: 1px;
+}
+
+.tl-footer ul li a:hover > span.Favourite-icon,
+.tl-footer ul li a.active > span.Favourite-icon,
+.tl-icon-wrapper ul li a:hover > span.Favourite-icon,
+.tl-icon-wrapper ul li a.active > span.Favourite-icon {
+    background: url('../img/favourite-hover.png') no-repeat left top transparent;
+}
+
+.tl-main-content {
+    height: 150px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.tl-main-content .btn-group .btn-default {
+    padding: 0.5em 1em;
+}
+
+.btn-default:hover,
+.btn-default:focus,
+.btn-default:active,
+.btn-default.active,
+.open .dropdown-toggle.btn-default {
+    background: #761413;
+    color: #FFF;
+}
+a.read-more {
+    margin: 0 1em;
+}
+
+a.redeem {
+    margin: 0.5em 0em 0.5em 1em;
+    display: inline-block;
+}
+
+a.read-more, .tl-main-content a,
+.health-care-content a, .like-content a, a.redeem {
+    color: #0c76b6;
+}
+
+a:hover.read-more, .tl-main-content a:hover,
+.health-care-content a:hover, .like-content a:hover {
+    text-decoration: underline;
+}
+
+
+/* Health Details Styles start here */
+
+.health-details {
+    background-color: #f0f2f2;
+    margin: 0;
+    width: 100%;
+    float: left;
+}
+.health-details .btn{
+    margin: 10px 0;
+    border-radius: 0;
+    min-width: inherit;
+}
+.health-details .btn-default{
+    min-width:90px;
+    margin-left:-4px;
+}
+.health-details .btn-default:hover,
+.health-details .btn-default:focus,
+.health-details .btn-default:active{
+    background:#FFF;
+    color: #000;
+    outline:none;
+    opacity: 1.0;
+}
+
+.health-details-box {
+    margin: 10px 0 10px 0;
+    float: left;
+    padding: 0;
+}
+
+.inner-box {
+    margin: 0 5px;
+    float: left;
+    border: 1px solid #FFF;
+    padding: 10px 2px;
+    width: 99%;
+    min-height: 42px;
+}
+
+.circle-lbl {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    margin-right: 5px;
+    border: 2px solid #FFF;
+    float: left;
+    margin-top: -1px;
+}
+
+.health-details-box .inner-box > span {
+    float: left;
+    font-size: 13px;
+}
+
+.health-details-box .inner-box > span + span {
+    color: #0c76b6;
+}
+
+.health-care {
+    border: 1px solid #dcdcdc;
+    padding: 10px;
+    float: right;
+    background-color: #FFF;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    width: 85%;
+}
+
+.health-care-content {
+    float: left;
+    background-color: #F5F5F5;
+    padding: 20px 30px;
+    width: 100%;
+}
+
+.health-care-content h2 {
+    margin-bottom: 10px;
+}
+
+.health-care-content img {
+    margin-right: 40px;
+    float: left;
+    width: 58px;
+    height: 59px;
+}
+
+.like-content {
+    background-color: #EAEAEA;
+    padding: 10px 30px 20px 30px;
+    float: right;
+    width: 85%;
+    border: 1px solid #D2D3D3;
+    margin-top: -3px;
+}
+
+.like-content ul li {
+    float: left;
+    height: 20px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.like-content img {
+    position: absolute;
+    top: 0;
+    left: 1%;
+    text-align: center;
+    background: #6a8db3;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    line-height: 30px;
+    margin-left: -16px;
+    border: 2px solid #ffffff;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    z-index: 99999;
+}
+
+.msg-details {
+    float: left;
+    margin-left: 60px;
+    margin-top: 4px;
+    width: 94%;
+}
+
+.msg-details > div {
+    margin-top: 4px;
+}
+
+.msg-details > span:first-child {
+    color: #177CB9;
+}
+
+.like-content .msg-details a {
+    color: #666666 !important;
+}
+
+.msg-details .input-group .btn {
+    padding-left: 25px;
+    padding-right: 25px;
+    height: 34px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.heading-arrow {
+    width: 0;
+    height: 0;
+    border-top: 27px solid transparent;
+    border-bottom: 27px solid transparent;
+    float: right;
+    border-right: 27px solid #e0e5e5;
+}
+
+/* Family Page style starts here */
+
+.patient-info img.rounded-content-image {
+    text-align: center;
+    background: #6a8db3;
+    color: #fff;
+    width: 150px;
+    height: 150px;
+    line-height: 150px;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    z-index: 99999;
+    float: left;
+    position: relative;
+    border: 3px solid #fff;
+    margin-top: 5px;
+}
+
+.patient-info label.family-admin-lbl {
+    float: right;
+    margin-right: 10px;
+}
+.bg-wrapper {
+    background: url(/images/Desktop-2.png) no-repeat;
+    background-size:100%;
+}
+.bg-wrapper .profile-title h4{
+    color: #FFF;
+}
+.calendar-wrapper.one .calendar-title{
+    border-left:5px solid #990033;
+    color: #990033;
+}
+.calendar-wrapper.two .calendar-title{
+    border-left:5px solid #663366;
+    color: #663366;
+}
+.calendar-wrapper.three .calendar-title{
+    border-left:5px solid #66cc66;
+    color: #66cc66;
+}
+
+.calendar-row.one .date-lbl{
+    background: #cc6666;
+}
+.calendar-row.one .holiday-lbl{
+    color: #cc6666;
+}
+.calendar-row.one .event-lbl span{
+    color: #996699;
+}
+
+.calendar-row.two .date-lbl{
+    background: #996699;
+}
+.calendar-row.two .holiday-lbl{
+    color: #996699;
+}
+.calendar-row.two .event-lbl span{
+    color: #996699;
+}
+
+.calendar-row.three .date-lbl{
+    background: #99cc99;
+}
+.calendar-row.three .holiday-lbl{
+    color: #99cc99;
+}
+.calendar-row.three .event-lbl span{
+    color: #99cc99;
+}
+
+.calendar-row.four .date-lbl{
+    background: #B8C4C4;
+}
+.calendar-row.four .holiday-lbl{
+    color: #B8C4C4;
+}
+.calendar-row.four .event-lbl span{
+    color: #B8C4C4;
+}
+
+.calendar-row.five .date-lbl{
+    background: #E0E0E0;
+}
+.calendar-row.five .holiday-lbl{
+    color: #E0E0E0;
+}
+.calendar-row.five .event-lbl span{
+    color: #989595;
+}
+.calendar-row .event-lbl .one,
+.calendar-row .event-lbl .two,
+.calendar-row .event-lbl .three{
+    padding:0 10px;
+    border-right: 1px solid #CCC;
+}
+
+.calendar-row.four .event-lbl .one{
+    color: #cc6666;
+}
+.calendar-row.four .event-lbl .two{
+    color: #996699;
+}
+.calendar-row.four .event-lbl span.three{
+    color: #99cc99;
+}
+
+.dob-lbl {
+    font-size: 14px;
+}
+
+.margin-top-40 {
+    margin-top: 40px !important;
+}
+
+.patient-cnt-bottom-lbl div.admin-wrap {
+    font-size: 13px;
+    margin-top: 4px;
+    float: left;
+}
+
+.patient-cnt-bottom-lbl div.admin-wrap ul li {
+    padding: 0;
+    margin: 4px 0;
+}
+
+.mail-link {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.mail-link a {
+    color: #0c76b6 !important;
+}
+
+.mail-link-position {
+    float: right;
+}
+.mail-link-position p{
+    margin-bottom: 5px;
+    height: 10px;
+}
+
+.patient-cnt-bottom-lbl div.add-linked-devices {
+    padding: 0;
+    float: left;
+}
+
+.linked-devices {
+    float: right;
+}
+
+.linked-devices div {
+    text-align: right;
+    float: left;
+    padding: 7px 22px 7px 35px;;
+    width: auto;
+    font-weight: bold;
+}
+
+.linked-devices button {
+    float: left;
+    padding: 7px 20px;
+    width: auto;
+    background-color: #0C76B6;
+    border: 1px solid #0C76B6;
+    color: #fff;
+}
+
+.clear-both {
+    clear: both;
+}
+
+.mail-link small {
+    margin-right: 15px;
+    float: left;
+}
+.calendar-schedule {
+    background: #FFF;
+    width: 600px;
+    position: fixed;
+    top:30px;
+    left:50%;
+    margin-left:-300px;
+    overflow: hidden;
+    height: 500px;
+    border-radius: 5px;
+}
+.calendar-schedule .modal-header{
+    background: #66cc66;
+    color: #FFF;
+}
+/* Profile Page */
+
+.patient-details .Seperator {
+    color: #0C76B6;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.margin-top-20 {
+    margin-top: 20px !important;
+}
+
+.tracker-box.profile-tracker-box {
+    background-color: transparent;
+    margin-top: 5px;
+    color: #333;
+}
+
+.patient-cnt-bottom-lbl.profile-content-btm-lbl {
+    height: 150px;
+}
+.profile-content-btm-lbl .pro-patient-info {
+    margin-bottom: 15px;
+    float: left;
+    margin: 8px;
+}
+
+.img-profile-med {
+    width: auto;
+    height: auto;
+    clear: left;
+    float: left;
+}
+
+.img-txt {
+    float: left;
+    margin-left: 15px;
+}
+
+.img-txt h6 {
+    font-size: 13px;
+    color: #0C76B6;
+    margin: 10px 0;
+}
+
+.icon-box {
+    background-color: #FFF;
+    border-radius: 7px;
+    padding: 15px 10px;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+}
+
+.icon-box img {
+    width: 60px;
+}
+.calender-thumbnail {
+    width: 230px;
+}
+.patient-bottom-lbl.profile-content-btm-lbl {
+    background-color: #f2f2f2;
+}
+
+.profile-title h4 {
+    margin: 10px 0 15px;
+}
+
+.guide-section {
+    background-color: #fff;
+    float: left;
+    border-radius: 0;
+}
+
+.guide-title,
+.guide-content {
+    padding: 10px;
+}
+
+.guide-title img {
+    width: 26px;
+    height: 26px;
+    float: left;
+    margin-right: 10px;
+}
+
+.guide-title h4 {
+    margin: 5px;
+}
+
+.guide-content {
+    height: 150px;
+}
+
+.guide-content p {
+    color: #666666;
+    line-height: 30px;
+    font-weight: normal;
+}
+
+.interest-box {
+    background-color: #D2D8D8;
+    padding: 0 10px 10px;
+}
+.interest-box .btn{
+    margin: 11px 6px 0 0;
+    font-size: inherit;
+}
+.interest {
+    background-color: #FFF;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #0C76B6;
+    display: inline-block;
+    margin-left: 5px;
+    margin-top: 10px;
+}
+
+.add-btn {
+    color: #fff;
+    background-color: #0c76b6;
+    float: right;
+    padding: 10px 20px;
+    border: 0;
+    margin-top: 10px;
+}
+
+.health-interest {
+    background-color: #e0e0e0;
+    padding: 10px;
+    float: left;
+    width: 100%;
+}
+
+.graph-img,
+.graph-wrapper h2 {
+    padding: 10px;
+    color: #666;
+}
+
+.graph-wrapper {
+    margin-top: 15px;
+    float: left;
+}
+
+.tl-main-content.tl-explain-content {
+    height: 185px;
+}
+
+.menu-wrapper {
+    background-color: #0d6ea4;
+    height: 51px;
+    margin-top: 1px;
+}
+
+.calendar-wrapper {
+    margin: 0 0 15px;
+    float: left;
+    background-color: #FFF;
+    width: 100%;
+}
+
+.calendar-title {
+    padding: 10px;
+    font-size: 25px;
+    color: #0c76b6;
+}
+
+.calendar-content {
+    padding: 20px;
+    font-size: 17px;
+    background-color: #F2F2F2;
+    float: left;
+    width: 100%;
+}
+
+.date-lbl {
+    background-color: #B8C4C4;
+    padding: 10px;
+    color: #FFF;
+    font-size: 27px;
+    text-align: center;
+}
+
+.holiday-lbl {
+    background-color: #FFF;
+    padding: 10px;
+    color: #0c76b6;
+    text-align: left;
+    line-height: 27px;
+    font-size: 15px;
+}
+
+.event-lbl {
+    padding-left: 5px;
+    border: 0;
+    font-size: 15px;
+}
+
+.event-lbl span {
+    margin-left: 0;
+    float: left;
+    background-color: #FFF;
+    padding: 10px;
+    color: #0c76b6;
+    text-align: left;
+    line-height: 27px;
+}
+
+.calendar-row {
+    margin-bottom: 5px;
+    float: left;
+    width: 100%;
+}
+.admin-wrap .radio label{
+    font-size: 12px;
+    margin:0;
+    padding: 0;
+    line-height: 18px;
+}
+.admin-wrap .radio,
+.admin-wrap .checkbox{
+    margin: 5px 0;
+}
+
+
+.modal-body {
+    padding-top: 27px;
+}
+
+.tabHead {
+    -webkit-box-shadow: 0px 0px 5px 4px rgba(211,2112,222,.3);
+    box-shadow: 0px 0px 5px 4px rgba(211,211,222,.3);
+    overflow: hidden;
+    position: relative;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+}
+
+.tabHead > div > div.title {
+    padding: 15px;
+    position: relative;
+    color: #fff;
+}
+
+.scApp {
+    color: #000;
+    font-weight: 400;
+    font-size: 12px;
+    position: relative;
+    height: 70px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+.scApp > p > span:nth-child(2) {
+    margin-right: 10px;
+    float: right;
+}
+
+.scApp > div {
+    padding: 5px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+    border-radius: 3px 3px 3px 3px;
+    background-color: #fff;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    -webkit-box-shadow: inset 3px 3px 5px 4px rgba(222,222,222,.3);
+    box-shadow: inset 3px 3px 5px 4px rgba(222,222,222,.3);
+}
+
+.scApp > div:hover {
+    background-color: #0d6ea4;
+    -webkit-box-shadow: inset 3px 3px 5px 4px rgba(222,222,222,.0);
+    box-shadow: inset 3px 3px 5px 4px rgba(222,222,222,.0);
+    -webkit-box-shadow: 0px 0px 5px 4px rgba(111,111,111,.1);
+    box-shadow: 0px 0px 5px 4px rgba(111,111,111,.1);
+    cursor: pointer;
+    color: #fff;
+    font-weight: 600;
+}
+
+
+
+
+/*  Checkbox and radio buttons starts  */
+.checkbox {
+    padding-left: 20px;
+}
+.checkbox label {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    padding-left: 5px;
+}
+
+.checkbox label::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    left: 0;
+    margin-left: -20px;
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+    background-color: #fff;
+    -webkit-transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+    -o-transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+    transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+}
+.checkbox label::after {
+    display: inline-block;
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    left: 0;
+    top: 0;
+    margin-left: -20px;
+    padding-left: 3px;
+    padding-top: 1px;
+    font-size: 11px;
+    color: #555555;
+}
+
+.checkbox input[type="checkbox"],
+.checkbox input[type="radio"] {
+    opacity: 0;
+    z-index: 1;
+}
+
+.checkbox input[type="checkbox"]:focus + label::before,
+.checkbox input[type="radio"]:focus + label::before {
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+}
+
+.checkbox input[type="checkbox"]:checked + label::after,
+.checkbox input[type="radio"]:checked + label::after {
+    font-family: "FontAwesome";
+    content: "\f00c";
+}
+
+.checkbox input[type="checkbox"]:disabled + label,
+.checkbox input[type="radio"]:disabled + label {
+    opacity: 0.65;
+}
+
+.checkbox input[type="checkbox"]:disabled + label::before,
+.checkbox input[type="radio"]:disabled + label::before {
+    background-color: #eeeeee;
+    cursor: not-allowed;
+}
+
+.checkbox.checkbox-circle label::before {
+    border-radius: 50%;
+}
+
+.checkbox.checkbox-inline {
+    margin-top: 0;
+}
+
+.checkbox-primary input[type="checkbox"]:checked + label::before,
+.checkbox-primary input[type="radio"]:checked + label::before {
+    background-color: #337ab7;
+    border-color: #337ab7;
+}
+
+.checkbox-primary input[type="checkbox"]:checked + label::after,
+.checkbox-primary input[type="radio"]:checked + label::after {
+    color: #fff;
+}
+
+.checkbox-danger input[type="checkbox"]:checked + label::before,
+.checkbox-danger input[type="radio"]:checked + label::before {
+    background-color: #d9534f;
+    border-color: #d9534f;
+}
+
+.checkbox-danger input[type="checkbox"]:checked + label::after,
+.checkbox-danger input[type="radio"]:checked + label::after {
+    color: #fff;
+}
+
+.checkbox-info input[type="checkbox"]:checked + label::before,
+.checkbox-info input[type="radio"]:checked + label::before {
+    background-color: #5bc0de;
+    border-color: #5bc0de;
+}
+
+.checkbox-info input[type="checkbox"]:checked + label::after,
+.checkbox-info input[type="radio"]:checked + label::after {
+    color: #fff;
+}
+
+.checkbox-warning input[type="checkbox"]:checked + label::before,
+.checkbox-warning input[type="radio"]:checked + label::before {
+    background-color: #f0ad4e;
+    border-color: #f0ad4e;
+}
+
+.checkbox-warning input[type="checkbox"]:checked + label::after,
+.checkbox-warning input[type="radio"]:checked + label::after {
+    color: #fff;
+}
+
+.checkbox-success input[type="checkbox"]:checked + label::before,
+.checkbox-success input[type="radio"]:checked + label::before {
+    background-color: #5cb85c;
+    border-color: #5cb85c;
+}
+
+.checkbox-success input[type="checkbox"]:checked + label::after,
+.checkbox-success input[type="radio"]:checked + label::after {
+    color: #fff;
+}
+
+.radio {
+    padding-left: 20px;
+}
+
+.radio label {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    padding-left: 5px;
+}
+
+.radio label::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    left: 0;
+    margin-left: -20px;
+    border: 1px solid #cccccc;
+    border-radius: 50%;
+    background-color: #fff;
+    -webkit-transition: border 0.15s ease-in-out;
+    -o-transition: border 0.15s ease-in-out;
+    transition: border 0.15s ease-in-out;
+}
+
+.radio label::after {
+    display: inline-block;
+    position: absolute;
+    content: " ";
+    width: 11px;
+    height: 11px;
+    left: 3px;
+    top: 3px;
+    margin-left: -20px;
+    border-radius: 50%;
+    background-color: #555555;
+    -webkit-transform: scale(0, 0);
+    -ms-transform: scale(0, 0);
+    -o-transform: scale(0, 0);
+    transform: scale(0, 0);
+    -webkit-transition: -webkit-transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33);
+    -moz-transition: -moz-transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33);
+    -o-transition: -o-transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33);
+    transition: transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33);
+}
+
+.radio input[type="radio"] {
+    opacity: 0;
+    z-index: 1;
+}
+
+.radio input[type="radio"]:focus + label::before {
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+}
+
+.radio input[type="radio"]:checked + label::after {
+    -webkit-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -o-transform: scale(1, 1);
+    transform: scale(1, 1);
+}
+
+.radio input[type="radio"]:disabled + label {
+    opacity: 0.65;
+}
+
+.radio input[type="radio"]:disabled + label::before {
+    cursor: not-allowed;
+}
+
+.radio.radio-inline {
+    margin-top: 0;
+}
+.radio-primary input[type="radio"] + label::after {
+    background-color: #337ab7;
+}
+
+.radio-primary input[type="radio"]:checked + label::before {
+    border-color: #337ab7;
+}
+
+.radio-primary input[type="radio"]:checked + label::after {
+    background-color: #337ab7;
+}
+
+.radio-danger input[type="radio"] + label::after {
+    background-color: #d9534f;
+}
+
+.radio-danger input[type="radio"]:checked + label::before {
+    border-color: #d9534f;
+}
+
+.radio-danger input[type="radio"]:checked + label::after {
+    background-color: #d9534f;
+}
+
+.radio-info input[type="radio"] + label::after {
+    background-color: #5bc0de;
+}
+
+.radio-info input[type="radio"]:checked + label::before {
+    border-color: #5bc0de;
+}
+
+.radio-info input[type="radio"]:checked + label::after {
+    background-color: #5bc0de;
+}
+
+.radio-warning input[type="radio"] + label::after {
+    background-color: #f0ad4e;
+}
+
+.radio-warning input[type="radio"]:checked + label::before {
+    border-color: #f0ad4e;
+}
+
+.radio-warning input[type="radio"]:checked + label::after {
+    background-color: #f0ad4e;
+}
+
+.radio-success input[type="radio"] + label::after {
+    background-color: #5cb85c;
+}
+
+.radio-success input[type="radio"]:checked + label::before {
+    border-color: #5cb85c;
+}
+
+.radio-success input[type="radio"]:checked + label::after {
+    background-color: #5cb85c;
+}
+
+input[type="checkbox"].styled:checked + label:after,
+input[type="radio"].styled:checked + label:after {
+    font-family: 'FontAwesome';
+    content: "\f00c";
+}
+
+input[type="checkbox"] .styled:checked + label::before,
+input[type="radio"] .styled:checked + label::before {
+    color: #fff;
+}
+
+input[type="checkbox"] .styled:checked + label::after,
+input[type="radio"] .styled:checked + label::after {
+    color: #fff;
+}
+
+.btn-group .btn-default {
+    min-width: 50px;
+    line-height: 22px;
+}
+.mail-link a.facebook {
+    width: auto !important;
+}
+.health-assessment .layer .assess-status div {
+    margin-top: 0;
+}
+.invitation-family a{
+    margin-left: 20px;
+}
+
+.menu {
+    margin: 15px 0;
+}
+
+.menu ul li:first-child {
+    border-left: 0;
+}
+
+.menu ul li {
+    float: left;
+    border-left: 1px solid #79C7F0;
+}
+
+.menu ul li a {
+    font-size: 16px;
+    color: #79C7F0;
+    padding: 5px 25px;
+}
+
+.menu ul li a:hover,
+.menu ul li a.active {
+    opacity: 0.8;
+}
+.orange-bottom-border {
+    border-bottom: 4px solid #FFB325;
+}
+.red-bottom-border {
+    border-bottom: 4px solid #f44a4a;
+}
+ul li{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}

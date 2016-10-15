@@ -22,6 +22,8 @@
     <link href="../dist/css/custom.css" rel="stylesheet" />
     <link href="css/styles.css" rel="stylesheet" />
 
+    <link href="../dist/css/familyfriends.css" rel="stylesheet" />
+
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>
@@ -150,15 +152,25 @@
                                 <li class="pull-right col-sm-6">
                                     <div class="col-sm-9 text-right trim-right">
                                         <div class="filter-icon">
-                                            <i class="fa fa-filter"></i>
+                                            <a href="#" class="dropdown-toggle" id="drop5" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true"> <i class="fa fa-filter"></i></a>
+                                            <ul class="dropdown-menu pull-right" id="menu2" aria-labelledby="drop5">
+                                                <li><a href="#">Action</a></li>
+                                                <li><a href="#">Another action</a></li>
+                                                <li><a href="#">Something else here</a></li>
+                                                <li role="separator" class="divider"></li>
+                                                <li><a href="#">Separated link</a></li> </ul>
                                         </div>
                                     </div>
                                     <div class="col-sm-3 text-right">
-                                        View <a href="#" class="text-muted "><i class="fa fa-navicon"></i></a>
+                                        View <a href="#" class="text-muted " id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-navicon"></i></a>
+                                        <ul class="dropdown-menu" id="menu1" aria-labelledby="drop4">
+                                            <li><a id="listview" href="#">List</a></li>
+                                            <li><a href="#" id="tileview">Tile</a></li>
+                                        </ul>
                                     </div>
                                 </li>
                             </ul>
-                            <div class="tab-content">
+                            <div class="tab-content pull-left">
                                 <div class="tab-pane active" id="wellnessFeeds">
                                     <div class="row">
                                         <div class="col-sm-3">
@@ -432,6 +444,699 @@
                                         </div>
                                     </div>
                                 </div>
+                                <!-- start member list view -->
+                                <div class="col-sm-12 tab-pane" id="listviewbox">
+                                    <ul class="timeline">
+                                        <li class="wellness-lbl">
+                                            <span>Goals</span>
+                                            <span class="heading-arrow"></span>
+                                        </li>
+                                        <li><div class="tldate">Today</div></li>
+                                        <li class="timeline-inverted">
+                                            <div class="tl-user"><img src="../dist/img/user.jpg" alt="Alan"></div>
+                                            <div class="tl-circ"></div>
+                                            <div class="tl-patient-name">Alan Balboa</div>
+                                            <div class="timeline-panel">
+                                                <div class="tl-heading">
+                                                    <h3>Decrease <span class="big-heading">Weight</span></h3>
+                                                    <h5 class="text-muted tl-date">Today 9:42 am</h5>
+                                                </div>
+                                                <div class="tl-body">
+                                                    <div class="col-lg-12 health-details">
+                                                        <div class="col-lg-12">
+                                                            <div class="row">
+                                                                <div class="col-sm-4 health-details-box">
+                                                                    <div class="inner-box">
+                                                                        <div class="circle-lbl red"></div>
+                                                                        <span>Current Weight: </span>
+                                                                        <span>230 lbs</span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-4 health-details-box">
+                                                                    <div class="inner-box">
+                                                                        <div class="circle-lbl blue"></div>
+                                                                        <span>Goal: </span>
+                                                                        <span>180 lbs</span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-4 health-details-box">
+                                                                    <div class="inner-box">
+                                                                        <div class="circle-lbl orange"></div>
+                                                                        <span>Goal Duration: </span>
+                                                                        <span>90 Days</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tl-footer pull-left">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="javascript:void(0)">
+                                                                <span class="like-icon"></span>
+                                                                <span>Like</span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:void(0)">
+                                                                <span class="comment-icon"></span>
+                                                                <span>Comment</span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:void(0)">
+                                                                <span class="phone-icon"></span>
+                                                                <span>Will call soon</span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:void(0)">
+                                                                <span class="care-icon"></span>
+                                                                <span>Take care</span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="wellness-lbl">
+                                            <span>Wellness Feeds</span>
+                                            <span class="heading-arrow"></span>
+                                        </li>
+                                        <li><div class="tldate">Today</div></li>
+
+                                        <li class="timeline-inverted">
+                                            <div class="tl-user"><img src="../dist/img/grand_mother.jpg" alt="grand mother"></div>
+                                            <div class="tl-circ"></div>
+                                            <div class="tl-patient-name">Shirley Balboa</div>
+                                            <div class="timeline-panel">
+                                                <div class="tl-heading">
+                                                    <h3>Update this morning <span class="big-heading">"My knees are killing me"</span></h3>
+                                                    <h5 class="text-muted tl-date">Today 9:42 am</h5>
+                                                </div>
+                                                <div class="tl-body">
+                                                    <div class="col-lg-12 health-details">
+                                                        <div class="col-lg-12">
+                                                            <div class="row">
+                                                                <div class="col-sm-3 health-details-box">
+                                                                    <div class="inner-box">
+                                                                        <div class="circle-lbl red"></div>
+                                                                        <span>Pain:</span>
+                                                                        <span>Knees 8/10</span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-3 health-details-box">
+                                                                    <div class="inner-box">
+                                                                        <div class="circle-lbl blue"></div>
+                                                                        <span>Fruit / Veg:</span>
+                                                                        <span>8</span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-2 health-details-box">
+                                                                    <div class="inner-box">
+                                                                        <div class="circle-lbl green"></div>
+                                                                        <span>Meds:</span>
+                                                                        <span><img src="../dist/img/check.png" style="width:16px"></span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-4 health-details-box">
+                                                                    <div class="inner-box">
+                                                                        <div class="circle-lbl orange"></div>
+                                                                        <span>Blood Sugar:</span>
+                                                                        <span>150 mg/dL</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-sm-3 health-details-box">
+                                                                    <div class="inner-box">
+                                                                        <div class="circle-lbl green"></div>
+                                                                        <span>Steps:</span>
+                                                                        <span>10321</span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-3 health-details-box">
+                                                                    <div class="inner-box">
+                                                                        <div class="circle-lbl green"></div>
+                                                                        <span>Calories:</span>
+                                                                        <span>1800</span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-2 health-details-box">
+                                                                    <div class="inner-box">
+                                                                        <div class="circle-lbl orange"></div>
+                                                                        <span>Sleep:</span>
+                                                                        <span>7.5 Hours</span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-4 health-details-box">
+                                                                    <div class="inner-box">
+                                                                        <div class="circle-lbl blue"></div>
+                                                                        <span>Alcohol:</span>
+                                                                        <span>1 drink in 10 days</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tl-footer pull-left">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="javascript:void(0)">
+                                                                <span class="like-icon"></span>
+                                                                <span>Like</span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:void(0)">
+                                                                <span class="comment-icon"></span>
+                                                                <span>Comment</span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:void(0)">
+                                                                <span class="phone-icon"></span>
+                                                                <span>Will call soon</span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:void(0)">
+                                                                <span class="care-icon"></span>
+                                                                <span>Take care</span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="timeline-inverted">
+                                            <div class="tl-user"><img src="../dist/img/LogoSmall.jpg" alt="small logo"></div>
+                                            <div class="tl-circ"></div>
+                                            <div class="tl-patient-name">Onlife</div>
+                                            <div class="timeline-panel">
+                                                <div class="tl-heading">
+                                                    <h3>Onlife Explains Arthiritis</h3>
+                                                    <h5 class="text-muted tl-date">Today 9:42 am</h5>
+                                                </div>
+                                                <div class="tl-body col-lg-12 trimLR">
+                                                    <p class="col-lg-4 trimLR">
+                                                        <img src="../dist/img/exp-1.jpg" alt="Message from Coach" class="content-main-img img-responsive">
+                                                    </p>
+                                                    <div class="col-lg-8 tl-content-heading">
+                                                        <div class="tl-main-content tl-explain-content">
+                                                            <p>Common arthritis symptoms of pain and stiffness are usually caused by degenerative arthritis (osteoarthritis). The more than 100 types of arthritis include rheumatoid arthritis and gout. A diagnosis is necessary in order to develop a treatment plan.</p>
+                                                            <p>Symptoms of rheumatoid arthritis may include painful swelling, inflammation, and stiffness in the fingers, arms, legs, and wrists occurring in the same joints on both sides of the body, especially upon awakening.</p>
+                                                            <p>Symptoms of infectious arthritis may include fever, chills, joint inflammation....</p>
+                                                        </div>
+                                                        <p><a href="javascript:void(0)" class="read-more pull-right">Read more</a></p>
+                                                    </div>
+                                                </div>
+                                                <div class="tl-footer pull-left">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="javascript:void(0)">
+                                                                <span class="like-icon"></span>
+                                                                <span>Like</span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:void(0)">
+                                                                <span class="comment-icon"></span>
+                                                                <span>Comment</span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:void(0)">
+                                                                <span class="share-icon"></span>
+                                                                <span>Share</span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:void(0)">
+                                                                <span class="Favourite-icon"></span>
+                                                                <span>Favourite</span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="timeline-inverted">
+                                            <div class="tl-user"><img src="../dist/img/LadyCoachSmall.jpg"></div>
+                                            <div class="tl-circ green white-border"></div>
+                                            <div class="tl-patient-name">Coach Megan</div>
+                                            <div class="tl-icon-wrapper">
+                                                <ul>
+                                                    <li>
+                                                        <a href="javascript:void(0)">
+                                                            <span class="comment-icon"></span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a data-toggle="modal" href="#scheduleModal">
+                                                            <span class="calendar-icon"></span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="timeline-panel">
+                                                <div class="tl-heading">
+                                                    <h3>Message from Coach</h3>
+                                                    <h5 class="text-muted tl-date">Today 8:30 am</h5>
+                                                </div>
+                                                <div class="tl-body col-lg-12 trimLR">
+                                                    <p class="col-lg-4 trimLR">
+                                                        <img src="../dist/img/image1.png" alt="Message from Coach" class="content-main-img img-responsive">
+                                                    </p>
+                                                    <div class="col-lg-8 tl-content-heading">
+                                                        <h3 class="constant-text-blue">Yoga for Meditation and Stress Management</h3>
+                                                        <div class="tl-main-content">
+                                                            <p>Yoga is considered a mind-body type of complementary and alternative medicine practice. Yoga brings together physical and mental disciplines to achieve peacefulness of body and mind, helping you relax and manage stress and anxiety.</p>
+                                                            <p>Yoga has many styles, forms and intensities. Hatha yoga, in particular, may be a good choice for stress management. Hatha is one of the most common styles of Yoga, and beginners may like its slower pace and easier movements. But most people can benefit from any style of yoga - it's all about your personal preferences.</p>
+                                                        </div>
+                                                        <p><a href="javascript:void(0)" class="read-more pull-right">Read more</a></p>
+                                                    </div>
+                                                </div>
+                                                <div class="tl-footer pull-left">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="javascript:void(0)">
+                                                                <span class="like-icon"></span>
+                                                                <span>Like</span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:void(0)">
+                                                                <span class="comment-icon"></span>
+                                                                <span>Comment</span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:void(0)">
+                                                                <span class="share-icon"></span>
+                                                                <span>Share</span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:void(0)">
+                                                                <span class="Favourite-icon"></span>
+                                                                <span>Favourite</span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="like-content">
+                                                <a href="">32 People</a> like this
+                                                <ul>
+                                                    <li>
+                                                        <img src="../dist/img/LadyCoachSmall.jpg">
+                                                        <div class="msg-details">
+                                                            <span>Coach Megan:</span>
+                                                            <span>Read your note about the stress at work that's affecting you and your team. Happy to talk but do also read this article. Short Yoga sessions can help!</span>
+                                                            <div><a href="">Like</a>  -  <a href="">Reply</a></div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <img src="../dist/img/daughter.jpg">
+                                                        <div class="msg-details">
+                                                            <span>Cindy Snow Balboa:</span>
+                                                            <span>Can't wait to see Dad doing yoga!</span>
+                                                            <div><a href="">Like</a>  -  <a href="">Reply</a></div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <img src="../dist/img/user.jpg">
+                                                        <div class="msg-details">
+                                                            <div class="input-group">
+                                                                <input type="text" class="form-control" placeholder="Add comment here">
+                                                                <span class="input-group-btn">
+                                                                <button class="btn btn-primary" type="button">Submit</button>
+                                                            </span>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+
+                                        <li class="timeline-inverted">
+                                            <div class="tl-user"><img src="../dist/img/LadyCoachSmall.jpg"></div>
+                                            <div class="tl-circ green white-border"></div>
+                                            <div class="tl-patient-name">Coach Megan</div>
+                                            <div class="tl-icon-wrapper">
+                                                <ul>
+                                                    <li>
+                                                        <a href="javascript:void(0)">
+                                                            <span class="comment-icon"></span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a data-toggle="modal" href="#scheduleModal">
+                                                            <span class="calendar-icon"></span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="timeline-panel">
+                                                <div class="tl-heading">
+                                                    <h3>Message from Coach</h3>
+                                                    <h5 class="text-muted tl-date">Today 8:22 am</h5>
+                                                </div>
+                                                <div class="tl-body col-lg-12 trimLR">
+                                                    <p class="col-lg-4 trimLR">
+                                                        <img src="../dist/img/Years-Happy-Birthday-Golden.jpg" alt="Message from Coach" class="content-main-img img-responsive">
+                                                    </p>
+                                                    <div class="col-lg-8 tl-content-heading">
+                                                        <h3 class="constant-text-blue">Stacy turning 40!</h3>
+                                                        <div class="tl-main-content">
+                                                            <h4>Stacy - a very Happy Birthday from all of us at Onlife.</h4>
+                                                            <p>Here's a health check list I have created fro women turning 40. Hope you find it useful. You can print it by clicking <a href="javascript:window.print();">here</a> </p>
+                                                        </div>
+                                                        <p><a href="javascript:void(0)" class="read-more pull-right">Read more</a></p>
+                                                    </div>
+                                                </div>
+                                                <div class="tl-footer pull-left">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="javascript:void(0)" class="active">
+                                                                <span class="like-icon"></span>
+                                                                <span>Liked</span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:void(0)">
+                                                                <span class="comment-icon"></span>
+                                                                <span>Comment</span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:void(0)">
+                                                                <span class="share-icon"></span>
+                                                                <span>Share</span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:void(0)">
+                                                                <span class="Favourite-icon"></span>
+                                                                <span>Favourite</span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="like-content">
+                                                <a href="">32 People</a> like this
+                                                <ul>
+                                                    <li>
+                                                        <img src="../dist/img/wife.jpg">
+                                                        <div class="msg-details">
+                                                            <span>Stacy Snow Balboa:</span>
+                                                            <span>Thanks Megan! That list is wonderful. I am going to share all of my friends.</span>
+                                                            <div><a href="">Like</a>  -  <a href="">Reply</a></div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <img src="../dist/img/daughter.jpg">
+                                                        <div class="msg-details">
+                                                            <span>Cindy Snow Balboa:</span>
+                                                            <span>Thanks for the reminder!</span>
+                                                            <div><a href="">Like</a>  -  <a href="">Reply</a></div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <img src="../dist/img/user.jpg">
+                                                        <div class="msg-details">
+                                                            <div class="input-group">
+                                                                <input type="text" class="form-control" placeholder="Add comment here">
+                                                                <span class="input-group-btn">
+                                                                <button class="btn btn-primary" type="button">Submit</button>
+                                                            </span>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+
+                                        <li class="timeline-inverted">
+                                            <div class="tl-user"><img src="../dist/img/BlackManTieSmall.jpg"></div>
+                                            <div class="tl-circ"></div>
+                                            <div class="tl-patient-name">Delmont Jones</div>
+                                            <div class="timeline-panel">
+                                                <div class="tl-heading">
+                                                    <h3>Invitation</h3>
+                                                    <h5 class="text-muted tl-date">Yesterday 10:00 pm</h5>
+                                                </div>
+                                                <div class="tl-body col-lg-12 trimLR">
+                                                    <p class="col-lg-4 trimLR">
+                                                        <img src="../dist/img/image3.png" alt="Invitation" class="content-main-img img-responsive">
+                                                    </p>
+                                                    <div class="col-lg-8 tl-content-heading">
+                                                        <h3 class="constant-text-blue">Join our Fall Group Challenge...</h3>
+                                                        <h4>Here is your chance to earn 2500 points</h4>
+                                                        <div class="tl-main-content">
+                                                            <p></p>
+                                                        </div>
+                                                        <p><a href="javascript:void(0)" class="read-more pull-right">Read more</a></p>
+                                                    </div>
+                                                </div>
+                                                <div class="tl-footer pull-left">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="javascript:void(0)">
+                                                                <span class="like-icon"></span>
+                                                                <span>Like</span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:void(0)">
+                                                                <span class="comment-icon"></span>
+                                                                <span>Comment</span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:void(0)">
+                                                                <span class="share-icon"></span>
+                                                                <span>Share</span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:void(0)">
+                                                                <span class="sign-up"></span>
+                                                                <span>Sign up</span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="timeline-inverted">
+                                            <div class="health-care">
+                                                <div class="health-care-content">
+                                                    <img src="../dist/img/mobile.png">
+                                                    <h2>Take Your Health With You</h2>
+                                                    <h5>Download for <a href="">IOS</a> and <a href="">Android.</a></h5>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="timeline-inverted">
+                                            <div class="tl-user"><img src="../dist/img/BlackLadySmall.jpg"></div>
+                                            <div class="tl-circ"></div>
+                                            <div class="tl-patient-name">Tasha</div>
+                                            <div class="timeline-panel">
+                                                <div class="tl-heading">
+                                                    <h3>Invitation</h3>
+                                                    <h5 class="text-muted tl-date">Yesterday 10:00 pm</h5>
+                                                </div>
+                                                <div class="tl-body col-lg-12 trimLR">
+                                                    <p class="col-lg-4 trimLR">
+                                                        <img src="../dist/img/Colorful-cut-vegetables.jpg" alt="Invitation" class="content-main-img img-responsive">
+                                                    </p>
+                                                    <div class="col-lg-8 tl-content-heading">
+                                                        <h3 class="constant-text-blue">Join the Nashville Healthy Cooking Club!</h3>
+                                                        <h4>We meet once a week and we will help you cook 2 days worth of healthy and tasty meals of family</h4>
+                                                        <div class="tl-main-content">
+                                                            <p></p>
+                                                        </div>
+                                                        <p><a href="javascript:void(0)" class="read-more pull-right">Read more</a></p>
+                                                    </div>
+                                                </div>
+                                                <div class="tl-footer pull-left">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="javascript:void(0)" class="active">
+                                                                <span class="like-icon"></span>
+                                                                <span>Liked</span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:void(0)">
+                                                                <span class="comment-icon"></span>
+                                                                <span>Comment</span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:void(0)">
+                                                                <span class="share-icon"></span>
+                                                                <span>Share</span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:void(0)">
+                                                                <span class="sign-up"></span>
+                                                                <span>Sign up</span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="like-content">
+                                                <a href="">32 People</a> like this
+                                                <ul>
+                                                    <li>
+                                                        <img src="../dist/img/wife.jpg">
+                                                        <div class="msg-details">
+                                                            <span>Stacy Snow Balboa:</span>
+                                                            <span>Tasha is this open to spouses too. I received the message but didn't want to make any assumptions.</span>
+                                                            <div><a href="">Like</a>  -  <a href="">Reply</a></div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <img src="../dist/img/BlackManTieSmall.jpg">
+                                                        <div class="msg-details">
+                                                            <span>Delmont Jones:</span>
+                                                            <span>And you guaranteeing that family will like the food??</span>
+                                                            <div><a href="">Like</a>  -  <a href="">Reply</a></div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <img src="../dist/img/user.jpg">
+                                                        <div class="msg-details">
+                                                            <div class="input-group">
+                                                                <input type="text" class="form-control" placeholder="Add comment here">
+                                                                <span class="input-group-btn">
+                                                                <button class="btn btn-primary" type="button">Submit</button>
+                                                            </span>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+
+                                        <li class="timeline-inverted">
+                                            <div class="tl-user"><img src="../dist/img/LadyCoachSmall.jpg"></div>
+                                            <div class="tl-circ green white-border"></div>
+                                            <div class="tl-patient-name">Coach Megan</div>
+                                            <div class="tl-icon-wrapper">
+                                                <ul>
+                                                    <li>
+                                                        <a href="javascript:void(0)">
+                                                            <span class="comment-icon"></span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a data-toggle="modal" href="#scheduleModal">
+                                                            <span class="calendar-icon"></span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="timeline-panel">
+                                                <div class="tl-heading">
+                                                    <h3>Questions of the Day from Coach</h3>
+                                                    <h5 class="text-muted tl-date">Yesterday 8:30 am</h5>
+                                                </div>
+                                                <div class="tl-body col-lg-12 trimLR">
+                                                    <p class="col-lg-4 trimLR">
+                                                        <img src="../dist/img/Healthy-Eating-Question.jpg" alt="Message from Coach" class="content-main-img  img-responsive">
+                                                    </p>
+                                                    <div class="col-lg-8 tl-content-heading">
+                                                        <div class="tl-main-content">
+                                                            <p>How many alcoholic drinks did you consume last week (Monday-Sunday)?</p>
+                                                            <form>
+                                                                <div class="row">
+                                                                    <div class="col-sm-8">
+                                                                        <p class="btn-group" data-toggle="buttons">
+                                                                            <label class="btn btn-default">
+                                                                                <input type="radio" id="" name="quality[25]" value="0"> 0
+                                                                            </label>
+                                                                            <label class="btn btn-default">
+                                                                                <input type="radio" id="" name="quality[25]" value="1-5"> 1-5
+                                                                            </label>
+                                                                            <label class="btn btn-default">
+                                                                                <input type="radio" id="" name="quality[25]" value="6-10"> 6-10
+                                                                            </label>
+                                                                            <label class="btn btn-default">
+                                                                                <input type="radio" id="" name="quality[25]" value="10-20"> 10-20
+                                                                            </label>
+                                                                            <label class="btn btn-default active">
+                                                                                <input type="radio" id="" name="quality[25]" checked="checked" value="20+"> 20+
+                                                                            </label>
+                                                                        </p>
+                                                                    </div>
+                                                                    <div class="text-left col-sm-4">
+                                                                        <p><button type="submit" class="btn btn-primary">Submit</button></p>
+                                                                    </div>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                        <p><a href="javascript:void(0)" class="read-more pull-right">Answer more Questions</a></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="timeline-inverted">
+                                            <div class="tl-user"><img src="../dist/img/LadyCoachSmall.jpg"></div>
+                                            <div class="tl-circ green white-border"></div>
+                                            <div class="tl-patient-name">Coach Megan</div>
+                                            <div class="tl-icon-wrapper">
+                                                <ul>
+                                                    <li>
+                                                        <a href="javascript:void(0)">
+                                                            <span class="comment-icon"></span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a data-toggle="modal" href="#scheduleModal">
+                                                            <span class="calendar-icon"></span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="timeline-panel">
+                                                <div class="tl-heading">
+                                                    <h3>Reminder from Coach</h3>
+                                                    <h5 class="text-muted tl-date">Yesterday 8:30 am</h5>
+                                                </div>
+                                                <div class="tl-body col-lg-12 trimLR">
+                                                    <p class="col-lg-4 trimLR">
+                                                        <img src="../dist/img/Fingers-smiling-against-flu.jpg" alt="Message from Coach" class="content-main-img  img-responsive">
+                                                    </p>
+                                                    <div class="col-lg-8 tl-content-heading">
+                                                        <h3 class="constant-text-blue">Get your flu shots today</h3>
+                                                        <div class="tl-main-content">
+                                                            <p>Influenza is a serious disease that can lead to hospitalization and sometimes even death. Every flu season is different, and influenza infection can affect people differently. Even healthy people can get very sick from the flu and spread it to others.</p>
+                                                        </div>
+                                                        <p>
+                                                            <a href="javascript:void(0)" class="read-more pull-right">Read more</a>
+                                                            <a href="javascript:void(0)" class="read-more pull-right">Find a location</a>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- end member list view-->
                                 <!-- /.tab-pane -->
                                 <div class="tab-pane" id="profile">
                                     <div class="row">
@@ -827,5 +1532,17 @@
     <!-- Onlife for demo purposes -->
     <script src="../dist/js/demo.js"></script>
     <script src="js/scripts.js"></script>
+
+<script type="text/javascript">
+    $("#listview").click(function(){
+        $("#listviewbox").addClass( "active" );
+        $("#wellnessFeeds").removeClass( "active" );
+    });
+    $("#tileview").click(function(){
+        $("#wellnessFeeds").addClass( "active" );
+        $("#listviewbox").removeClass( "active" );;
+    });
+
+</script>
 </body>
 </html>
