@@ -1345,7 +1345,7 @@ box.box-danger .circle-logo {
 }
 /*  Saravanan changes 10/14/2016  */
 .navbar-custom-menu>.navbar-nav>li>.dropdown-menu {
-    right: auto !important;
+    /*right: auto !important;*/
 }
 .list-style {
     list-style-type: disc !important;
@@ -1521,3 +1521,65 @@ box.box-danger .circle-logo {
   height:40px;
 }
 
+.m-t-15 {
+  margin-top: 15px;
+}
+
+.m-t-20 {
+  margin-top: 20px;
+}
+
+.m-t-25 {
+  margin-top: 25px;
+}
+
+.m-a-0 {
+  margin: 0;
+}
+
+.m-y-10 {
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+}
+
+.m-l-10 {
+  margin-left: 10px;
+}
+
+.m-l-25 {
+  margin-left: 25px;
+}
+
+.p-r-0 {
+  padding-right: 0;
+}
+
+.p-x-0 {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.quality-score {
+  background: green;
+  padding: 15px 5px;
+  text-align: center;
+  position: relative;
+  width: 50px;
+}
+.quality-score-icon {
+  height: 30px;
+}
+.quality-score-text {
+  font-weight: normal !important;
+}
+.quality-score-sub-text {
+  margin-top: -5px !important;
+}
+
+.border-left {
+  border-left: 1px solid lightgray;
+  height: 60px;
+}
+.clinical-note-separator {
+  border-top-color: #d2d6de;
+}
