@@ -22,7 +22,7 @@
                 isCall: true,
                 member: {
                   id: 494079,
-                  lastName: '',
+                  lastName: 'balboa',
                   firstName: 'louis'
                 }
               },
