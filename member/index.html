@@ -291,7 +291,7 @@
         </aside>
 
         <!-- Content Wrapper. Contains page content -->
-        <div class="content-wrapper member-view" data-ng-controller="MemberController">
+        <div class="content-wrapper member-view">
             <!-- Main content -->
             <section class="content">
                 <div class="row">
@@ -897,7 +897,7 @@
                                     <li><a href="#activityTab" data-toggle="tab">Activity</a></li>
                                 </ul>
                                 <div class="tab-content">
-                                    <div class="active tab-pane" id="messagesTab">
+                                    <div class="active tab-pane" id="messagesTab" data-ng-controller="MemberMessageController">
                                         <div class="row">
                                             <div class="col-sm-12">
                                                 <ul class="nav nav-tabs">
@@ -908,6 +908,23 @@
                                                 <div class="tab-content">
                                                     <div class="tab-pane active" id="successfulMessages">
                                                         <div class="direct-chat-messages">
+                                                            <div class="direct-chat-msg" data-ng-class="{'right': !message.self}" data-ng-repeat="message in successfulMessages">
+                                                                <div class="row">
+                                                                    <div data-ng-class="{'col-xs-8 trim-right': !message.self, 'col-xs-4': message.self}">
+                                                                        <span class="direct-chat-name" data-ng-class="{'pull-right': !message.self, 'pull-left': message.self}">{{message.senderName}}</span>
+                                                                    </div>
+                                                                    <div data-ng-class="{'col-xs-8 trim-left': message.self, 'col-xs-4': message.self}">
+                                                                        <img class="direct-chat-img" data-ng-src="../dist/img/{{member.senderIconSrc}}" alt="Message User Image"><!-- /.direct-chat-img -->
+                                                                    </div>
+                                                                    <div class="col-xs-12">
+                                                                        <div class="direct-chat-text">
+                                                                            {{message.description}} <a href="javascript:void(0);" data-ng-if="message.isVoice"><i class="fa fa-play-circle"></i></a>
+                                                                        </div>
+                                                                        <span class="direct-chat-timestamp pull-left">10 Oct 2:20 pm</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
                                                             <div class="direct-chat-msg right">
                                                                 <div class="row">
                                                                     <div class="col-xs-8 trim-right">
@@ -1211,7 +1228,8 @@
     <!-- Onlife dashboard demo (This is only for demo purposes) -->
     <script src="../dist/js/pages/dashboard.js"></script>
     <script src="../dist/js/angular/member/app.js"></script>
-    <script src="../dist/js/angular/member/memberController.js"></script>
+    <script src="../dist/js/angular/member/services/memberMessageService.js"></script>
+    <script src="../dist/js/angular/member/controllers/memberMessageController.js"></script>
     <!-- Onlife for demo purposes -->
     <script src="../dist/js/demo.js"></script>
     <script>
