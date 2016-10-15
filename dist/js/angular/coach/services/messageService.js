@@ -9,7 +9,7 @@
             return [
               {
                 id: 1,
-                memberName: 'Louis',
+                memberName: 'Balboa, Louis',
                 description: 'Voice Message from Member',
                 isCall: true,
                 duration: 5,
