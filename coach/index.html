@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Coach Space dashboard</title>
+  <title>Coach Space - Dashboard</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.6 -->
@@ -70,69 +70,6 @@
                 <div class="navbar-custom-menu">
                     <ul class="nav navbar-nav">
                         <!-- Tasks-->
-                        <li class="dropdown tasks-menu">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                Quality Score 
-                                <span class="score-icon">
-                                    <img src="../dist/img/score.png" alt="" />
-                                </span>
-                                <span class="">
-                                    5 Audits
-                                    <i class="fa fa-caret-up custom"></i> +2.0 pts.
-                                </span>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li class="header">You have 5 Audits</li>
-                                <li>
-                                    <!-- inner menu: contains the actual data -->
-                                    <ul class="menu">
-                                        <li>
-                                            <!-- Task item -->
-                                            <a href="#">
-                                                <h3>
-                                                    Audit 1
-                                                    <small class="pull-right">20%</small>
-                                                </h3>
-                                            </a>
-                                        </li>
-                                        <!-- end task item -->
-                                        <li>
-                                            <!-- Task item -->
-                                            <a href="#">
-                                                <h3>
-                                                    Audit 2
-                                                    <small class="pull-right">40%</small>
-                                                </h3>
-                                            </a>
-                                        </li>
-                                        <!-- end task item -->
-                                        <li>
-                                            <!-- Task item -->
-                                            <a href="#">
-                                                <h3>
-                                                    Audit 3
-                                                    <small class="pull-right">60%</small>
-                                                </h3>
-                                            </a>
-                                        </li>
-                                        <!-- end task item -->
-                                        <li>
-                                            <!-- Task item -->
-                                            <a href="#">
-                                                <h3>
-                                                   Audit 4
-                                                    <small class="pull-right">80%</small>
-                                                </h3>
-                                            </a>
-                                        </li>
-                                        <!-- end task item -->
-                                    </ul>
-                                </li>
-                                <li class="footer">
-                                    <a href="#">View all Audit</a>
-                                </li>
-                            </ul>
-                        </li>
                         <!-- User Account -->
                         <li class="dropdown user user-menu">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
@@ -141,8 +78,8 @@
                                     <span class="single-break"></span>
                                     <span class="sign-out">Signout</span>
                                 </span>
-                                
-</a>
+
+                            </a>
                             <ul class="dropdown-menu">
                                 <!-- Menu Body -->
                                 <li class="user-body">
@@ -175,17 +112,12 @@
                 </div>
             </div>
         </div>
-     
-
-    
-
     </nav>
   </header>
   <!-- Left side column. contains the logo and sidebar -->
   <aside class="main-sidebar">
     <!-- sidebar-->
     <section class="sidebar">
-      
       <!-- sidebar menu -->
       <ul class="sidebar-menu">
         <li class="active">
@@ -253,7 +185,7 @@
                     <ul class="nav navbar-nav row">
                         <!-- Messages-->
                         <li class="dropdown messages-menu col-sm-4" data-ng-controller="MessageController">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"> 
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                 <!-- DIRECT CHAT -->
                                 <div class="box box-warning direct-chat direct-chat-warning">
                                     <div class="box-header">
@@ -446,6 +378,59 @@
 
             </div>
 
+            <div class="col-sm-12 m-t-25">
+                <div class="no-print">
+                    <div class="callout callout-info">
+                        <div class="row">
+                            <div class="col-xs-1 p-r-0">
+                                <div class="quality-score">
+                                    <span class="">
+                                        <img src="../dist/img/quality_score_icon.png" alt="Quality Score" class="quality-score-icon">
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-xs-11">
+                                <div class="row">
+                                    <div class="col-xs-2 p-x-0">
+                                        <div class="pull-left">
+                                            <div class="clearfix">
+                                                <h1 class="m-a-0 pull-left">85</h1>
+                                                <h6>
+                                                <a href="javascript:void(0);" class="dropdown-toggle m-t-20 m-l-10">
+                                                    <span class="green-color">
+                                                        +2.0 pts.
+                                                    </span>
+                                                    <span class="m-l-25">
+                                                        <i class="fa fa-caret-up custom green-color"></i>
+                                                    </span>
+                                                </a></h6>
+                                            </div>
+                                            <div>
+                                                <h5 class="m-a-0 pull-left quality-score-sub-text">
+                                                    <strong>Quality Score</strong>
+                                                </h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-3 border-left">
+                                        <h4 class="quality-score-text text-center m-y-10">Motivational Interviewing</h4>
+                                        <h4 class="quality-score-sub-text text-center"><small>25%</small></h4>
+                                    </div>
+                                    <div class="col-xs-3 border-left">
+                                        <h4 class="quality-score-text text-center m-y-10">Protocol/Compliance</h4>
+                                        <h4 class="quality-score-sub-text text-center"><small>75%</small></h4>
+                                    </div>
+                                    <div class="col-xs-3 border-left">
+                                        <h4 class="quality-score-text text-center m-y-10">Member Experience</h4>
+                                        <h4 class="quality-score-sub-text text-center"><small>50%</small></h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <div class="col-sm-12">
                 <div class="row">
                     <div class="col-sm-6">
@@ -545,7 +530,6 @@
                                             </span>
                                         </div>
                                     <!-- /.box (chat box) -->
-                                    
                                 </div>
                                 <!-- /.tab-pane -->
                                 <div class="tab-pane" id="timeline">
@@ -634,7 +618,6 @@
 
         </div>
         <!-- /.row -->
-      
     </section>
     <!-- /.content -->
   </div>
