@@ -519,14 +519,6 @@ $(function () {
 
 })();
 
-$(".clinical-notes").click(function () {
-  var effect = 'slide',
-      options = { direction: 'left' },
-      duration = 500;
-
-  $('#clinicalNotesDiv').toggle(effect, options, duration);
-});
-
 $('.like-btn').click(function () {
   $(this).children('i').toggleClass('ion-ios-heart');
   $(this).children('i').toggleClass('ion-ios-heart-outline');

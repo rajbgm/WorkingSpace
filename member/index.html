@@ -220,9 +220,12 @@
                 </ul>
             </section>
             <!-- /.sidebar -->
-            <div>
+            <div data-ng-controller="ClinicalNotesController">
                 <div id="clinicalNotesDiv" class="clinical-notes-container display-none">
                     <div class="row">
+                        <div class="col-xs-12">
+                            <button type="button" class="close" data-dismiss="modal" data-ng-click="slideClinicalNotes()">×</button>
+                        </div>
                         <div class="col-xs-12">
                             <ul class="nav nav-tabs">
                                 <li class="active"><a href="#viewNotes" data-toggle="tab">Viewing Note</a></li>
@@ -284,7 +287,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="clinical-notes">
+                <div class="clinical-notes" data-ng-click="slideClinicalNotes()">
                     <img src="../dist/img/clinical_notes.png" alt="" class="clinical-notes-toggle img-responsive" />
                 </div>
             </div>
@@ -1212,6 +1215,7 @@
     <script src="../dist/js/pages/dashboard.js"></script>
     <script src="../dist/js/angular/member/app.js"></script>
     <script src="../dist/js/angular/member/memberController.js"></script>
+    <script src="../dist/js/angular/member/clinicalNotesController.js"></script>
     <!-- Onlife for demo purposes -->
     <script src="../dist/js/demo.js"></script>
     <script>
