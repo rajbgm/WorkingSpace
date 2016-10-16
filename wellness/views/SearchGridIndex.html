@@ -64,7 +64,8 @@
                         <span class="fa arrow"></span>
                     </a>
                     <ul class="nav nav-second-level collapse in">
-                        <li data-ng-class="groupCtrl.menuClass[subMenuIndex]" data-ng-repeat="(subMenuIndex, subMenu) in groupCtrl.settingMenu">
+                        <li data-ng-class="groupCtrl.menuClass[subMenuIndex]"
+                            data-ng-repeat="(subMenuIndex, subMenu) in groupCtrl.settingMenu">
                             <a data-ng-click="groupCtrl.viewSetting(subMenu, subMenuIndex)">{{subMenu.DisplayName}}</a>
                         </li>
                     </ul>
