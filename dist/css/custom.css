@@ -2073,3 +2073,6 @@ box.box-danger .circle-logo {
 .font-normal {
   font-weight: normal;
 }
+.side-bar-header {
+    margin: 0;
+}

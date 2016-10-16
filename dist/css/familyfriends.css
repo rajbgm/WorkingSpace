@@ -453,7 +453,7 @@ header .header-right-buttons ul li:last-child span {
 .tl-icon-wrapper {
     top: 185px;
     width: 100px;
-    left: 1.5%;
+    left: 0;
 }
 
 h2 {

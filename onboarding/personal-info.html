@@ -57,7 +57,7 @@
                                 <span class="tab-number"> 1 </span>
                             </li>
                             <li>
-                                <a href="#contactDetails" data-toggle="tab">Contact Preferences</a>
+                                <a href="#contactDetails" class="contact-pref" data-toggle="tab">Contact Preferences</a>
                                 <span class="tab-confirmed"> &#10004; </span>
                                 <span class="tab-number"> 2 </span>
                             </li>
@@ -89,12 +89,12 @@
                                                 </div>
                                                 <div class="col-sm-6">
                                                     <div class="form-group">
-                                                        <input type="text" class="form-control" id="bankDetail" value="Banks">
+                                                        <input type="text" class="form-control" id="lastName" value="Balboa">
                                                     </div>
                                                 </div>
                                                 <div class="col-sm-6">
                                                     <div class="form-group">
-                                                        <input type="text" class="form-control" id="dateOfBirth" value="07/31/1972">
+                                                        <input type="text" class="form-control" id="dateOfBirth" value="07/31/1966">
                                                     </div>
                                                 </div>
                                                 <div class="col-sm-6">
@@ -146,14 +146,13 @@
                                         </form>
                                     </div>
                                     <div class="col-sm-3">
-                                        <h3 class="page-header">Why is this necessary ?</h3>
+                                        <h3 class="page-header side-bar-header">Why is this necessary ?</h3>
                                         <p>The more you tell us about yourself the better we can customize your wellness program. Has anything changed?  Please take a minute to review your personal information for accuracy </p>
                                     </div>
                                     <div class="col-sm-9">
                                         <div class="form-group text-right button-holder">
                                             <span>
-                                                <button type="button" class="btn btn-primary custom-btn back-btn">Back</button>
-                                                <button type="button" class="btn btn-primary custom-btn next-btn" data-toggle="tab">Next</button>
+                                                <button type="button" class="btn btn-primary custom-btn next-btn" id="first-tab" data-toggle="tab">Next</button>
                                             </span>
                                         </div>
                                     </div>
@@ -171,17 +170,17 @@
                                             <div class="row">
                                                 <div class="col-sm-6">
                                                     <div class="form-group">
-                                                        <input type="email" class="form-control" id="inputName" value="louis@mail.com" >
+                                                        <input type="email" class="form-control" id="inputName" value="Louis.Balboa@gmail.com" >
                                                     </div>
                                                 </div>
                                                 <div class="col-sm-6">
                                                     <div class="form-group">
-                                                        <input type="text" class="form-control" id="phoneNum" value="+1670 3327 601" >
+                                                        <input type="text" class="form-control" id="phoneNum" value="(167) 033 7601" >
                                                     </div>
                                                 </div>
                                                 <div class="col-sm-6">
                                                     <div class="form-group">
-                                                        <input type="text" class="form-control" id="cellNum" value="+1670 3327" >
+                                                        <input type="text" class="form-control" id="cellNum" value="(167) 033 7602" >
                                                     </div>
                                                 </div>
                                                 <div class="col-sm-12">
@@ -241,14 +240,14 @@
                                         </form>
                                     </div>
                                     <div class="col-sm-3">
-                                        <h3 class="page-header">What’s your preference?</h3>
+                                        <h3 class="page-header side-bar-header">What’s your preference?</h3>
                                         <p>We’re here for you and can better serve when we know how you prefer to communicate.</p>
                                     </div>
                                     <div class="col-sm-9">
                                         <div class="form-group text-right button-holder">
                                             <span>
-                                                <button type="button" class="btn btn-primary custom-btn back-btn">Back</button>
-                                                <button type="button" class="btn btn-primary custom-btn next-btn" data-toggle="tab">Next</button>
+                                                <button type="button" class="btn btn-primary custom-btn back-btn contact-pref-back">Back</button>
+                                                <button type="button" class="btn btn-primary custom-btn next-btn contact-pref-next" data-toggle="tab">Next</button>
                                             </span>
                                         </div>
                                     </div>
@@ -272,7 +271,7 @@
                                                 </div>
                                                 <div class="col-sm-6">
                                                     <div class="form-group">
-                                                        <input type="text" class="form-control" id="cellNum" value="180 CM" >
+                                                        <input type="text" class="form-control" id="cellNum" value="5 foot 11 inches" >
                                                     </div>
                                                 </div>
                                                 <div class="col-sm-12">
@@ -369,14 +368,14 @@
                                         </form>
                                     </div>
                                     <div class="col-sm-3">
-                                        <h3 class="page-header">Why is this necessary ?</h3>
-                                        <p>Lorem ipsum dummy text....</p>
+                                        <h3 class="page-header side-bar-header">Why is this necessary ?</h3>
+                                        <p>Program preferences allow us to refine the wellness content based on your needs.</p>
                                     </div>
                                     <div class="col-sm-9">
                                         <div class="form-group text-right button-holder">
                                             <span>
-                                                <button type="button" class="btn btn-primary custom-btn back-btn">Back</button>
-                                                <button type="button" class="btn btn-primary custom-btn next-btn ">Next</button>
+                                                <button type="button" class="btn btn-primary custom-btn back-btn prog-pref-back">Back</button>
+                                                <button type="button" class="btn btn-primary custom-btn next-btn prog-pref-next">Next</button>
                                             </span>
                                         </div>
                                     </div>
@@ -487,13 +486,13 @@
                                         </form>
                                     </div>
                                     <div class="col-sm-3">
-                                        <h3 class="page-header">Why is this necessary ?</h3>
-                                        <p>Lorem ipsum dummy text....</p>
+                                        <h3 class="page-header side-bar-header">Why is this necessary ?</h3>
+                                        <p>Activities will make you stay fit.</p>
                                     </div>
                                     <div class="col-sm-9">
                                         <div class="form-group text-right button-holder">
                                             <span>
-                                                <button type="button" class="btn btn-primary custom-btn back-btn">Back</button>
+                                                <button type="button" class="btn btn-primary custom-btn back-btn activities-back">Back</button>
                                                 <button type="button" class="btn btn-primary custom-btn next-btn" id="getStarted">Done</button>
                                             </span>
                                         </div>
@@ -712,6 +711,30 @@
     <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
     <script>
         $.widget.bridge('uibutton', $.ui.button);
+
+
+        $(function () {
+
+            /*  Navigation Tab  */
+            $('#first-tab').click(function () {
+                $('a[href="#contactDetails"]').click();
+            });
+            $('.contact-pref-back').click(function () {
+                $('a[href="#personalInfo"]').click();
+            });
+            $('.contact-pref-next').click(function () {
+                $('a[href="#preferences"]').click();
+            });
+            $('.prog-pref-next').click(function () {
+                $('a[href="#preferences-2"]').click();
+            });
+            $('.prog-pref-back').click(function () {
+                $('a[href="#contactDetails"]').click();
+            });
+            $('.activities-back').click(function () {
+                $('a[href="#preferences"]').click();
+            });
+        });
     </script>
     <!-- Bootstrap 3.3.6 -->
     <script src="../bootstrap/js/bootstrap.min.js"></script>
@@ -742,5 +765,6 @@
     <script src="../dist/js/pages/dashboard.js"></script>
     <!-- Onlife for demo purposes -->
     <script src="../dist/js/demo.js"></script>
+
 </body>
 </html>
