@@ -64,7 +64,7 @@
     top: 20px;
 }
 .ca-main{
-    font-size: 30px;
+    font-size: 24px;
     -webkit-transition: all 300ms linear;
     -moz-transition: all 300ms linear;
     -o-transition: all 300ms linear;
@@ -95,5 +95,5 @@
 }
 .ca-menu li:hover .ca-sub{
     color: #fff;
-    font-size: 30px;
+    font-size: 24px;
 }
