@@ -207,7 +207,7 @@ header {
 }
 
 .description-area p {
-  font-size: 1.2em;
+  font-size: 1.1em;
 }
 
 .description-area.zero-border {
@@ -220,9 +220,61 @@ header {
   padding-top: 5px;
 }
 
+.points-tile {
+  background: orange;
+  text-align: center;
+}
+
+.points-tile .points-header {
+  background: darkorange;
+}
+
+.points-tile .points-header i {
+  color: white;
+}
+
+.greeting-tile {
+  background: #9BBF5B;
+  text-align: center;
+}
+
+.greeting-tile img {
+  width: 70px;
+  height: 70px;
+}
+
+.greeting-tile .points-header i {
+  color: white;
+}
+
+.invite-friends-img {
+  width: 220px;
+  height: 203px;
+  background-size: contain;
+  padding-right: 0;
+}
+
+.mother-details-tile .mother-health-details {
+  font-size: 11px;
+}
+
+.mother-details-tile .circle-lbl {
+  width: 15px;
+  height: 15px;
+}
+
+.tile-footer {
+  padding: 12px;
+}
+
 .profile-footer {
   background: #5bbcbc;
   padding: 12px;
+}
+
+.tile-footer .white-btn {
+  border: 1px solid #FFF;
+  color: #FFF;
 }
 
 .profile-footer .btn-primary, .profile-footer .btn-secondary {
@@ -232,7 +284,8 @@ header {
 
 .profile-strength h4 {
   font-weight: 600;
-  margin-top: 60px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .profile-strength .percentage {
@@ -244,7 +297,9 @@ header {
 .profile-strength .progress {
   background: #FFF;
   border-radius: 10px;
+  margin-top: 10px;
   margin-bottom: 8px;
+  height: 7px;
 }
 
 .profile-strength .progress-bar {
