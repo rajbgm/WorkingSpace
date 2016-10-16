@@ -1,0 +1,68 @@
+<div class="animated fadeInDown">
+    <div class="row wrapper border-bottom white-bg page-heading">
+        <div class="col-lg-10">
+            <h2>Group Search</h2>
+            <ol class="breadcrumb" data-ng-controller="BreadCrumbController as breadCrumbCtrl">
+                <li data-ng-repeat="breadCrumbValue in  group.breadCrumb">
+                    <a data-ng-bind="breadCrumbValue.GroupName" data-ng-click="breadCrumbCtrl.selectedGroup(breadCrumbValue)"></a>
+                </li>
+            </ol>
+        </div>
+        <div class="col-lg-4">
+
+        </div>
+    </div>
+    <div class="row" data-ng-controller="GroupCreateController as groupCreateCtrl">
+
+        <div class="col-lg-8 col-lg-offset-2">
+            <div class="ibox float-e-margins ibox-custom">
+                <div class="ibox-title push-top-small">
+                    <h5>Create Child Group</h5>
+
+                    <div ibox-tools></div>
+                </div>
+                <div class="ibox-content">
+                    <form name="createGroupForm" class="form-horizontal">
+                        <div class="form-group"><label class="col-lg-3 control-label">Group Name</label>
+
+                            <div class="col-lg-9">
+                                <input type="text" placeholder="GroupName" class="form-control" data-ng-model="groupCreateCtrl.groupData.GroupName" data-ng-required="true" data-allow-blank="false">
+                            </div>
+                        </div>
+                        <div class="form-group"><label class="col-lg-3 control-label">Address</label>
+
+                            <div class="col-lg-9">
+                                <input type="text" placeholder="Address" class="form-control" data-ng-model="groupCreateCtrl.groupData.GroupAddress1">
+                            </div>
+                        </div>
+                        <div class="form-group"><label class="col-lg-3 control-label">Phone Number</label>
+
+                            <div class="col-lg-9">
+                                <input type="text" placeholder="Phone Number" class="form-control" data-ng-model="groupCreateCtrl.groupData.GroupPhoneNo">
+                            </div>
+                        </div>
+                        <div class="form-group"><label class="col-lg-3 control-label">City</label>
+
+                            <div class="col-lg-9">
+                                <input type="text" placeholder="City" class="form-control" data-ng-model="groupCreateCtrl.groupData.GroupCity">
+                            </div>
+                        </div>
+                        <div class="form-group"><label class="col-lg-3 control-label">State</label>
+
+                            <div class="col-lg-9">
+                                <input type="text" placeholder="State" class="form-control" data-ng-model="groupCreateCtrl.groupData.GroupState">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-lg-offset-3 col-lg-9">
+                                <button data-ng-click="groupCreateCtrl.createGroup()" data-ng-disabled="createGroupForm.$invalid" class="btn btn-primary" type="submit">Create Group
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

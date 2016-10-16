@@ -1,0 +1,625 @@
+<div class="ibox animated fadeInDown" data-ng-controller="SettingListController as settingListCtrl">
+<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-sm-12">
+        <h2>{{settingMenuData.DisplayName}}</h2>
+        <ol class="breadcrumb" data-ng-controller="BreadCrumbController as breadCrumbCtrl">
+            <li data-ng-repeat="breadCrumbValue in group.breadCrumb">
+                <a data-ng-bind="breadCrumbValue.GroupName" data-ng-click="breadCrumbCtrl.selectedGroup(breadCrumbValue)"></a>
+            </li>
+        </ol>
+    </div>
+    <div class="col-sm-12 text-right">
+        <div class="checkbox checkbox-primary" data-ng-hide="settingListCtrl.hideFilter">
+            <input id="settingFilter" class="styled" type="checkbox" data-ng-change="settingListCtrl.filterCurrentSettings(settingListCtrl.showCurrentSetting,
+                            settingMenuData.MenuIdentifier)" data-ng-model="settingListCtrl.showCurrentSetting">
+            <label for="settingFilter">Current Settings</label>
+        </div>
+    </div>
+</div>
+<div class="tab-structure">
+
+<!-- Nav tabs -->
+<ul class="nav nav-tabs" role="tablist" data-ng-show="settingMenuData.ClassType.length > 1">
+    <li role="presentation" data-ng-class="tabIndex === 0 ? 'active' : ''" data-ng-repeat="(tabIndex, tabMenu) in  settingMenuData.ClassType">
+        <a href="#{{tabMenu}}" target="_self" aria-controls="home" role="tab" data-ng-click="settingListCtrl.getSettingData(tabMenu)" data-toggle="tab">{{tabMenu}}</a>
+    </li>
+</ul>
+<!-- Tab panes -->
+<div class="tab-content">
+<div role="tabpanel" id="SettingNameValueCollection" data-ng-class="settingMenuData.ClassType[0] === 'SettingNameValueCollection' ? 'tab-pane active'
+                    : 'tab-pane fade'">
+    <div class="list-group" data-ng-show="settingListCtrl.settingsGrid.data.length > 0">
+        <div ui-grid="settingListCtrl.settingsGrid" ui-grid-selection ui-grid-auto-resize class="myGrid" data-ng-cloak>
+
+        </div>
+    </div>
+</div>
+<div role="tabpanel" id="Announcements" class="animated fadeInDown ng-cloak" data-ng-class="settingMenuData.ClassType[0] === 'Announcements' ? 'tab-pane active': 'tab-pane fade'">
+    <div class="tabs-container push-top-small">
+        <div class="tabs-left">
+            <ul class="nav nav-tabs draglist" role="tablist">
+                <li role="presentation" data-ng-repeat="(index, announcementData ) in settingListCtrl.settingsAnnouncementData" data-ng-drop="true" ng-drop-success="settingListCtrl.onDropComplete(index, $data, 'saveannouncements',
+                                settingListCtrl.settingsAnnouncementData)" data-ng-class="index === 0 ? 'active' : ''">
+                    <a href="#announcement{{index}}" data-ng-drag="true" target="_self" aria-controls="home" data-ng-drag-data="announcementData" role="tab" data-toggle="tab">{{announcementData.AnnouncementName}}</a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div role="tabpanel" data-ng-repeat="(announcementIndex, announcement ) in settingListCtrl.settingsAnnouncementData" data-ng-class="announcementIndex === 0 ? 'tab-pane active' : 'tab-pane fade'" data-ng-click="settingListCtrl.createEditAnnouncement(settingListCtrl.settingsAnnouncementData,
+                                 announcementIndex, true)" id="announcement{{announcementIndex}}">
+                    <div class="panel-body">
+                        <div class="col-xs-12 col-sm-12">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <label class="control-label">Announcement Text</label>
+
+                                    <p>{{announcement.AnnouncementText[0].Value}}</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <label class="control-label">Start Date</label>
+
+                                    <p>{{announcement.StartDate | date: 'MM/dd/yyyy' }}</p>
+                                </div>
+                                <div class="col-sm-4">
+                                    <label class="control-label">End Date</label>
+
+                                    <p>{{announcement.EndDate | date: 'MM/dd/yyyy'}}</p>
+                                </div>
+                                <div class="col-sm-4">
+                                    <label class="control-label">Disabled</label>
+
+                                    <p>{{announcement.Disabled}}</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <label class="control-label">Setting From</label>
+
+                                    <p>{{announcement.MetaData.SettingsFromGroupName }}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group text-right push-top-small">
+                    <button class="btn btn-primary" type="button" data-ng-click="settingListCtrl.createEditAnnouncement(
+                                        settingListCtrl.settingsAnnouncementData,null, false)">Create
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div role="tabpanel" id="PointsMatrix" class="animated fadeInDown ng-cloak" data-ng-class="settingMenuData.ClassType[0] === 'PointsMatrix' ? 'tab-pane active': 'tab-pane fade'">
+    <div class="tabs-container push-top-small">
+        <div class="tabs-left">
+            <ul class="nav nav-tabs draglist" role="tablist">
+                <li role="presentation" data-ng-repeat="(index, pointMatrixData ) in settingListCtrl.pointMatrixData
+                                 track by $index" data-ng-drop="true" ng-drop-success="settingListCtrl.onDropComplete(index, $data, 'savepointsmatrix',
+                                settingListCtrl.pointMatrixData)" data-ng-class="index === 0 ? 'active' : ''">
+                    <a href="#point{{index}}" data-ng-drag="true" data-ng-drag-data="pointMatrixData" target="_self" aria-controls="home" role="tab" data-toggle="tab">
+                        {{pointMatrixData.ActionDisplayName}}
+                    </a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div role="tabpanel" data-ng-repeat="(pointIndex, pointMatrix ) in settingListCtrl.pointMatrixData
+                                 track by $index" data-ng-class="pointIndex === 0 ? 'tab-pane active' : 'tab-pane fade'" data-ng-click="settingListCtrl.createEditPointMatrix(settingListCtrl.pointMatrixData,
+                                 pointIndex, true)" id="point{{pointIndex}}">
+                    <div class="panel-body">
+                        <div class="col-xs-12 col-sm-12">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <label class="control-label">Action Category Title</label>
+
+                                    <p>{{pointMatrix.ActionCategoryTitle[0].Value}}</p>
+                                </div>
+                                <div class="col-sm-8">
+                                    <label class="control-label">Action Category Text</label>
+
+                                    <p>{{pointMatrix.ActionCategoryText[0].Value}}</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <label class="control-label">Instance Points</label>
+
+                                    <p>{{pointMatrix.InstancePoints}}</p>
+                                </div>
+                                <div class="col-sm-4">
+                                    <label class="control-label">Max Instances</label>
+
+                                    <p>{{pointMatrix.MaxInstances}}</p>
+                                </div>
+                                <div class="col-sm-4">
+                                    <label class="control-label">Frequency Max Instances</label>
+
+                                    <p>{{pointMatrix.FrequencyMaxInstances}}</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-xs-12 col-sm-12">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <label class="control-label">Frequency Days</label>
+
+                                    <p>{{pointMatrix.PointsFrequencyName}}</p>
+                                </div>
+                                <div class="col-sm-4">
+                                    <label class="control-label">PreCondition</label>
+
+                                    <p>{{pointMatrix.PreConditionDisplayName}}</p>
+                                </div>
+                                <div class="col-sm-4">
+                                    <label class="control-label">Disabled</label>
+
+                                    <p>{{pointMatrix.Disabled}}</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <label class="control-label">Calendar Start Date</label>
+
+                                    <p>{{pointMatrix.CalendarStartDate | date: 'MM/dd/yyyy' }}</p>
+                                </div>
+                                <div class="col-sm-4">
+                                    <label class="control-label">Start Date</label>
+
+                                    <p>{{pointMatrix.StartDate | date: 'MM/dd/yyyy'}}</p>
+                                </div>
+                                <div class="col-sm-4">
+                                    <label class="control-label">End Date</label>
+
+                                    <p>{{pointMatrix.EndDate | date: 'MM/dd/yyyy'}}</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <label class="control-label">Setting From</label>
+
+                                    <p>{{pointMatrix.MetaData.SettingsFromGroupName }}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane fade" id="profile1">
+                    <div class="panel-body">
+                        Correct boy 2
+
+                    </div>
+                </div>
+                <div class="form-group text-right push-top-small">
+                    <button class="btn btn-primary" type="button" data-ng-click="settingListCtrl.createEditPointMatrix(
+                                        settingListCtrl.pointMatrixData,null, false)">Create
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div role="tabpanel" id="Incentives" class="animated fadeInDown ng-cloak" data-ng-class="settingMenuData.ClassType[0] === 'Incentives' ? 'tab-pane active': 'tab-pane fade'">
+    <div class="tabs-container push-top-small">
+        <div class="tabs-left">
+            <ul class="nav nav-tabs draglist" role="tablist">
+                <li role="presentation" data-ng-repeat="(index, pointMatrixData ) in settingListCtrl.manageIncentiveData
+                                 track by $index" data-ng-drop="true" ng-drop-success="settingListCtrl.onDropComplete(index, $data, 'savepointsmatrix',
+                                settingListCtrl.pointMatrixData)" data-ng-class="index === 0 ? 'active' : ''">
+                    <a href="#point{{index}}" data-ng-drag="true" data-ng-drag-data="pointMatrixData" target="_self" aria-controls="home" role="tab" data-toggle="tab">
+                        {{pointMatrixData.ActionDisplayName}}
+                    </a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div role="tabpanel" data-ng-repeat="(incentiveIndex, manageIncentive ) in settingListCtrl.manageIncentiveData
+                                 track by $index" data-ng-class="incentiveIndex === 0 ? 'tab-pane active' : 'tab-pane fade'" data-ng-click="settingListCtrl.createEditIncentives(settingListCtrl.manageIncentiveData,
+                                 incentiveIndex, true)" id="point{{incentiveIndex}}">
+                    <div class="panel-body">
+                        <div class="col-xs-12 col-sm-12">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <label class="control-label">Action Category Title</label>
+
+                                    <p>{{manageIncentive.ActionCategoryTitle[0].Value}}</p>
+                                </div>
+                                <div class="col-sm-4">
+                                    <label class="control-label">Incentive Code</label>
+
+                                    <p>{{manageIncentive.IncentiveCode[0].Value}}</p>
+                                </div>
+                                <div class="col-sm-4">
+                                    <label class="control-label">Action Category Text</label>
+
+                                    <p>{{manageIncentive.ActionCategoryText[0].Value}}</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <label class="control-label">Incentive</label>
+
+                                    <p>{{manageIncentive.Incentive}}</p>
+                                </div>
+                                <div class="col-sm-4">
+                                    <label class="control-label">Max Instances</label>
+
+                                    <p>{{manageIncentive.MaxInstances}}</p>
+                                </div>
+                                <div class="col-sm-4">
+                                    <label class="control-label">Frequency Max Instances</label>
+
+                                    <p>{{manageIncentive.FrequencyMaxInstances}}</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-xs-12 col-sm-12">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <label class="control-label">Frequency Days</label>
+
+                                    <p>{{manageIncentive.PointsFrequencyName}}</p>
+                                </div>
+                                <div class="col-sm-4">
+                                    <label class="control-label">PreCondition</label>
+
+                                    <p>{{manageIncentive.PreConditionDisplayName}}</p>
+                                </div>
+                                <div class="col-sm-4">
+                                    <label class="control-label">Disabled</label>
+
+                                    <p>{{manageIncentive.Disabled}}</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <label class="control-label">Start Date</label>
+
+                                    <p>{{manageIncentive.StartDate | date: 'MM/dd/yyyy'}}</p>
+                                </div>
+                                <div class="col-sm-8">
+                                    <label class="control-label">End Date</label>
+
+                                    <p>{{manageIncentive.EndDate | date: 'MM/dd/yyyy'}}</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <label class="control-label">Setting From</label>
+
+                                    <p>{{manageIncentive.MetaData.SettingsFromGroupName }}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane fade" id="profile1">
+                    <div class="panel-body">
+                        Correct boy 2
+
+                    </div>
+                </div>
+                <div class="form-group text-right push-top-small">
+                    <button class="btn btn-primary" type="button" data-ng-click="settingListCtrl.createEditIncentives(
+                                        settingListCtrl.manageIncentiveData,null, false)">Create
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div role="tabpanel" id="AuthenticationFields" class="animated fadeInDown ng-cloak" data-ng-class="settingMenuData.ClassType[0] === 'AuthenticationFields' ? 'tab-pane active': 'tab-pane fade'">
+    <div class="tabs-container push-top-small">
+        <div class="tabs-left">
+            <ul class="nav nav-tabs draglist" role="tablist">
+                <li role="presentation" data-ng-repeat="(index, authFieldData ) in settingListCtrl.authenticationFieldData" data-ng-drop="true" ng-drop-success="settingListCtrl.onDropComplete(index, $data, 'saveauthenticationfields',
+                                settingListCtrl.authenticationFieldData)" data-ng-class="index === 0 ? 'active' : ''">
+                    <a href="#authField{{index}}" data-ng-drag="true" target="_self" aria-controls="home" data-ng-drag-data="authFieldData" role="tab" data-toggle="tab">{{authFieldData.DisplayFieldName}}</a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div role="tabpanel" data-ng-repeat="(authIndex, authField ) in settingListCtrl.authenticationFieldData" data-ng-class="authIndex === 0 ? 'tab-pane active' : 'tab-pane fade'" data-ng-click="settingListCtrl.createEditAuthField(settingListCtrl.authenticationFieldData,
+                                 authIndex, true)" id="authField{{authIndex}}">
+                    <div class="panel-body">
+                        <div class="col-xs-12 col-sm-12">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <label class="control-label">Display Label</label>
+
+                                    <p>{{authField.DisplayLabel[0].Value}}</p>
+                                </div>
+                                <div class="col-sm-4">
+                                    <label class="control-label">Instructions</label>
+
+                                    <p>{{authField.Instructions[0].Value}}</p>
+                                </div>
+                                <div class="col-sm-4">
+                                    <label class="control-label">Setting From</label>
+
+                                    <p>{{authField.MetaData.SettingsFromGroupName }}</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <label class="control-label">Disabled</label>
+
+                                    <p>{{authField.Disabled}}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group text-right push-top-small">
+                    <button class="btn btn-primary" type="button" data-ng-click="settingListCtrl.createEditAuthField(
+                                        settingListCtrl.authenticationFieldData,null, false)">Create
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div role="tabpanel" id="IntroScreen" class="animated fadeInDown ng-cloak" data-ng-class="settingMenuData.ClassType[0] === 'IntroScreen' ? 'tab-pane active': 'tab-pane fade'">
+    <div class="tabs-container push-top-small">
+        <div class="tabs-left">
+            <ul class="nav nav-tabs draglist" role="tablist">
+                <li role="presentation" data-ng-repeat="(index, introScreenData ) in settingListCtrl.introScreenData" data-ng-drop="true" ng-drop-success="settingListCtrl.onDropComplete(index, $data, 'saveintroscreens',
+                                settingListCtrl.introScreenData)" data-ng-class="index === 0 ? 'active' : ''">
+                    <a href="#intro{{index}}" data-ng-drag="true" data-ng-drag-data="introScreenData" target="_self" aria-controls="home" role="tab" data-toggle="tab">{{introScreenData.Name}}</a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div role="tabpanel" data-ng-repeat="(introIndex, introScreen) in settingListCtrl.introScreenData" data-ng-class="introIndex === 0 ? 'tab-pane active' : 'tab-pane fade'" data-ng-click="settingListCtrl.createEditIntroScreen(settingListCtrl.introScreenData,
+                                 introIndex, true)" id="intro{{introIndex}}">
+                    <div class="panel-body">
+                        <div class="col-xs-12 col-sm-12">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <label class="control-label">Header</label>
+
+                                    <p>{{introScreen.Header[0].Value}}</p>
+                                </div>
+                                <div class="col-sm-4">
+                                    <label class="control-label">Content</label>
+
+                                    <p>{{introScreen.Content[0].Value}}</p>
+                                </div>
+                                <div class="col-sm-4">
+                                    <label class="control-label">Title</label>
+
+                                    <p>{{introScreen.Title[0].Value}}</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <label class="control-label">Image</label>
+
+                                    <p>{{introScreen.Image}}</p>
+                                </div>
+                                <div class="col-sm-4">
+                                    <label class="control-label">Start Date</label>
+
+                                    <p>{{introScreen.StartDate | date: 'MM/dd/yyyy'}}</p>
+                                </div>
+                                <div class="col-sm-4">
+                                    <label class="control-label">End Date</label>
+
+                                    <p>{{introScreen.EndDate | date: 'MM/dd/yyyy'}}</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <label class="control-label">Setting From</label>
+
+                                    <p>{{introScreen.MetaData.SettingsFromGroupName}}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group text-right push-top-small">
+                    <button class="btn btn-primary" type="button" data-ng-click="settingListCtrl.createEditIntroScreen(
+                                        settingListCtrl.introScreenData,null, false)">Create
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div role="tabpanel" id="MarketingTiles" class="animated fadeInDown ng-cloak" data-ng-class="settingMenuData.ClassType[0] === 'MarketingTiles' ? 'tab-pane active': 'tab-pane fade'">
+    <div class="tabs-container push-top-small">
+        <div class="tabs-left">
+            <ul class="nav nav-tabs draglist" role="tablist">
+                <li role="presentation" data-ng-repeat="(index, marketingTileData ) in settingListCtrl.marketingTileData" data-ng-drop="true" ng-drop-success="settingListCtrl.onDropComplete(index, $data, 'savemarketingtiles',
+                                settingListCtrl.marketingTileData)" data-ng-class="index === 0 ? 'active' : ''">
+                    <a href="#marketing{{index}}" data-ng-drag="true" data-ng-drag-data="marketingTileData" target="_self" aria-controls="home" role="tab" data-toggle="tab">{{marketingTileData.Name}}</a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div role="tabpanel" data-ng-repeat="(tileIndex, marketingTile) in settingListCtrl.marketingTileData" data-ng-class="tileIndex === 0 ? 'tab-pane active' : 'tab-pane fade'" data-ng-click="settingListCtrl.createEditMarketingTileScreen(
+                                 settingListCtrl.marketingTileData, tileIndex, true)" id="marketing{{tileIndex}}">
+                    <div class="panel-body">
+                        <div class="col-xs-12 col-sm-12">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <label class="control-label">Header</label>
+
+                                    <p>{{marketingTile.Header[0].Value}}</p>
+                                </div>
+                                <div class="col-sm-4">
+                                    <label class="control-label">Text</label>
+
+                                    <p>{{marketingTile.Text[0].Value}}</p>
+                                </div>
+                                <div class="col-sm-4">
+                                    <label class="control-label">Link Text</label>
+
+                                    <p>{{marketingTile.LinkText[0].Value}}</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <label class="control-label">Image</label>
+
+                                    <p>{{marketingTile.Image}}</p>
+                                </div>
+                                <div class="col-sm-4">
+                                    <label class="control-label">Link</label>
+
+                                    <p>{{marketingTile.Link}}</p>
+                                </div>
+                                <div class="col-sm-4">
+                                    <label class="control-label">Priority</label>
+
+                                    <p>{{marketingTile.Priority}}</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <label class="control-label">Start Date</label>
+
+                                    <p>{{marketingTile.StartDate | date: 'MM/dd/yyyy'}}</p>
+                                </div>
+                                <div class="col-sm-4">
+                                    <label class="control-label">End Date</label>
+
+                                    <p>{{marketingTile.EndDate | date: 'MM/dd/yyyy'}}</p>
+                                </div>
+                                <div class="col-sm-4">
+                                    <label class="control-label">Disabled</label>
+
+                                    <p>{{marketingTile.Disabled}}</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <label class="control-label">Setting From</label>
+
+                                    <p>{{marketingTile.MetaData.SettingsFromGroupName}}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group text-right push-top-small">
+                <button class="btn btn-primary" type="button" data-ng-click="settingListCtrl.createEditMarketingTileScreen(
+                                        settingListCtrl.marketingTileData,null, false)">Create
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<div role="tabpanel" id="MyCompany" class="animated fadeInDown ng-cloak" data-ng-class="settingMenuData.ClassType[0] === 'MyCompany' ? 'tab-pane active': 'tab-pane fade'">
+    <div class="tabs-container push-top-small">
+        <div class="tabs-left">
+            <ul class="nav nav-tabs draglist" role="tablist">
+                <li role="presentation" data-ng-repeat="(index, myCompanyData ) in settingListCtrl.myCompanyData" data-ng-drop="true" ng-drop-success="settingListCtrl.onDropComplete(index, $data, 'savemycompany',
+                                settingListCtrl.myCompanyData)" data-ng-class="index === 0 ? 'active' : ''">
+                    <a href="#myCompany{{index}}" data-ng-drag="true" data-ng-drag-data="myCompanyData" target="_self" aria-controls="home" role="tab" data-toggle="tab">{{myCompanyData.Name}}</a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div role="tabpanel" data-ng-repeat="(companyIndex, myCompany) in settingListCtrl.myCompanyData" data-ng-class="companyIndex === 0 ? 'tab-pane active' : 'tab-pane fade'" data-ng-click="settingListCtrl.createEditMyCompanyScreen(
+                                 settingListCtrl.myCompanyData, companyIndex, true)" id="myCompany{{companyIndex}}">
+                    <div class="panel-body">
+                        <div class="col-xs-12 col-sm-12">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <label class="control-label">Title</label>
+
+                                    <p>{{myCompany.Title[0].Value}}</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <label class="control-label">Display Text</label>
+
+                                    <p>{{myCompany.DisplayText[0].Value | removeHTMLTags}}</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <label class="control-label">Disabled</label>
+
+                                    <p>{{myCompany.Disabled}}</p>
+                                </div>
+                                <div class="col-sm-4">
+                                    <label class="control-label">Target URL</label>
+
+                                    <p>{{myCompany.TargetURL}}</p>
+                                </div>
+                                <div class="col-sm-4">
+                                    <label class="control-label">Setting From</label>
+
+                                    <p>{{myCompany.MetaData.SettingsFromGroupName}}</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <label class="control-label">Start Date</label>
+
+                                    <p>{{myCompany.StartDate | date: 'MM/dd/yyyy'}}</p>
+                                </div>
+                                <div class="col-sm-4">
+                                    <label class="control-label">End Date</label>
+
+                                    <p>{{myCompany.EndDate | date: 'MM/dd/yyyy'}}</p>
+                                </div>
+                                <div class="col-sm-4">
+                                    <label class="control-label">Effective Date</label>
+
+                                    <p>{{myCompany.EffectiveDate | date: 'MM/dd/yyyy'}}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group text-right push-top-small">
+                <button class="btn btn-primary" type="button" data-ng-click="settingListCtrl.createEditMyCompanyScreen(
+                                        settingListCtrl.myCompanyData,null, false)">Create
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+
+

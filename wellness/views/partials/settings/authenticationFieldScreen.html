@@ -1,0 +1,61 @@
+<div class="modal-header ng-cloak">
+    <div class="row">
+        <div class="col-sm-8">
+            <h3 class="modal-title">{{authenticationCtrl.header}}</h3>
+        </div>
+        <div class="col-sm-4">
+            <select class="form-control" id="selectLanguage1" data-ng-model="authenticationCtrl.languageId" data-ng-options="language.Id as language.Value for language
+                                in authenticationCtrl.languageList" data-ng-change="authenticationCtrl.languageChange(authenticationCtrl.languageId)">
+            </select>
+        </div>
+    </div>
+</div>
+<div class="modal-body ng-cloak">
+    <div class="announcement-data-wrapper">
+        <div class="col-sm-12 col-xs-12">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label class="control-label" for="displayLabelId">Display Label:</label>
+                    <input type="text" class="form-control" id="displayLabelId" placeholder="Display Label" data-ng-model="authenticationCtrl.authenticationModel[authenticationCtrl.authenticationIndex].
+                               DisplayLabel[authenticationCtrl.languageIndex].Value">
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="row">
+                        <div class="form-group">
+                            <label class="control-label" for="instructionsId">Instruction:</label>
+                            <input type="text" class="form-control" id="InstructionsId" placeholder="Instructions" data-ng-model="authenticationCtrl.authenticationModel[authenticationCtrl.authenticationIndex].
+                               Instructions[authenticationCtrl.languageIndex].Value">
+                        </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-3 col-xs-6">
+            <div class="form-group">
+                <label class="control-label">Field Name:</label>
+                <div class="input-group">
+                    <select class="form-control" id="fieldName" data-ng-model="authenticationCtrl.authenticationModel[authenticationCtrl.authenticationIndex].FieldName" data-ng-options="fieldName.Id as fieldName.Value for fieldName in authenticationCtrl.fieldNameList">
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3 col-xs-6">
+            <div class="form-group">
+                <label class="control-label visibility-hidden col-xs-12" for="custom-disabled-checkbox-[settingIndex]">xyz</label>
+                <div class="checkbox checkbox-primary">
+                    <input id="custom-disabled-checkbox-[settingIndex]" class="styled" type="checkbox" data-ng-model="authenticationCtrl.authenticationModel[authenticationCtrl.authenticationIndex].Disabled" data-ng-checked="authenticationCtrl.authenticationModel[authenticationCtrl.authenticationIndex].Disabled">
+                    <label for="custom-disabled-checkbox-[settingIndex]">Disabled</label>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal-footer">
+    <button type="button" class="btn btn-primary" data-ng-click="authenticationCtrl.saveAuthenticationFieldData(authenticationCtrl.authenticationModel)">
+        Save changes
+    </button>
+</div>

@@ -1,0 +1,74 @@
+<div class="animated fadeInDown">
+    <div class="row wrapper border-bottom white-bg page-heading animated fadeInDownBig">
+        <div class="col-lg-10">
+            <h2>Import/Export Group Settings </h2>
+            <ol class="breadcrumb" data-ng-controller="BreadCrumbController as breadCrumbCtrl">
+                <li data-ng-repeat="breadCrumbValue in  group.breadCrumb">
+                    <a data-ng-bind="breadCrumbValue.GroupName" data-ng-click="breadCrumbCtrl.selectedGroup(breadCrumbValue)"></a>
+                </li>
+            </ol>
+        </div>
+        <div class="col-lg-4">
+
+        </div>
+    </div>
+    <div class="row" data-ng-controller="ExportController as exportCtrl" data-ng-cloak>
+            <div class="col-lg-12 col-lg-offset-0">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>Import Setting</h5>
+
+                        <div ibox-tools></div>
+                    </div>
+                    <div class="ibox-content">
+                        <form action="" class="dropzone" file-import id="file-dropzone">
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>Export Setting</h5>
+
+                        <div ibox-tools></div>
+                    </div>
+                    <div class="ibox-content">
+                        <form name="exportForm" class="form-inline" role="form">
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <div class="form-group">
+                                        <div class="checkbox checkbox-primary m-r-xs">
+                                            <input type="checkbox" class="styled" id="groupName1" data-ng-model="exportCtrl.export.isChildRequired">
+                                            <label for="groupName1">
+                                                Include Child Settings?
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="form-group">
+                                        <div class="checkbox checkbox-primary m-r-xs">
+                                            <input type="checkbox" class="styled" id="groupName2" data-ng-model="exportCtrl.export.isFlattenedSettings">
+                                            <label for="groupName2">
+                                                Only Flattened Settings
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3 col-sm-offset-3 text-right">
+                                    <div class="form-group">
+                                    <span class="pull-right">
+                                        <button type="submit" class="btn btn-primary" data-ng-click="exportCtrl.exportSetting()">Export
+                                        </button>
+                                    </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+    </div>
+</div>

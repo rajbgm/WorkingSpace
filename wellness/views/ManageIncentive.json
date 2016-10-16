@@ -1,0 +1,40 @@
+[
+    {
+        "SortOrder": 0,
+        "Icon": "/app.jpg",
+        "MetaData": {
+            "SettingsFromGroupID": "3d7e2cc7-32c2-4ebf-a505-9db1258e5267",
+            "SettingsFromGroupName": "Default"
+        },
+        "Disabled": false,
+        "PreCondition": [
+            2,
+            3
+        ],
+        "ActionCategoryText": [
+            {
+                "LanguageId": 1033,
+                "Value": "Test Text"
+            }
+        ],
+        "ActionCategoryTitle": [
+            {
+                "LanguageId": 1033,
+                "Value": "Test Category"
+            }
+        ],
+        "IncentiveCode": [
+            {
+                "LanguageId": 1033,
+                "Value": "Incentive Code"
+            }
+        ],
+        "EndDate": "2017-01-17T18:30:00Z",
+        "StartDate": "2016-10-11T18:30:00Z",
+        "FrequencyDays": 3,
+        "FrequencyMaxInstances": 1,
+        "MaxInstances": 1,
+        "Incentive": 1,
+        "ActionCategoryID": 3
+    }
+]

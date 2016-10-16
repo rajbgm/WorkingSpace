@@ -1,0 +1,90 @@
+    <div class="modal-header">
+        <div class="row">
+            <div class="col-sm-6">
+                <h3 class="modal-title">{{settingCtrl.settingHistoryData[0].SettingName.MetaData.DisplayName}}</h3>
+            </div>
+        </div>
+
+    </div>
+    <div class="modal-body">
+    <form role="form">
+        <div class="form-fields" data-ng-hide="settingCtrl.settingHistoryData[0].SettingName.MetaData.DataType === 'string'">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="form-group">
+                        <label class="control-label">Setting Value:</label>
+                        <input type="text" class="form-control" placeholder="Setting Value" data-ng-model="settingCtrl.settingHistoryData[0].SettingValue[settingCtrl.index].LocalizedValue[0].Value" data-ng-show="settingCtrl.settingHistoryData[0].SettingName.MetaData.DataType === 'int'">
+                        <button type="button" class="btn btn-default dim" data-ng-show="settingCtrl.settingHistoryData[0].SettingName.MetaData.DataType === 'bool'" data-ng-bind="settingCtrl.settingHistoryData[0].SettingValue[settingCtrl.index].LocalizedValue[0].Value" data-ng-click="settingCtrl.settingValueChange(
+                                settingCtrl.settingHistoryData[0].SettingValue[settingCtrl.index].LocalizedValue[0])">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="announcement-data-wrapper">
+        <div class="col-sm-12 col-xs-12" data-ng-repeat="(settingIndex, settingValue) in settingCtrl.settingHistoryData[0].SettingValue[settingCtrl.index].LocalizedValue" data-ng-show="settingCtrl.settingHistoryData[0].SettingName.MetaData.DataType === 'string'">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <label class="control-label" for="selectLanguage">Language:</label>
+                        <select class="form-control" id="selectLanguage" data-ng-model="settingValue.LanguageId" data-ng-options="language.Id as language.Value for language
+                                in settingCtrl.languageList">
+                        </select>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label class="control-label" for="settingValue">Setting Value:</label>
+                        <input type="text" class="form-control" id="settingValue" placeholder="Setting Value" data-ng-model="settingValue.Value">
+                    </div>
+                </div>
+                <div class="col-sm-2 text-right">
+                    <div class="form-group">
+                        <label data-ng-show="settingIndex <= 0" class="control-label visibility-hidden col-xs-12">xyz</label>
+                        <button type="button" class="rounded-btn add-btn" id="Instructions_authenticationIndex" data-ng-click="settingCtrl.addRemoveSetting(settingIndex)">
+                            <span data-ng-class="settingCtrl.glyphiconClass[settingIndex] =
+                            settingIndex <= 0 ? 'glyphicon glyphicon-plus' : 'glyphicon glyphicon-minus'"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="form-group">
+            <div class="row">
+                <div class="col-sm-4">
+                    <label class="control-label">Start Date:</label>
+                        <div class="input-group" data-ng-click="settingCtrl.openStartDatePicker($event)">
+                            <input type="text" is-open="settingCtrl.openedStartDate" class="form-control calendar-form campaign-form-calendar-input" data-ng-model="settingCtrl.settingHistoryData[0].SettingValue[settingCtrl.index].StartDate" datepicker-popup="MMMM dd, yyyy" show-button-bar="false" show-weeks="false" datepicker-options="settingCtrl.dateOptions">
+                        <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-calendar"></span>
+                        </span>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <label class="control-label">End Date:</label>
+
+                    <div class="input-group" data-ng-click="settingCtrl.openEndDatePicker($event)">
+                        <input type="text" is-open="settingCtrl.openedEndDate" class="form-control calendar-form campaign-form-calendar-input" data-ng-model="settingCtrl.settingHistoryData[0].SettingValue[settingCtrl.index].EndDate" datepicker-popup="MMMM dd, yyyy" show-button-bar="false" show-weeks="false" datepicker-options="settingCtrl.dateOptions">
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <label class="control-label visibility-hidden col-xs-12" for="settingValue">xyz</label>
+                        <div class="checkbox checkbox-primary">
+                            <input id="custom-disabled-checkbox-[settingIndex]" class="styled" type="checkbox" data-ng-model="settingCtrl.settingHistoryData[0].SettingValue[0].Disabled" data-ng-checked="settingValue.Disabled">
+                            <label for="custom-disabled-checkbox-[settingIndex]">Disabled</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-ng-click="settingCtrl.saveSetting(settingCtrl.settingHistoryData[0])">Save changes
+        </button>
+    </div>

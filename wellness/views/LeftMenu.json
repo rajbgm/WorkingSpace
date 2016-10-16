@@ -1,0 +1,36 @@
+{
+    "SettingMenuCollection": [
+        {
+            "DisplayName": "Points",
+            "ClassType": [
+                "PointsMatrix"
+            ],
+            "MenuIdentifier": "Points",
+            "Category": "Points"
+        },
+        {
+            "DisplayName": "Marketing Tiles",
+            "ClassType": [
+                "MarketingTiles"
+            ],
+            "MenuIdentifier": "MarketingTiles",
+            "Category": null
+        },
+        {
+            "DisplayName": "Announcements",
+            "ClassType": [
+                "Announcements"
+            ],
+            "MenuIdentifier": "Announcements",
+            "Category": null
+        },
+        {
+            "DisplayName": "Manage Incentives",
+            "ClassType": [
+                "Incentives"
+            ],
+            "MenuIdentifier": "Incentives",
+            "Category": null
+        }
+    ]
+}

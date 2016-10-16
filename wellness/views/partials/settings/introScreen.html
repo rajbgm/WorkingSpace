@@ -1,0 +1,94 @@
+<div class="modal-header ng-cloak">
+    <div class="row">
+        <div class="col-sm-8">
+            <h3 class="modal-title">{{introScreenCtrl.header}}</h3>
+        </div>
+        <div class="col-sm-4">
+            <select class="form-control" id="selectLanguage1" data-ng-model="introScreenCtrl.languageId" data-ng-options="language.Id as language.Value for language
+                                in introScreenCtrl.languageList" data-ng-change="introScreenCtrl.languageChange(introScreenCtrl.languageId)">
+            </select>
+        </div>
+    </div>
+</div>
+<div class="modal-body ng-cloak">
+    <div class="announcement-data-wrapper">
+        <div class="col-sm-12 col-xs-12">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label class="control-label" for="nameId">Name:</label>
+                        <input type="text" class="form-control" id="nameId" placeholder="Name" data-ng-model="introScreenCtrl.introScreenModel[introScreenCtrl.introScreenIndex].
+                               Name">
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label class="control-label" for="headerId">Header:</label>
+                        <input type="text" class="form-control" id="headerId" placeholder="Header" data-ng-model="introScreenCtrl.introScreenModel[introScreenCtrl.introScreenIndex].
+                               Header[introScreenCtrl.languageIndex].Value">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="announcement-data-wrapper">
+        <div class="col-sm-12 col-xs-12">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label class="control-label" for="titleId">Title:</label>
+                        <input type="text" class="form-control" id="titleId" placeholder="Title" data-ng-model="introScreenCtrl.introScreenModel[introScreenCtrl.introScreenIndex].
+                               Title[introScreenCtrl.languageIndex].Value">
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label class="control-label" for="introContentId">Content:</label>
+                        <input type="text" class="form-control" id="introContentId" placeholder="Content" data-ng-model="introScreenCtrl.introScreenModel[introScreenCtrl.introScreenIndex].
+                               Content[introScreenCtrl.languageIndex].Value">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-sm-4 col-xs-8">
+            <div class="form-group">
+                <label class="control-label">Start Date:</label>
+
+                <div class="input-group" data-ng-click="introScreenCtrl.openStartDatePicker($event)">
+                    <input type="text" is-open="introScreenCtrl.openedStartDate" class="form-control calendar-form campaign-form-calendar-input" data-ng-model="introScreenCtrl.introScreenModel[introScreenCtrl.introScreenIndex].StartDate" datepicker-popup="MMMM dd, yyyy" show-button-bar="false" show-weeks="false" datepicker-options="introScreenCtrl.dateOptions">
+                        <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-calendar"></span>
+                        </span>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4 col-xs-8">
+            <div class="form-group">
+                <label class="control-label">End Date:</label>
+
+                <div class="input-group" data-ng-click="introScreenCtrl.openEndDatePicker($event)">
+                    <input type="text" is-open="introScreenCtrl.openedEndDate" class="form-control calendar-form campaign-form-calendar-input" data-ng-model="introScreenCtrl.introScreenModel[introScreenCtrl.introScreenIndex].EndDate" datepicker-popup="MMMM dd, yyyy" show-button-bar="false" show-weeks="false" datepicker-options="introScreenCtrl.dateOptions">
+                        <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-calendar"></span>
+                        </span>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4 col-xs-8">
+            <div class="form-group">
+                <label class="control-label">Image URL:</label>
+                <div class="input-group">
+                    <input class="form-control" type="text" data-ng-model="introScreenCtrl.introScreenModel[introScreenCtrl.introScreenIndex].Image">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal-footer">
+    <button type="button" class="btn btn-primary" data-ng-click="introScreenCtrl.saveIntroScreenData(introScreenCtrl.introScreenModel)">
+        Save changes
+    </button>
+</div>

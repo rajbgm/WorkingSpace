@@ -1,0 +1,398 @@
+[
+    {
+        "Id": 3,
+        "Value": "Coach Recommended Content"
+    },
+    {
+        "Id": 4,
+        "Value": "Track Your Progress"
+    },
+    {
+        "Id": 5,
+        "Value": "Set Up a Health Coaching Program (GOAL)"
+    },
+    {
+        "Id": 6,
+        "Value": "Completing Health Coaching Program (GOAL)"
+    },
+    {
+        "Id": 7,
+        "Value": "Contact Your Health Coach"
+    },
+    {
+        "Id": 8,
+        "Value": "On-in-21 Program/Start"
+    },
+    {
+        "Id": 9,
+        "Value": "onin21"
+    },
+    {
+        "Id": 11,
+        "Value": "onmyway Assessment"
+    },
+    {
+        "Id": 12,
+        "Value": "Call"
+    },
+    {
+        "Id": 13,
+        "Value": "Message"
+    },
+    {
+        "Id": 14,
+        "Value": "Point Redemption"
+    },
+    {
+        "Id": 18,
+        "Value": "Coaching Session Note Outreach Codes"
+    },
+    {
+        "Id": 19,
+        "Value": "WF Reminders"
+    },
+    {
+        "Id": 20,
+        "Value": "WF Outreach"
+    },
+    {
+        "Id": 21,
+        "Value": "WF InAction Notification"
+    },
+    {
+        "Id": 22,
+        "Value": "Initial Outbound Calls"
+    },
+    {
+        "Id": 23,
+        "Value": "Initial Outbound Messages"
+    },
+    {
+        "Id": 26,
+        "Value": "Case Review"
+    },
+    {
+        "Id": 27,
+        "Value": "Coaching Outreaching"
+    },
+    {
+        "Id": 28,
+        "Value": "Standard Reminders"
+    },
+    {
+        "Id": 29,
+        "Value": "On-in-21 Optional Reminders"
+    },
+    {
+        "Id": 30,
+        "Value": "Participation Impacting"
+    },
+    {
+        "Id": 31,
+        "Value": "Alert"
+    },
+    {
+        "Id": 32,
+        "Value": "Disease Management Engagement"
+    },
+    {
+        "Id": 33,
+        "Value": "Worksite Health Event"
+    },
+    {
+        "Id": 34,
+        "Value": "Seminar/Wellness Class"
+    },
+    {
+        "Id": 35,
+        "Value": "Fitness Screening"
+    },
+    {
+        "Id": 36,
+        "Value": "Select Fitness Class"
+    },
+    {
+        "Id": 37,
+        "Value": "Weight Management Class"
+    },
+    {
+        "Id": 38,
+        "Value": "Select Wellness Device Usage"
+    },
+    {
+        "Id": 39,
+        "Value": "Fitness Center Utilization"
+    },
+    {
+        "Id": 40,
+        "Value": "External HRA Completed"
+    },
+    {
+        "Id": 41,
+        "Value": "Biometric Screening"
+    },
+    {
+        "Id": 42,
+        "Value": "Community Based Health Event"
+    },
+    {
+        "Id": 43,
+        "Value": "Preventive MD Visit"
+    },
+    {
+        "Id": 44,
+        "Value": "CosmoDialer Actionable Actions"
+    },
+    {
+        "Id": 45,
+        "Value": "Voicemails"
+    },
+    {
+        "Id": 46,
+        "Value": "onmytime lesson"
+    },
+    {
+        "Id": 47,
+        "Value": "Course Lesson"
+    },
+    {
+        "Id": 48,
+        "Value": "onmytime Course Complete"
+    },
+    {
+        "Id": 49,
+        "Value": "Progress Check-in Complete"
+    },
+    {
+        "Id": 50,
+        "Value": "Wellness Device Usage"
+    },
+    {
+        "Id": 51,
+        "Value": "onmytime Lesson Activity"
+    },
+    {
+        "Id": 56,
+        "Value": "PointsWrapUp"
+    },
+    {
+        "Id": 100,
+        "Value": "Fun Run/Walk Events"
+    },
+    {
+        "Id": 101,
+        "Value": "Intermediate Events"
+    },
+    {
+        "Id": 102,
+        "Value": "Advanced Events"
+    },
+    {
+        "Id": 103,
+        "Value": "Elite Events"
+    },
+    {
+        "Id": 113,
+        "Value": "Member Activity Alerts"
+    },
+    {
+        "Id": 114,
+        "Value": "NonCoaching Outreach"
+    },
+    {
+        "Id": 115,
+        "Value": "Read System Recommended Content"
+    },
+    {
+        "Id": 116,
+        "Value": "Complete Online Challenge"
+    },
+    {
+        "Id": 117,
+        "Value": "Healthy Biometric Range"
+    },
+    {
+        "Id": 118,
+        "Value": "Safety Event"
+    },
+    {
+        "Id": 119,
+        "Value": "Tobacco Free"
+    },
+    {
+        "Id": 120,
+        "Value": "Company Event"
+    },
+    {
+        "Id": 124,
+        "Value": "Annual Physical"
+    },
+    {
+        "Id": 125,
+        "Value": "Healthy BMI"
+    },
+    {
+        "Id": 126,
+        "Value": "Healthy Cholesterol"
+    },
+    {
+        "Id": 127,
+        "Value": "Healthy Blood Pressure"
+    },
+    {
+        "Id": 128,
+        "Value": "Healthy Glucose"
+    },
+    {
+        "Id": 129,
+        "Value": "Improved BMI"
+    },
+    {
+        "Id": 130,
+        "Value": "Improved Cholesterol"
+    },
+    {
+        "Id": 131,
+        "Value": "Improved Blood Pressure"
+    },
+    {
+        "Id": 132,
+        "Value": "Improved Glucose"
+    },
+    {
+        "Id": 133,
+        "Value": "Outboundcampaign"
+    },
+    {
+        "Id": 134,
+        "Value": "AvayaDialer Actionable Actions"
+    },
+    {
+        "Id": 135,
+        "Value": "OBI Start of Period Healthy BMI"
+    },
+    {
+        "Id": 136,
+        "Value": "OBI Start of Period Healthy Cholesterol"
+    },
+    {
+        "Id": 137,
+        "Value": "OBI Start of Period Healthy Blood Pressure"
+    },
+    {
+        "Id": 138,
+        "Value": "OBI Start of Period Healthy Glucose"
+    },
+    {
+        "Id": 139,
+        "Value": "OBI Start of Period Tobacco Free"
+    },
+    {
+        "Id": 140,
+        "Value": "Tobacco Attestation"
+    },
+    {
+        "Id": 141,
+        "Value": "Selected Primary Care Physician"
+    },
+    {
+        "Id": 142,
+        "Value": "Log Member as Engaged in DM"
+    },
+    {
+        "Id": 143,
+        "Value": "Log Member as Not Engaged in DM"
+    },
+    {
+        "Id": 144,
+        "Value": "Preventative Dentist Visit"
+    },
+    {
+        "Id": 145,
+        "Value": "Weight Management Class or Fun Run/Walk"
+    },
+    {
+        "Id": 146,
+        "Value": "Connect Your Device or Mobile App"
+    },
+    {
+        "Id": 147,
+        "Value": "Track Your Progress Using a Fitness Device or Mobile App"
+    },
+    {
+        "Id": 148,
+        "Value": "Track 30 Minutes of Activity OR Accumulate 10,000 Steps Using a Fitness Device or Mobile App"
+    },
+    {
+        "Id": 149,
+        "Value": "Health Pledge"
+    },
+    {
+        "Id": 150,
+        "Value": "Preventive Cancer Screening"
+    },
+    {
+        "Id": 151,
+        "Value": "Telemedicine Account Registration"
+    },
+    {
+        "Id": 152,
+        "Value": "Recommended Preventive Screenings"
+    },
+    {
+        "Id": 153,
+        "Value": "Beginner Events"
+    },
+    {
+        "Id": 154,
+        "Value": "Six Instructor-led Fitness Classes"
+    },
+    {
+        "Id": 155,
+        "Value": "Health Management Program"
+    },
+    {
+        "Id": 156,
+        "Value": "HCSC Track Your Progress"
+    },
+    {
+        "Id": 157,
+        "Value": "HCSC Health Assessment"
+    },
+    {
+        "Id": 158,
+        "Value": "HCSC Progress Check-In"
+    },
+    {
+        "Id": 159,
+        "Value": "HCSC Course Completion"
+    },
+    {
+        "Id": 160,
+        "Value": "HCSC Fitness Program Enrollment"
+    },
+    {
+        "Id": 161,
+        "Value": "HCSC Fitness Center Use - Visit 1"
+    },
+    {
+        "Id": 162,
+        "Value": "HCSC Fitness Center Use - Visit 3"
+    },
+    {
+        "Id": 163,
+        "Value": "HCSC Connecting A Fitness Device Or Mobile App"
+    },
+    {
+        "Id": 164,
+        "Value": "HCSC Track Your Progress Using A Fitness Device Or Mobile App"
+    },
+    {
+        "Id": 165,
+        "Value": "C"
+    },
+    {
+        "Id": 166,
+        "Value": "Completion Certificate Sent"
+    }
+]
