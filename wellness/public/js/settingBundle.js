@@ -3820,7 +3820,7 @@ module.exports = angular.module(
                     "MenuIdentifier": "Announcements",
                     "Category": null
                 };
-                self.viewSetting(pp, 1);
+                self.viewSetting(pp, 2);
             }
 
             if(sss === '/setting/marketingtiles')
@@ -3847,7 +3847,7 @@ module.exports = angular.module(
                     "Category": "Points"
                 }
 
-                self.viewSetting(ff, 1);
+                self.viewSetting(ff, 0);
             }
 
             if(sss === '/setting/incentives')
@@ -3861,7 +3861,7 @@ module.exports = angular.module(
                     "Category": "Incentives"
                 }
 
-                self.viewSetting(kk, 1);
+                self.viewSetting(kk, 3);
             }
 
         }
