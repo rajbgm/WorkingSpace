@@ -1,0 +1,93 @@
+<div class="modal-body">
+    <div class="modal-header ng-cloak">
+        <div class="row">
+            <div class="col-sm-8">
+                <h3 class="modal-title">{{settingHistoryCtrl.settingHistory[0].SettingName.MetaData.DisplayName}}</h3>
+            </div>
+            <div class="col-sm-4" data-ng-show="settingHistoryCtrl.settingHistory[0].SettingName.MetaData.DataType === 'string'">
+                <select class="form-control" id="selectLanguage1" data-ng-model="settingHistoryCtrl.languageId" data-ng-options="language.Id as language.Value for language
+                                in settingHistoryCtrl.languageList" data-ng-change="settingHistoryCtrl.languageChange(settingHistoryCtrl.languageId)">
+                </select>
+            </div>
+        </div>
+    </div>
+    <table class="footable table table-stripped toggle-arrow-tiny custom-table" data-page-size="15">
+        <thead>
+        <tr>
+            <th width="24%">Setting Value</th>
+            <th width="20%">Start Date</th>
+            <th width="20%">End Date</th>
+            <th width="8%">Disabled </th>
+            <th width="8%">Action </th>
+        </tr>
+        </thead>
+        <tfoot>
+        <tr>
+            <td colspan="5" class="text-left">
+                <button type="button" class="rounded-btn add-btn" data-ng-click="settingHistoryCtrl.addSetting
+                        (settingHistoryCtrl.settingHistory[0].SettingName.MetaData.DataType)">
+                    <span class="glyphicon glyphicon-plus"></span>
+                </button>
+                <span class="">Add</span>
+            </td>
+        </tr>
+        </tfoot>
+        <tbody>
+        <tr class="ng-cloak" data-ng-repeat="(settingIndex, settingValue) in settingHistoryCtrl.settingHistory[0].SettingValue">
+            <td>
+                <div class="radio-buttons" data-ng-show="settingHistoryCtrl.settingHistory[0].SettingName.MetaData.DataType === 'bool'">
+                    <button type="button" class="btn btn-default dim" data-ng-click="settingHistoryCtrl.settingValueChange
+                            (settingValue.LocalizedValue[0].Value, settingValue)">
+                        {{settingValue.LocalizedValue[0].Value}}
+                    </button>
+                </div>
+                <textarea class="form-control" data-ng-show="settingHistoryCtrl.settingHistory[0].SettingName.MetaData.DataType === 'string'
+                            && settingValue.LocalizedValue[0].Value.length > 40" data-ng-model="settingValue.LocalizedValue[settingHistoryCtrl.languageIndex].Value" class="form-control">
+                </textarea>
+                <input class="form-control" data-ng-show="settingHistoryCtrl.settingHistory[0].SettingName.MetaData.DataType === 'string'
+                            && settingValue.LocalizedValue[0].Value.length < 40" type="text" data-ng-model="settingValue.LocalizedValue[settingHistoryCtrl.languageIndex].Value" class="form-control">
+                <input class="form-control" data-ng-show="settingHistoryCtrl.settingHistory[0].SettingName.MetaData.DataType === 'int'" type="text" data-ng-model="settingValue.LocalizedValue[settingHistoryCtrl.languageIndex].Value" class="form-control">
+                <select class="form-control" id="lookup" data-ng-show="settingHistoryCtrl.settingHistory[0].SettingName.MetaData.DataType.substring(0,4) === 'enum'" data-ng-model="settingHistoryCtrl.settingHistory[0].SettingValue[settingIndex].LocalizedValue[settingHistoryCtrl.languageIndex].Value">
+                        <option ng-repeat="enumData in settingHistoryCtrl.enumList" value="{{enumData.Id}}">
+                           {{enumData.Value}}
+                        </option>
+                </select>
+            </td>
+            <td>
+                <div class="input-group" data-ng-click="settingHistoryCtrl.openStartDatePicker($event, settingIndex)">
+                    <input type="text" is-open="settingHistoryCtrl.openedStartDate[settingIndex]" class="form-control calendar-form campaign-form-calendar-input" data-ng-model="settingValue.StartDate" datepicker-popup="MMMM dd, yyyy" show-button-bar="false" show-weeks="false" datepicker-options="settingHistoryCtrl.dateOptions">
+                        <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-calendar"></span>
+                        </span>
+                </div>
+            </td>
+            <td>
+                <div class="input-group" data-ng-click="settingHistoryCtrl.openEndDatePicker($event, settingIndex)">
+                    <input type="text" is-open="settingHistoryCtrl.openedEndDate[settingIndex]" class="form-control calendar-form campaign-form-calendar-input" data-ng-model="settingValue.EndDate" datepicker-popup="MMMM dd, yyyy" show-button-bar="false" show-weeks="false" datepicker-options="settingHistoryCtrl.dateOptions">
+                        <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-calendar"></span>
+                        </span>
+                </div>
+            </td>
+            <td>
+                <div class="checkbox checkbox-primary">
+                    <input id="custom-disabled-checkbox-[settingIndex]" class="styled" type="checkbox" data-ng-model="settingValue.Disabled" data-ng-checked="settingValue.Disabled">
+                    <label for="custom-disabled-checkbox-[settingIndex]"></label>
+                </div>
+            </td>
+            <td>
+                <button type="button" class="rounded-btn remove-btn" data-ng-click="settingHistoryCtrl.deleteSetting(settingIndex)">
+                    <span class="glyphicon glyphicon-trash"></span>
+                    <div class="custom-popover">
+                        Delete
+                        <div class="custom-popover-arrow"></div>
+                    </div>
+                </button>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-ng-click="settingHistoryCtrl.saveSetting(settingHistoryCtrl.settingHistory[0])">Save changes</button>
+    </div>
+</div>

@@ -1,0 +1,95 @@
+{
+    "Groups": [
+        {
+            "ParentGroupID": "3d7e2cc7-32c2-4ebf-a505-9db1258e5267",
+            "GroupID": "7ac04183-e219-42ec-a947-8a18d0d55599",
+            "GroupName": "CCA",
+            "GroupAddress1": "10 Burton Hills Boulevard",
+            "GroupCity": "Nashville",
+            "GroupState": "TN",
+            "GroupPhoneNo": "855-861-9399"
+        },
+        {
+            "ParentGroupID": "3d7e2cc7-32c2-4ebf-a505-9db1258e5267",
+            "GroupID": "7f7795f6-70d0-4444-b258-2f07b7e9538d",
+            "GroupName": "BCBST",
+            "GroupAddress1": "9020 Overlook Blvd, Suite 300",
+            "GroupCity": "Brentwood",
+            "GroupState": "TN",
+            "GroupPhoneNo": "877-620-2232"
+        },
+        {
+            "ParentGroupID": "3d7e2cc7-32c2-4ebf-a505-9db1258e5267",
+            "GroupID": "35887dc1-0060-4267-8b2b-4d9283970b56",
+            "GroupName": "BCBST ASO",
+            "GroupAddress1": "1 Cameron Hill Circle",
+            "GroupCity": "Chattanooga",
+            "GroupState": "TN",
+            "GroupPhoneNo": "866-498-9806"
+        },
+        {
+            "ParentGroupID": "3d7e2cc7-32c2-4ebf-a505-9db1258e5267",
+            "GroupID": "85f4ec51-607e-472b-a23e-d29d9b394746",
+            "GroupName": "University of Arkansas",
+            "GroupAddress1": "2404 North University Avenue",
+            "GroupCity": "Little Rock",
+            "GroupState": "AR",
+            "GroupPhoneNo": "877-369-0285"
+        },
+        {
+            "ParentGroupID": "3d7e2cc7-32c2-4ebf-a505-9db1258e5267",
+            "GroupID": "7657532f-dc79-4336-aab5-ed4570e10f02",
+            "GroupName": "Dollar General",
+            "GroupAddress1": "100 Mission Ridge",
+            "GroupCity": "Goodlettsville",
+            "GroupState": "TN",
+            "GroupPhoneNo": "855-861-9398"
+        },
+        {
+            "ParentGroupID": "3d7e2cc7-32c2-4ebf-a505-9db1258e5267",
+            "GroupID": "cae1f24c-85ef-49a9-9c5f-65081aa37882",
+            "GroupName": "GEHA",
+            "GroupAddress1": "PO Box 4665",
+            "GroupCity": "Independence",
+            "GroupState": "MO",
+            "GroupPhoneNo": "877-397-7598"
+        },
+        {
+            "ParentGroupID": "3d7e2cc7-32c2-4ebf-a505-9db1258e5267",
+            "GroupID": "6810b98a-a0e4-4831-8b38-a97da0c3185e",
+            "GroupName": "Health Trust",
+            "GroupAddress1": "25 TrianglePark Drive",
+            "GroupCity": "Concord",
+            "GroupState": "NH",
+            "GroupPhoneNo": "866-564-5237"
+        },
+        {
+            "ParentGroupID": "3d7e2cc7-32c2-4ebf-a505-9db1258e5267",
+            "GroupID": "3434929c-ec3a-4f2d-9b31-6b94c4532702",
+            "GroupName": "Louisiana Pacific Corporation",
+            "GroupAddress1": "414 Union Street, Suite 2000",
+            "GroupCity": "Nashville",
+            "GroupState": "TN",
+            "GroupPhoneNo": "866-564-5238"
+        },
+        {
+            "ParentGroupID": "3d7e2cc7-32c2-4ebf-a505-9db1258e5267",
+            "GroupID": "c8ba8a41-f929-49f0-83a8-39f8a79a62cb",
+            "GroupName": "MEABT",
+            "GroupAddress1": "35 Community Drive",
+            "GroupCity": "Augusta",
+            "GroupState": "ME",
+            "GroupPhoneNo": "877-806-9379"
+        },
+        {
+            "ParentGroupID": "3d7e2cc7-32c2-4ebf-a505-9db1258e5267",
+            "GroupID": "8b6fc662-3d8a-451b-ad97-52f27bf25c64",
+            "GroupName": "NuCor",
+            "GroupAddress1": "1915 Rexford Road",
+            "GroupCity": "Charlotte",
+            "GroupState": "NC",
+            "GroupPhoneNo": "866-828-9982"
+        }
+    ],
+    "totalCount": 15
+}

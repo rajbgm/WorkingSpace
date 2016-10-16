@@ -1,0 +1,121 @@
+<div class="modal-header ng-cloak">
+    <div class="row">
+        <div class="col-sm-8">
+            <h3 class="modal-title">{{marketingTileCtrl.header}}</h3>
+        </div>
+        <div class="col-sm-4">
+            <select class="form-control" id="selectLanguage1" data-ng-model="marketingTileCtrl.languageId" data-ng-options="language.Id as language.Value for language
+                                in marketingTileCtrl.languageList" data-ng-change="marketingTileCtrl.languageChange(marketingTileCtrl.languageId)">
+            </select>
+        </div>
+    </div>
+</div>
+<div class="modal-body ng-cloak">
+    <div class="announcement-data-wrapper">
+        <div class="col-sm-12 col-xs-12">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label class="control-label" for="NameId">Name:</label>
+                        <input type="text" class="form-control" id="NameId" placeholder="Name" data-ng-model="marketingTileCtrl.marketingTileModel[marketingTileCtrl.marketingIndex].
+                               Name">
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label class="control-label" for="headerId">Header:</label>
+                        <input type="text" class="form-control" id="headerId" placeholder="Header" data-ng-model="marketingTileCtrl.marketingTileModel[marketingTileCtrl.marketingIndex].
+                               Header[marketingTileCtrl.languageIndex].Value">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="announcement-data-wrapper">
+        <div class="col-sm-12 col-xs-12">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label class="control-label" for="TextId">Text:</label>
+                        <input type="text" class="form-control" id="TextId" placeholder="Text" data-ng-model="marketingTileCtrl.marketingTileModel[marketingTileCtrl.marketingIndex].
+                               Text[marketingTileCtrl.languageIndex].Value">
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label class="control-label" for="linkTextId">Link Test:</label>
+                        <input type="text" class="form-control" id="linkTextId" placeholder="Link Test" data-ng-model="marketingTileCtrl.marketingTileModel[marketingTileCtrl.marketingIndex].
+                               LinkText[marketingTileCtrl.languageIndex].Value">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-sm-4 col-xs-6">
+            <div class="form-group">
+                <label class="control-label">Start Date:</label>
+
+                <div class="input-group" data-ng-click="marketingTileCtrl.openStartDatePicker($event)">
+                    <input type="text" is-open="marketingTileCtrl.openedStartDate" class="form-control calendar-form campaign-form-calendar-input" data-ng-model="marketingTileCtrl.marketingTileModel[marketingTileCtrl.marketingIndex].StartDate" datepicker-popup="MMMM dd, yyyy" show-button-bar="false" show-weeks="false" datepicker-options="marketingTileCtrl.dateOptions">
+                        <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-calendar"></span>
+                        </span>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4 col-xs-6">
+            <div class="form-group">
+                <label class="control-label">End Date:</label>
+
+                <div class="input-group" data-ng-click="marketingTileCtrl.openEndDatePicker($event)">
+                    <input type="text" is-open="marketingTileCtrl.openedEndDate" class="form-control calendar-form campaign-form-calendar-input" data-ng-model="marketingTileCtrl.marketingTileModel[marketingTileCtrl.marketingIndex].EndDate" datepicker-popup="MMMM dd, yyyy" show-button-bar="false" show-weeks="false" datepicker-options="marketingTileCtrl.dateOptions">
+                        <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-calendar"></span>
+                        </span>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4 col-xs-6">
+            <div class="form-group">
+                <label class="control-label">Image:</label>
+                <div class="input-group">
+                    <input class="form-control" type="text" data-ng-model="marketingTileCtrl.marketingTileModel[marketingTileCtrl.marketingIndex].Image">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-4 col-xs-6">
+            <div class="form-group">
+                <label class="control-label">Priority:</label>
+                <div class="input-group">
+                    <input class="form-control" type="text" data-ng-model="marketingTileCtrl.marketingTileModel[marketingTileCtrl.marketingIndex].Priority">
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4 col-xs-6">
+            <div class="form-group">
+                <label class="control-label">Link:</label>
+                <div class="input-group">
+                    <input class="form-control" type="text" data-ng-model="marketingTileCtrl.marketingTileModel[marketingTileCtrl.marketingIndex].Link">
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4 col-xs-6">
+            <div class="form-group">
+                <label class="control-label visibility-hidden col-xs-12" for="custom-disabled-checkbox-[settingIndex]">xyz</label>
+                <div class="checkbox checkbox-primary">
+                    <input id="custom-disabled-checkbox-[settingIndex]" class="styled" type="checkbox" data-ng-model="marketingTileCtrl.marketingTileModel[marketingTileCtrl.marketingIndex].Disabled" data-ng-checked="marketingTileCtrl.marketingTileModel[marketingTileCtrl.marketingIndex].Disabled">
+                    <label for="custom-disabled-checkbox-[settingIndex]">Disabled</label>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal-footer">
+    <button type="button" class="btn btn-primary" data-ng-click="marketingTileCtrl.saveMarketingTileData(marketingTileCtrl.marketingTileModel)">
+        Save changes
+    </button>
+</div>

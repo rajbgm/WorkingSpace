@@ -1,0 +1,147 @@
+<div class="modal-header">
+    <div class="row">
+        <div class="col-sm-8">
+            <h3 class="modal-title">{{pointsMatrixCtrl.header}}</h3>
+        </div>
+        <div class="col-sm-4">
+            <select class="form-control" id="selectLanguage1" data-ng-model="pointsMatrixCtrl.languageId" data-ng-options="language.Id as language.Value for language
+                                in pointsMatrixCtrl.languageList" data-ng-change="pointsMatrixCtrl.languageChange(pointsMatrixCtrl.languageId)">
+            </select>
+        </div>
+    </div>
+</div>
+<div class="modal-body ng-cloak">
+<div class="announcement-data-wrapper">
+    <div class="col-sm-12 col-xs-12">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="form-group">
+                    <label class="control-label" for="settingValue"> Action Category Title:</label>
+                    <input type="text" class="form-control" id="actionCatId" placeholder="Action Category Title" data-ng-model="pointsMatrixCtrl.pointMatrixModel[pointsMatrixCtrl.pointsIndex].
+                               ActionCategoryTitle[pointsMatrixCtrl.languageIndex].Value">
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="form-group">
+                    <label class="control-label" for="settingValue"> Action Category Text:</label>
+                    <input type="text" class="form-control" id="settingValue" placeholder="Action Category Text" data-ng-model="pointsMatrixCtrl.pointMatrixModel[pointsMatrixCtrl.pointsIndex].
+                               ActionCategoryText[pointsMatrixCtrl.languageIndex].Value">
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="form-group">
+                    <label class="control-label" for="settingValue1">Incentive Code:</label>
+                    <input type="text" class="form-control" id="settingValue1" placeholder="Action Category Text" data-ng-model="pointsMatrixCtrl.pointMatrixModel[pointsMatrixCtrl.pointsIndex].
+                               IncentiveCode[pointsMatrixCtrl.languageIndex].Value">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-3 col-xs-6">
+        <div class="form-group">
+            <label class="control-label">Action Category:</label>
+            <select id="actionCategory" class="form-control" data-ng-model="pointsMatrixCtrl.pointMatrixModel[pointsMatrixCtrl.pointsIndex].ActionCategoryID" data-ng-options="actionCategory.Id as actionCategory.Value for actionCategory in pointsMatrixCtrl.actionCategory">
+            </select>
+        </div>
+    </div>
+    <div class="col-sm-3 col-xs-6">
+        <div class="form-group">
+            <label class="control-label">Max Instances:</label>
+
+            <div class="input-group">
+                <input class="form-control" type="text" data-ng-model="pointsMatrixCtrl.pointMatrixModel[pointsMatrixCtrl.pointsIndex].MaxInstances">
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-3 col-xs-6">
+        <div class="form-group">
+            <label class="control-label">Frequency Max Instances</label>
+
+            <div class="input-group">
+                <input class="form-control" type="text" data-ng-model="pointsMatrixCtrl.pointMatrixModel[pointsMatrixCtrl.pointsIndex].FrequencyMaxInstances">
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-3 col-xs-6">
+        <div class="form-group">
+            <label class="control-label">Frequency Days:</label>
+
+            <select id="frequencyDay" class="form-control" data-ng-model="pointsMatrixCtrl.pointMatrixModel[pointsMatrixCtrl.pointsIndex].FrequencyDays" data-ng-options="pointsFrequency.Id as pointsFrequency.Value for pointsFrequency in pointsMatrixCtrl.pointsFrequency">
+            </select>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-3 col-xs-6">
+        <div class="form-group">
+            <label class="control-label">Pre Condition:</label>
+            <ui-select multiple="multiple" data-ng-model="pointsMatrixCtrl.pointMatrixModel[pointsMatrixCtrl.pointsIndex].PreCondition" theme="bootstrap" sortable="true" close-on-select="false" class="form-control">
+                <ui-select-match placeholder="Select person...">{{$item.Value}}</ui-select-match>
+                <ui-select-choices repeat="preCondition in pointsMatrixCtrl.preConditionList">
+                    {{preCondition.Value}}
+                </ui-select-choices>
+            </ui-select>
+        </div>
+    </div>
+    <div class="col-sm-3 col-xs-6">
+        <div class="form-group">
+            <label class="control-label">Icon:</label>
+
+            <div class="input-group">
+                <input class="form-control" type="text" data-ng-model="pointsMatrixCtrl.pointMatrixModel[pointsMatrixCtrl.pointsIndex].Icon">
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-3 col-xs-6">
+        <div class="form-group">
+            <label class="control-label">Incentive:</label>
+
+            <div class="input-group">
+                <input class="form-control" type="text" data-ng-model="pointsMatrixCtrl.pointMatrixModel[pointsMatrixCtrl.pointsIndex].InstancePoints">
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-3 col-xs-6">
+        <div class="form-group">
+            <label class="control-label visibility-hidden col-xs-12" for="settingValue">xyz</label>
+
+            <div class="checkbox checkbox-primary">
+                <input id="custom-disabled-checkbox-[settingIndex]" class="styled" type="checkbox" data-ng-model="pointsMatrixCtrl.pointMatrixModel[pointsMatrixCtrl.pointsIndex].Disabled" data-ng-checked="pointsMatrixCtrl.pointMatrixModel[pointsMatrixCtrl.pointsIndex].Disabled">
+                <label for="custom-disabled-checkbox-[settingIndex]">Disabled</label>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-6">
+        <div class="form-group">
+            <label class="control-label">Start Date:</label>
+
+            <div class="input-group" data-ng-click="pointsMatrixCtrl.openStartDatePicker($event)">
+                <input type="text" is-open="pointsMatrixCtrl.openedStartDate" class="form-control calendar-form campaign-form-calendar-input" data-ng-model="pointsMatrixCtrl.pointMatrixModel[pointsMatrixCtrl.pointsIndex].StartDate" datepicker-popup="MMMM dd, yyyy" show-button-bar="false" show-weeks="false" datepicker-options="pointsMatrixCtrl.dateOptions">
+                        <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-calendar"></span>
+                        </span>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6">
+        <div class="form-group">
+            <label class="control-label">End Date:</label>
+
+            <div class="input-group" data-ng-click="pointsMatrixCtrl.openEndDatePicker($event)">
+                <input type="text" is-open="pointsMatrixCtrl.openedEndDate" class="form-control calendar-form campaign-form-calendar-input" data-ng-model="pointsMatrixCtrl.pointMatrixModel[pointsMatrixCtrl.pointsIndex].EndDate" datepicker-popup="MMMM dd, yyyy" show-button-bar="false" show-weeks="false" datepicker-options="pointsMatrixCtrl.dateOptions">
+                        <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-calendar"></span>
+                        </span>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<div class="modal-footer">
+    <button type="button" class="btn btn-primary" data-ng-click="pointsMatrixCtrl.savePointsMatrix(pointsMatrixCtrl.pointMatrixModel)">Save changes
+    </button>
+</div>

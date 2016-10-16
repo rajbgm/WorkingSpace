@@ -1,0 +1,74 @@
+<div class="modal-header ng-cloak">
+    <div class="row">
+        <div class="col-sm-8">
+            <h3 class="modal-title">{{announcementCtrl.header}}</h3>
+        </div>
+        <div class="col-sm-4">
+            <select class="form-control" id="selectLanguage1" data-ng-model="announcementCtrl.languageId" data-ng-options="language.Id as language.Value for language
+                                in announcementCtrl.languageList" data-ng-change="announcementCtrl.languageChange(announcementCtrl.languageId)">
+            </select>
+        </div>
+    </div>
+</div>
+<div class="modal-body ng-cloak">
+    <div class="announcement-data-wrapper">
+        <div class="col-sm-12 col-xs-12">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label class="control-label" for="announcementNameId1">Announcements Name:</label>
+                        <input type="text" class="form-control" id="announcementNameId1" placeholder="Announcements Name" data-ng-model="announcementCtrl.announcementModel[announcementCtrl.announcementIndex].
+                               AnnouncementName">
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label class="control-label" for="announcementTextId1">Announcements Text:</label>
+                        <input type="text" class="form-control" id="announcementTextId1" placeholder="Announcements Text" data-ng-model="announcementCtrl.announcementModel[announcementCtrl.announcementIndex].
+                               AnnouncementText[announcementCtrl.languageIndex].Value">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-4 col-xs-6">
+            <div class="form-group">
+                <label class="control-label">Start Date:</label>
+
+                <div class="input-group" data-ng-click="announcementCtrl.openStartDatePicker($event)">
+                    <input type="text" is-open="announcementCtrl.openedStartDate" class="form-control calendar-form campaign-form-calendar-input" data-ng-model="announcementCtrl.announcementModel[announcementCtrl.announcementIndex].StartDate" datepicker-popup="MMMM dd, yyyy" show-button-bar="false" show-weeks="false" datepicker-options="announcementCtrl.dateOptions">
+                        <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-calendar"></span>
+                        </span>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4 col-xs-6">
+            <div class="form-group">
+                <label class="control-label">End Date:</label>
+
+                <div class="input-group" data-ng-click="announcementCtrl.openEndDatePicker($event)">
+                    <input type="text" is-open="announcementCtrl.openedEndDate" class="form-control calendar-form campaign-form-calendar-input" data-ng-model="announcementCtrl.announcementModel[announcementCtrl.announcementIndex].EndDate" datepicker-popup="MMMM dd, yyyy" show-button-bar="false" show-weeks="false" datepicker-options="announcementCtrl.dateOptions">
+                        <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-calendar"></span>
+                        </span>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4 col-xs-6">
+            <div class="form-group">
+                <label class="control-label visibility-hidden col-xs-12" for="custom-disabled-checkbox-[settingIndex]">xyz</label>
+
+                <div class="checkbox checkbox-primary">
+                    <input id="custom-disabled-checkbox-[settingIndex]" class="styled" type="checkbox" data-ng-model="announcementCtrl.announcementModel[announcementCtrl.announcementIndex].Disabled" data-ng-checked="announcementCtrl.announcementModel[announcementCtrl.announcementIndex].Disabled">
+                    <label for="custom-disabled-checkbox-[settingIndex]">Disabled</label>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal-footer">
+    <button type="button" class="btn btn-primary" data-ng-click="announcementCtrl.saveAnnouncementData(announcementCtrl.announcementModel)">Save changes
+    </button>
+</div>

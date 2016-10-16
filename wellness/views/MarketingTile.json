@@ -1,0 +1,258 @@
+[
+    {
+        "MetaData": {
+            "SettingsFromGroupID": "3d7e2cc7-32c2-4ebf-a505-9db1258e5267",
+            "SettingsFromGroupName": "Default"
+        },
+        "SortOrder": 0,
+        "Disabled": false,
+        "Priority": 1,
+        "EndDate": null,
+        "StartDate": null,
+        "LinkText": [
+            {
+                "LanguageId": 1033,
+                "Value": "CONNECT NOW"
+            }
+        ],
+        "Link": "/BioDevices",
+        "Text": [
+            {
+                "LanguageId": 1033,
+                "Value": "If you're using a wearable device to track your activities, you can connect it to your wellness program. The more datayou track, the better you can watch your progress and reach your goal."
+            }
+        ],
+        "Header": [
+            {
+                "LanguageId": 1033,
+                "Value": "Connect Your Devices & Apps Now"
+            }
+        ],
+        "Image": "/Images/icrossing/slider/top-carousel-shoe-tie.jpg",
+        "Name": "Device"
+    },
+    {
+        "MetaData": {
+            "SettingsFromGroupID": "3d7e2cc7-32c2-4ebf-a505-9db1258e5267",
+            "SettingsFromGroupName": "Default"
+        },
+        "SortOrder": 0,
+        "Disabled": false,
+        "Priority": 3,
+        "EndDate": null,
+        "StartDate": null,
+        "LinkText": [
+            {
+                "LanguageId": 1033,
+                "Value": "DOWNLOAD APP"
+            }
+        ],
+        "Link": "/MobileRegistration/UserLog",
+        "Text": [
+            {
+                "LanguageId": 1033,
+                "Value": "Stay connected to your wellness plan. Access your wellness resources anywhere, anytime. Download the AlwaysOn? Wellness Mobile Application to your Android&#8482; or iPhone?, and enjoy ourwebsite experience on the go!"
+            }
+        ],
+        "Header": [
+            {
+                "LanguageId": 1033,
+                "Value": "Get the AlwaysOn? Mobile AppToday!"
+            }
+        ],
+        "Image": "/content/images/MarketingTiles/AlwaysOn.jpg",
+        "Name": "MobileApp"
+    },
+    {
+        "MetaData": {
+            "SettingsFromGroupID": "3d7e2cc7-32c2-4ebf-a505-9db1258e5267",
+            "SettingsFromGroupName": "Default"
+        },
+        "SortOrder": 0,
+        "Disabled": false,
+        "Priority": 4,
+        "EndDate": null,
+        "StartDate": null,
+        "LinkText": [
+            {
+                "LanguageId": 1033,
+                "Value": "Start Now"
+            }
+        ],
+        "Link": "/FinancialWellBeing",
+        "Text": [
+            {
+                "LanguageId": 1033,
+                "Value": "Finances are a major source of stress formost Americans - so if this is something that stresses you out, you are not alone. Review our resourcesto learn more about Financial Well-being."
+            }
+        ],
+        "Header": [
+            {
+                "LanguageId": 1033,
+                "Value": "Financial Well-beingStarts Here"
+            }
+        ],
+        "Image": "/content/images/MarketingTiles/FinancialWellbeing.png",
+        "Name": "FinancialWellbeing"
+    },
+    {
+        "MetaData": {
+            "SettingsFromGroupID": "3d7e2cc7-32c2-4ebf-a505-9db1258e5267",
+            "SettingsFromGroupName": "Default"
+        },
+        "SortOrder": 0,
+        "Disabled": false,
+        "Priority": 4,
+        "EndDate": null,
+        "StartDate": null,
+        "LinkText": [
+            {
+                "LanguageId": 1033,
+                "Value": "TAKE A LOOK"
+            }
+        ],
+        "Link": "/MyCompany",
+        "Text": [
+            {
+                "LanguageId": 1033,
+                "Value": "Check out the MyCompany page. It's a great way to stay current with your wellness program offerings and to see what'sgoing on at your organization."
+            }
+        ],
+        "Header": [
+            {
+                "LanguageId": 1033,
+                "Value": "My Company"
+            }
+        ],
+        "Image": "/Images/icrossing/slider/top-carousel-mycompany.jpg",
+        "Name": "MyCompany"
+    },
+    {
+        "MetaData": {
+            "SettingsFromGroupID": "3d7e2cc7-32c2-4ebf-a505-9db1258e5267",
+            "SettingsFromGroupName": "Default"
+        },
+        "SortOrder": 0,
+        "Disabled": false,
+        "Priority": 4,
+        "EndDate": null,
+        "StartDate": null,
+        "LinkText": [
+            {
+                "LanguageId": 1033,
+                "Value": "Manage Alerts"
+            }
+        ],
+        "Link": "/LegacyPage/Index?pageName=Settings",
+        "Text": [
+            {
+                "LanguageId": 1033,
+                "Value": "Don't miss an importantmessage or announcement while you're away from your computer. Use text message alerts to stay on trackwith your wellness program."
+            }
+        ],
+        "Header": [
+            {
+                "LanguageId": 1033,
+                "Value": "Manage Text Alerts"
+            }
+        ],
+        "Image": "/Images/icrossing/slider/top-carousel-man-texting.jpg",
+        "Name": "TextMessage"
+    },
+    {
+        "MetaData": {
+            "SettingsFromGroupID": "3d7e2cc7-32c2-4ebf-a505-9db1258e5267",
+            "SettingsFromGroupName": "Default"
+        },
+        "SortOrder": 0,
+        "Disabled": false,
+        "Priority": 5,
+        "EndDate": null,
+        "StartDate": null,
+        "LinkText": [
+            {
+                "LanguageId": 1033,
+                "Value": "TRACK NOW"
+            }
+        ],
+        "Link": "/FoodDiary",
+        "Text": [
+            {
+                "LanguageId": 1033,
+                "Value": "Keeping a diary is an excellent tool when you're tryingto eat more healthfully and incorporate exercise into your routine. You will also find healthy recipesand meal plans to help you stay on track."
+            }
+        ],
+        "Header": [
+            {
+                "LanguageId": 1033,
+                "Value": "Trying To Lose Weight? Keep a Diary"
+            }
+        ],
+        "Image": "/Images/icrossing/slider/top-carousel-food-diary.jpg",
+        "Name": "FoodDiary"
+    },
+    {
+        "MetaData": {
+            "SettingsFromGroupID": "3d7e2cc7-32c2-4ebf-a505-9db1258e5267",
+            "SettingsFromGroupName": "Default"
+        },
+        "SortOrder": 0,
+        "Disabled": false,
+        "Priority": 6,
+        "EndDate": null,
+        "StartDate": null,
+        "LinkText": [
+            {
+                "LanguageId": 1033,
+                "Value": "REQUEST CERTIFICATE"
+            }
+        ],
+        "Link": "/Certificates",
+        "Text": [
+            {
+                "LanguageId": 1033,
+                "Value": "Aftercompleting your program within the portal, you may request a completion certificate by calling ParticipantServices at (877)709-0201."
+            }
+        ],
+        "Header": [
+            {
+                "LanguageId": 1033,
+                "Value": "Certificates"
+            }
+        ],
+        "Image": "/Images/icrossing/slider/top-carousel-certificates.jpg",
+        "Name": "Certificates"
+    },
+    {
+        "MetaData": {
+            "SettingsFromGroupID": "3d7e2cc7-32c2-4ebf-a505-9db1258e5267",
+            "SettingsFromGroupName": "Default"
+        },
+        "SortOrder": 0,
+        "Disabled": false,
+        "Priority": 6,
+        "EndDate": null,
+        "StartDate": null,
+        "LinkText": [
+            {
+                "LanguageId": 1033,
+                "Value": "UPDATE PROGRESS"
+            }
+        ],
+        "Link": "",
+        "Text": [
+            {
+                "LanguageId": 1033,
+                "Value": "Take a moment to answer a few questions to help us createa personalized report about your wellness goals and provide recommendations for your next steps."
+            }
+        ],
+        "Header": [
+            {
+                "LanguageId": 1033,
+                "Value": "Progress Check-in"
+            }
+        ],
+        "Image": "/Content/images/MarketingTiles/top-carousel-milestone-assessment.jpg",
+        "Name": "MilestoneAssessment"
+    }
+]

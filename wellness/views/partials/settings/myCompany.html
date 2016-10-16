@@ -1,0 +1,104 @@
+<div class="modal-header ng-cloak">
+    <div class="row">
+        <div class="col-sm-8">
+            <h3 class="modal-title">{{myCompanyCtrl.header}}</h3>
+        </div>
+        <div class="col-sm-4">
+            <select class="form-control" id="selectLanguage1" data-ng-model="myCompanyCtrl.languageId" data-ng-options="language.Id as language.Value for language
+                                in myCompanyCtrl.languageList" data-ng-change="myCompanyCtrl.languageChange(myCompanyCtrl.languageId)">
+            </select>
+        </div>
+    </div>
+</div>
+<div class="modal-body ng-cloak">
+<div class="announcement-data-wrapper">
+    <div class="col-sm-12 col-xs-12">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label class="control-label" for="myCompanyName">Name:</label>
+                    <input type="text" class="form-control" id="myCompanyName" placeholder="Name" data-ng-model="myCompanyCtrl.myCompanyModel[myCompanyCtrl.myCompanyIndex].Name">
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label class="control-label" for="myCompanyTitle">Title:</label>
+                    <input type="text" class="form-control" id="myCompanyTitle" placeholder="Title" data-ng-model="myCompanyCtrl.myCompanyModel[myCompanyCtrl.myCompanyIndex].
+                               Title[myCompanyCtrl.languageIndex].Value">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="announcement-data-wrapper">
+    <div class="col-sm-12 col-xs-12">
+        <div class="row">
+            <div class="col-sm-12">
+                <label class="control-label">Display Text:</label>
+            </div>
+            <div class="col-sm-12">
+                    <div text-angular data-ng-model="myCompanyCtrl.myCompanyModel[myCompanyCtrl.myCompanyIndex].
+                     DisplayText[myCompanyCtrl.languageIndex].Value"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-4 col-xs-6">
+        <div class="form-group">
+            <label class="control-label">Start Date:</label>
+
+            <div class="input-group" data-ng-click="myCompanyCtrl.openStartDatePicker($event)">
+                <input type="text" is-open="myCompanyCtrl.openedStartDate" class="form-control calendar-form campaign-form-calendar-input" data-ng-model="myCompanyCtrl.myCompanyModel[myCompanyCtrl.myCompanyIndex].StartDate" datepicker-popup="MMMM dd, yyyy" show-button-bar="false" show-weeks="false" datepicker-options="myCompanyCtrl.dateOptions">
+                        <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-calendar"></span>
+                        </span>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-4 col-xs-6">
+        <div class="form-group">
+            <label class="control-label">End Date:</label>
+            <div class="input-group" data-ng-click="myCompanyCtrl.openEndDatePicker($event)">
+                <input type="text" is-open="myCompanyCtrl.openedEndDate" class="form-control calendar-form campaign-form-calendar-input" data-ng-model="myCompanyCtrl.myCompanyModel[myCompanyCtrl.myCompanyIndex].EndDate" datepicker-popup="MMMM dd, yyyy" show-button-bar="false" show-weeks="false" datepicker-options="myCompanyCtrl.dateOptions">
+                        <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-calendar"></span>
+                        </span>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-4 col-xs-6">
+        <div class="form-group">
+            <label class="control-label">Effective Date:</label>
+            <div class="input-group" data-ng-click="myCompanyCtrl.openEffectiveDatePicker($event)">
+                <input type="text" is-open="myCompanyCtrl.effectiveDate" class="form-control calendar-form campaign-form-calendar-input" data-ng-model="myCompanyCtrl.myCompanyModel[myCompanyCtrl.myCompanyIndex].EffectiveDate" datepicker-popup="MMMM dd, yyyy" show-button-bar="false" show-weeks="false" datepicker-options="myCompanyCtrl.dateOptions">
+                        <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-calendar"></span>
+                        </span>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="row">
+        <div class="col-sm-6 col-xs-6">
+            <div class="form-group">
+                <label class="control-label" for="myCompanyTitle">Target URL:</label>
+                <input type="text" class="form-control" id="myCompanyTargetURL" placeholder="Target URL" data-ng-model="myCompanyCtrl.myCompanyModel[myCompanyCtrl.myCompanyIndex].TargetURL">
+            </div>
+        </div>
+        <div class="col-sm-6 col-xs-6">
+            <div class="form-group">
+                <label class="control-label visibility-hidden col-xs-12" for="custom-disabled-checkbox-[settingIndex]">xyz</label>
+                <div class="checkbox checkbox-primary">
+                    <input id="custom-disabled-checkbox-[settingIndex]" class="styled" type="checkbox" data-ng-model="myCompanyCtrl.myCompanyModel[myCompanyCtrl.myCompanyIndex].Disabled" data-ng-checked="myCompanyCtrl.myCompanyModel[myCompanyCtrl.myCompanyIndex].Disabled">
+                    <label for="custom-disabled-checkbox-[settingIndex]">Disabled</label>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal-footer">
+    <button type="button" class="btn btn-primary" data-ng-click="myCompanyCtrl.saveMyCompanyData(myCompanyCtrl.myCompanyModel)">
+        Save changes
+    </button>
+</div>

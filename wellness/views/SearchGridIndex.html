@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Admin Portal | Dashboard</title>
+    <link href="../public/styles/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../public/styles/font-awesome/css/font-awesome.css" rel="stylesheet">
+
+    <link href="../public/styles/css/animate.css" rel="stylesheet">
+    <link href="../public/styles/css/style.css" rel="stylesheet">
+    <link href="../public/styles/css/custom.css" rel="stylesheet">
+    <link href="../public/styles/css/ui-grid.min.css" rel="stylesheet">
+    <link href="../public/styles/css/angular-notify.min.css" rel="stylesheet">
+
+    <!-- DropZone Plugin CSSS -->
+    <link href="../public/styles/css/dropzone/dropzone.css" rel="stylesheet">
+    <link href="../public/styles/css/dropzone/basic.css" rel="stylesheet">
+
+    <!-- ui-select-->
+    <link href="../public/styles/css/ui-select/select.min.css" rel="stylesheet">
+
+    <link href="../public/styles/css/textAngular.css" rel="stylesheet">
+
+</head>
+
+<body data-ng-app="onlife.admin.settings.home">
+
+<div id="wrapper" data-ng-cloak data-ng-controller="GroupController as groupCtrl">
+    <nav class="navbar-default navbar-static-side" role="navigation">
+        <div class="sidebar-collapse">
+            <ul class="nav metismenu" id="side-menu">
+                <li class="nav-header">
+                    <div class="dropdown profile-element">
+                            <span>
+                                <img alt="image" class="img-circle" src="../public/styles/img/profile_small.jpg">
+                            </span>
+                        <a data-toggle="dropdown" class="dropdown-toggle">
+                                <span class="clear">
+                                    <span class="block m-t-xs">
+                                        <strong class="font-bold">Admin</strong>
+                                    </span> <span class="text-muted text-xs block">Director <b class="caret"></b></span>
+                                </span>
+                        </a>
+                        <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                            <li><a data-ng-show="group.isSelected" data-ng-click="groupCtrl.createSubGroup()">
+                                Add Child Group</a></li>
+                            <li class="divider"></li>
+                            <li><a data-ng-href="#/login">Logout</a></li>
+                        </ul>
+                    </div>
+                    <div class="logo-element">
+                        OLH
+                    </div>
+                </li>
+                <li data-ng-cloak>
+                    <a href="index.html">
+                        <i class="fa fa-gears"></i>
+                        <span class="nav-label" data-ng-bind="group.groupName"></span>
+                        <span class="fa arrow"></span>
+                    </a>
+                    <ul class="nav nav-second-level collapse in">
+                        <li data-ng-class="groupCtrl.menuClass[subMenuIndex]" data-ng-repeat="(subMenuIndex, subMenu) in groupCtrl.settingMenu">
+                            <a data-ng-click="groupCtrl.viewSetting(subMenu, subMenuIndex)">{{subMenu.DisplayName}}</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+
+    <div id="page-wrapper" class="gray-bg dashbard-1">
+        <div class="row border-bottom">
+            <div class="col-xs-2">
+                <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
+                    <div class="navbar-header">
+                        <a class="navbar-minimalize minimalize-styl-2 btn btn-primary">
+                            <i class="fa fa-bars"></i> </a>
+                    </div>
+                </nav>
+            </div>
+            <div class="col-xs-10">
+                <ul class="nav navbar-top-links navbar-right" data-ng-show="group.isSelected">
+                    <li dropdown="" class="dropdown" data-ng-click="groupCtrl.searchGroup()">
+                        <a class="dropdown-toggle count-info" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-search"></i> Group Search
+                        </a>
+                    </li>
+                    <li dropdown="" class="dropdown" data-ng-click="groupCtrl.fileUpload()">
+                        <a class="dropdown-toggle count-info" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-cloud-download"></i> Import / Export
+                        </a>
+                    </li>
+                    <li dropdown="" class="dropdown" data-ng-click="groupCtrl.clearSettingCache()">
+                        <a class="dropdown-toggle count-info" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa fa-eraser"></i> Clear Cache
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row border-bottom white-bg dashboard-header">
+
+            <div class="col-sm-12">
+                <article data-ui-view></article>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+<!-- Mainly scripts -->
+<script src="../libs/jquery-2.1.1.js"></script>
+<script src="../libs/bootstrap.min.js"></script>
+<script src="../libs/plugins/metisMenu/jquery.metisMenu.js"></script>
+<script src="../libs/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+
+<!-- Angular -->
+<script src="../libs/angular/angular.js"></script>
+<script src="../libs/angular/angular-ui-router.min.js"></script>
+<script src="../libs/angular/ui-grid.js"></script>
+<script src="../libs/lodash/lodash.min.js"></script>
+
+<!-- Angular Plugin -->
+<script src="../libs/plugins/angular-notify/angular-notify.min.js"></script>
+<script src="../libs/plugins/dropzone/dropzone.js"></script>
+
+<!-- Config -->
+<script src="../../config.js"></script>
+
+<!---bundle  --->
+<script src="../public/js/settingBundle.js"></script>
+
+<!-- Custom and plugin javascript -->
+<script src="../libs/inspinia.js"></script>
+<script src="../libs/plugins/pace/pace.min.js"></script>
+<script src="../libs/ui-bootstrap-tpls-0.12.0.min.js"></script>
+<script src="../libs/plugins/ui-select/select.min.js"></script>
+
+
+<!-- jQuery UI -->
+<script src="../libs/plugins/jquery-ui/jquery-ui.min.js"></script>
+
+<!-- ngDraggable -->
+<script src="../libs/ngDraggable/ngDraggable.js"></script>
+
+<!--Text Angular --->
+<script src="../libs/textangular/textAngular-rangy.min.js"></script>
+<script src="../libs/textangular/textAngular-sanitize.min.js"></script>
+<script src="../libs/textangular/textAngular.min.js"></script>
+
+</body>
+</html>
