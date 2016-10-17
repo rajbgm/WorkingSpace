@@ -1714,7 +1714,7 @@ box.box-danger .circle-logo {
 .campaign-dashboard .page-header {
     font-weight: 600;
     font-size: 26px;
-  font-size: 22px;
+    font-size: 22px;
 }
 
 .m-l-10 {
@@ -2041,6 +2041,11 @@ box.box-danger .circle-logo {
     margin-left: 0;
 }
 
+.p-x-0 {
+    padding-right: 0;
+    padding-left: 0;
+}
+
 .p-x-5 {
     padding-right: 5px;
     padding-left: 5px;
@@ -2213,4 +2218,12 @@ box.box-danger .circle-logo {
     -webkit-box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.16);
     -moz-box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.16);
     box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.16);
+}
+
+/*
+Campaign Management
+*/
+
+.campaign-container .campaign-content {
+    padding: 25px 50px;
 }
