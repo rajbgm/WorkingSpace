@@ -738,7 +738,6 @@ a:hover.read-more, .tl-main-content a:hover,
 }
 
 .patient-info label.family-admin-lbl {
-    float: right;
     margin-right: 10px;
 }
 .bg-wrapper {
@@ -1170,7 +1169,6 @@ a:hover.read-more, .tl-main-content a:hover,
 }
 
 .tabHead > div > div.title {
-    padding: 15px;
     position: relative;
     color: #fff;
 }
@@ -1620,7 +1618,6 @@ a:hover.read-more, .tl-main-content a:hover,
 }
 
 .patient-info label.family-admin-lbl {
-    float: right;
     margin-right: 10px;
 }
 .bg-wrapper {
@@ -2034,7 +2031,6 @@ a:hover.read-more, .tl-main-content a:hover,
 }
 
 .tabHead > div > div.title {
-    padding: 15px;
     position: relative;
     color: #fff;
 }
