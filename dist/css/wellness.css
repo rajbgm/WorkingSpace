@@ -23,8 +23,9 @@
     padding: 0px;
     width: 18.7%;
     float: left;
-    margin-right: 15px;
+    margin-right: 8px;
     min-height: 215px;
+    margin-left: 7px;
 }
 
 .section-box-heading{
@@ -112,3 +113,20 @@ h4{
     font-weight: 400;
 }
 /*End Connected Devices */
+.user-menu {
+    text-align: right;
+}
+.support-center {
+    display: inline-block;
+    padding: 10px;
+    color: #FFF;
+}
+.support-center-logo {
+    padding: 13px;
+    background: #0c658f;
+    text-align: center;
+    width: 45px;
+    display: inline-block;
+    border-radius: 50%;
+    height: 45px;
+}
