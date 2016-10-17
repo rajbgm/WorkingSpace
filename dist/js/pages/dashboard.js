@@ -140,7 +140,7 @@ $(function () {
   });
 
   $('.direct-chat-messages').slimScroll({
-      height: '500px',
+      height: '400px',
       alwaysVisible: true,
       railVisible: false
   });
