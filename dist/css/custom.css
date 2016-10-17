@@ -450,7 +450,7 @@ input[type="radio"] .styled:checked + label::after {
 }
 
 /*  Buttons  */
-body .btn-primary, body .btn-secondary, body .btn-warning, body .btn-default {
+body .btn-primary, body .btn-secondary, body .tile-footer .btn-warning, body .btn-default {
     background-color: inherit;
     border-radius: 30px;
     font-weight: 600;
@@ -467,7 +467,7 @@ body .btn-secondary {
     color: #29abe1;
 }
 
-body .btn-warning {
+body .tile-footer .btn-warning {
     border: 2px solid #e08e0b;
     color: #e08e0b;
 }
@@ -1558,7 +1558,7 @@ box.box-danger .circle-logo {
 }
 
 .skin-blue .sidebar-menu > li.active span.arrow-right {
-    background: url(/dist/img/right_arrow.png) no-repeat;
+    background: url(../img/right_arrow.png) no-repeat;
     width: 30px;
     height: 30px;
     position: absolute;
@@ -1686,7 +1686,7 @@ box.box-danger .circle-logo {
 
     .apply-segment li {
         list-style-type: none;
-        background: url(/dist/img/bullet.jpg) no-repeat 6px 22px;
+        background: url(../img/bullet.jpg) no-repeat 6px 22px;
         padding-left: 25px;
         border-top: 1px solid #CCC;
     }
