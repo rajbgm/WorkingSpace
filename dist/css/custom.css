@@ -445,7 +445,7 @@ input[type="radio"] .styled:checked + label::after {
 }
 
 /*  Buttons  */
-body .btn-primary, body .btn-secondary, body .btn-warning, body .btn-default {
+body .btn-primary, body .btn-secondary, body .tile-footer .btn-warning, body .btn-default {
   background-color: inherit;
   border-radius: 30px;
   font-weight: 600;
@@ -462,7 +462,7 @@ body .btn-secondary {
   color: #29abe1;
 }
 
-body .btn-warning {
+body .tile-footer .btn-warning {
   border: 2px solid #e08e0b;
   color: #e08e0b;
 }
@@ -2073,6 +2073,7 @@ box.box-danger .circle-logo {
 .font-normal {
   font-weight: normal;
 }
+
 .side-bar-header {
-    margin: 0;
+  margin: 0;
 }
