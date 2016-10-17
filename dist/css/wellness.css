@@ -1,6 +1,6 @@
 @font-face {
     font-family: roboto;
-    src: url("../fonts/fonts/Roboto-Regular.ttf");
+    src: url("../fonts/fonts/Roboto-Regular.woff");
 }
 .wrapper-wellness{
 
@@ -76,3 +76,39 @@ h4{
         margin-bottom: 10px;
     }
 }
+/*Start Connected Devices */
+.motivation-devices, .connected-devices{
+
+    background-color: #fff;
+    padding: 0px;
+    min-height: 215px;
+    margin-bottom: 15px;
+}
+.motivation-devices-content{
+    padding: 10px;
+}
+.motivation-devices .btn-xs, .connected-devices .btn-xs{
+    line-height: 1;
+    padding: 3px 10px 3px 10px;
+    margin-top: 5px;
+}
+
+.margin-top-5{
+    margin-top: 5px;
+}
+.margin-bottom-5{
+    margin-bottom: 5px;
+}
+.devices-divider{
+    border-bottom: 1px solid #ccc;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.text-right{
+    text-align: right;
+}
+.motivation-devices .section-box-heading h4{
+    color: #367fa9;
+    font-weight: 400;
+}
+/*End Connected Devices */
