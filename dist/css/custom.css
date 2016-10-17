@@ -2023,6 +2023,11 @@ box.box-danger .circle-logo {
     margin-left: 0;
 }
 
+.p-x-0 {
+    padding-right: 0;
+    padding-left: 0;
+}
+
 .p-x-5 {
     padding-right: 5px;
     padding-left: 5px;
@@ -2156,3 +2161,12 @@ box.box-danger .circle-logo {
     font-weight: 500;
     text-transform: uppercase;
 }
+
+/*
+Campaign Management
+*/
+
+.campaign-container .campaign-content {
+    padding: 25px 50px;
+}
+
