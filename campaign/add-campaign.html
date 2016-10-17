@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Coach Space - Add Segment</title>
+  <title>Coach Space - Add Campaign</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.6 -->
@@ -116,18 +116,18 @@
           </a>
             <span class="arrow-right"></span>
         </li>
-        <li>
-            <a href="campaign.html">
-                <i class="icon-members"></i>
-                <span class="">Campaign</span>
-            </a>
-        </li>
           <li class="active">
-              <a href="segment.html">
-                  <i class="icon-calendar"></i>
-                  <!--<span class="">Segments</span>-->
+              <a href="campaign.html">
+                  <i class="icon-members"></i>
+                  <!--<span class="">Campaign</span>-->
               </a>
               <span class="arrow-right"></span>
+          </li>
+          <li>
+              <a href="segment.html">
+                  <i class="icon-calendar"></i>
+                  <span class="">Segments</span>
+              </a>
           </li>
         <li>
             <a href="javascript:void(0)">
@@ -148,25 +148,23 @@
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
-    
-
     <!-- Main content -->
     <section class="content">
           <div class="row">
               <div class="col-sm-12">
-                  <h3 class="text-bold">Add segment</h3>
+                  <h3 class="text-bold">Add Campaign</h3>
                   <hr />
                   <form>
                       <div class="form-group">
-                          <label for="segmentName">Segment Name *:</label>
+                          <label for="segmentName">Campaign Name *:</label>
                           <input type="text" class="form-control" id="segmentName">
                       </div>
                       <div class="form-group">
-                          <label for="segment-description">Segment Description:</label>
+                          <label for="segment-description">Campaign Description:</label>
                           <textarea class="form-control" id="segment-description"></textarea>
                       </div>
                       <div class="form-group">
-                          <label for="segment-group">Segment Group:</label>
+                          <label for="segment-group">Campaign Group:</label>
                           <select class="form-control" id="segment-group">
                               <option>-- Select --</option>
                               <option>Group 1</option>
@@ -187,7 +185,7 @@
                                   </div>
                               </div>
                           </div>
-                          <h4>Apply this segment if: </h4>
+                          <h4>Apply this Campaign if: </h4>
                           <ul class="apply-segment">
                               <li>
                                   <div class="item-field">
@@ -250,8 +248,8 @@
                       </div>
                       <div class="col-sm-12 button-wrapper">
                           <div class="button-holder text-right">
-                              <a href="segment.html" type="button" class="btn btn-secondary text-uppercase">Cancel</a>
-                              <a href="segment.html" type="button" class="btn btn-primary text-uppercase">Save</a>
+                              <a href="campaign.html" type="button" class="btn btn-secondary text-uppercase">Cancel</a>
+                              <a href="campaign.html" type="button" class="btn btn-primary text-uppercase">Save</a>
                           </div>
                       </div>
                   </div>
