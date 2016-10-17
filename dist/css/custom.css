@@ -1,4 +1,4 @@
-﻿﻿@font-face {
+﻿@font-face {
     font-family: 'OnlifeFont';
     src: url('../fonts/fonts/OnlifeFont.eot');
     src: url('../fonts/fonts/OnlifeFont.eot?#iefix') format('embedded-opentype'), url('../fonts/fonts/OnlifeFont.woff') format('woff'), url('../fonts/fonts/OnlifeFont.ttf') format('truetype'), url('../fonts/fonts/OnlifeFont.svg#OnlifeFont') format('svg');
@@ -1615,16 +1615,28 @@ box.box-danger .circle-logo {
 }
 
 .segment-item {
-    padding: 15px;
-    border-top: 1px solid #CCC;
+  padding: 15px;
+  background: #ffffff;
+  margin:10px 0;
+  border-left: 10px solid #19bed8;
+  color: #666666;
+  height:145px;
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
 }
-
     .segment-item h3 {
         font-weight: 600;
+      font-size: 20px;
+      color: #666666;
     }
+.users-lbl{
+  font-size: 18px;
+  font-weight: 600;
+}
 
 .editable-icons i {
-    font-size: 1.6em;
+    font-size: 1.3em;
     cursor: pointer;
     margin-top: 8px;
 }
@@ -1702,6 +1714,7 @@ box.box-danger .circle-logo {
 .campaign-dashboard .page-header {
     font-weight: 600;
     font-size: 26px;
+    font-size: 22px;
 }
 
 .m-l-10 {
@@ -1949,7 +1962,12 @@ box.box-danger .circle-logo {
 .m-t-25 {
     margin-top: 25px;
 }
-
+.m-t-40{
+  margin-top:40px;
+}
+.m-t-5 {
+  margin-top: 5px;
+}
 .m-a-0 {
     margin: 0;
 }
@@ -2085,34 +2103,34 @@ box.box-danger .circle-logo {
 .side-bar-header {
     margin: 0;
 }
+/* Engagement Hub */
+.contact-value {
+  font-size: 18px;
+}
 
 .list-style-dots {
     margin-left: 0;
     padding-left: 28px;
 }
-
 .sub-list-type ul {
     margin-left: 0;
     padding-left: 25px;
 }
-
 .box-hub {
     max-width: 300px;
     margin: 0 auto;
     text-align: center;
-    padding: 10px;
     margin-bottom: 10px;
 }
-
-    .box-hub.blue-section,  .box-hub.green-section{
-        border-bottom: 5px solid #29abe2;
-    }
-    .box-hub.green-section {
-        border-bottom: 5px solid #afd178;
-    }
-    .box-hub.brown-section {
-        border-bottom: 5px solid #a67c52;
-    }
+.box-hub.blue-section .desc-text span{
+    border-bottom: 5px solid #29abe2;
+}
+.box-hub.green-section .desc-text span {
+    border-bottom: 5px solid #afd178;
+}
+.box-hub.brown-section .desc-text span {
+    border-bottom: 5px solid #a67c52;
+}
 .hub-logo {
     width: 55px;
     height: 55px;
@@ -2123,7 +2141,6 @@ box.box-danger .circle-logo {
     line-height: 56px;
     margin: 0 auto;
 }
-
 .blue-section .hub-logo {
     border-color: #29abe2;
     color: #29abe2;
@@ -2146,20 +2163,61 @@ box.box-danger .circle-logo {
 .points-value {
     margin: 10px 0;
 }
-
 .percentage-text {
     margin: 0;
     font-size: 12px;
 }
-
 .hidden-field {
     visibility: hidden;
 }
-
 .desc-text {
-    margin-bottom: 25px;
+    margin-bottom: 8px;
     font-weight: 500;
     text-transform: uppercase;
+}
+.welcome-area {
+    padding: 10px 0 10px 25px;
+}
+.welcome-area .page-header {
+    margin: 0;
+}
+.welcome-area .login-name {
+    margin: 10px 0 0 0;
+    color: #27709d;
+}
+.welcome-area .person-desig {
+    color: #27709d;
+    margin: 0;
+}
+.graph-indicator{
+    margin: 15px 0;
+}
+.cloud-area {
+    margin-top: 20px;
+    font-size: 3em;
+}
+.cloud-degree {
+    padding-top: 20px;
+}
+.cloud-degree .place-degree{
+    font-size: 12px;
+    margin: 0;
+    color: #7f7f7f;
+}
+.cloud-degree .place-time {
+    color: #7f7f7f;
+    font-size: 10px;
+}
+.block-container {
+    padding: 10px;
+}
+.block-container.zero-border {
+    border:0;
+}
+.welcome-area, .engaged-right{
+    -webkit-box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.16);
+    -moz-box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.16);
+    box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.16);
 }
 
 /*
@@ -2169,4 +2227,3 @@ Campaign Management
 .campaign-container .campaign-content {
     padding: 25px 50px;
 }
-
