@@ -144,6 +144,14 @@ $(function () {
       alwaysVisible: true,
       railVisible: false
   });
+  
+  $('#clinicalNotesDivRow').slimScroll({
+      height: '410px',
+	  width: '660px',
+      alwaysVisible: true,
+      railVisible: false
+  });
+  
 
   /* Morris.js Charts */
   // Sales chart
