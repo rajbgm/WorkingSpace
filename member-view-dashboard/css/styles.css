@@ -103,6 +103,9 @@ header {
   height: 100px;
 }
 
+.points-value {
+  display:none;
+}
 .points-icon .points-value {
   color: #3095ce;
   font-size: 3em;
@@ -192,7 +195,7 @@ header {
 
 .description-area {
   background: #FFF;
-  padding: 20px 15px;
+  padding: 22.5px 15px;
   border-bottom: 4px solid #ffc033;
   margin-bottom: 20px;
 }
@@ -328,6 +331,10 @@ header {
   font-size: 17px;
 }
 
+.calendar-padding{
+  padding-left: 10px;
+}
+
 .modal-header {
   background: #3095ce;
   color: #FFF;
@@ -454,4 +461,12 @@ header {
   padding: 9px 14px;
   width: 39px;
   height: 39px;
+}
+
+#scheduleModal {
+  height: 600px;
+}
+
+.weight-modal-body {
+  color:white;
 }

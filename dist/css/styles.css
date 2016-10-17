@@ -21,6 +21,17 @@
     float: left;
 }
 
+.patient-col-details {
+  float: right;
+}
+
+.fa-calendar-o {
+    padding-left: 10px;
+}
+
+.calendar-schedule{
+    display: none;
+}
 .patient-info label {
     font-size: 25px;
     color: #0C76B6;
@@ -107,7 +118,6 @@ a.facebook, a.g-plus{
 }
 
 .patient-info label.family-admin-lbl {
-    float: right;
     margin-right: 10px;
 }
 .patient-info label.username-content {
@@ -481,6 +491,7 @@ input[type="radio"] .styled:checked + label::after {
         padding: 10px 15px;
     }
 }
+
 
 @media (min-width: 768px) {
     .patient-cnt-bottom-lbl.profile-content-btm-lbl {
