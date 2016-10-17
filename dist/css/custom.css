@@ -1615,16 +1615,28 @@ box.box-danger .circle-logo {
 }
 
 .segment-item {
-    padding: 15px;
-    border-top: 1px solid #CCC;
+  padding: 15px;
+  background: #ffffff;
+  margin:10px 0;
+  border-left: 10px solid #19bed8;
+  color: #666666;
+  height:145px;
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
 }
-
     .segment-item h3 {
         font-weight: 600;
+      font-size: 20px;
+      color: #666666;
     }
+.users-lbl{
+  font-size: 18px;
+  font-weight: 600;
+}
 
 .editable-icons i {
-    font-size: 1.6em;
+    font-size: 1.3em;
     cursor: pointer;
     margin-top: 8px;
 }
@@ -1702,6 +1714,7 @@ box.box-danger .circle-logo {
 .campaign-dashboard .page-header {
     font-weight: 600;
     font-size: 26px;
+  font-size: 22px;
 }
 
 .m-l-10 {
@@ -1949,7 +1962,12 @@ box.box-danger .circle-logo {
 .m-t-25 {
     margin-top: 25px;
 }
-
+.m-t-40{
+  margin-top:40px;
+}
+.m-t-5 {
+  margin-top: 5px;
+}
 .m-a-0 {
     margin: 0;
 }
@@ -2079,6 +2097,9 @@ box.box-danger .circle-logo {
 
 .side-bar-header {
     margin: 0;
+}
+.contact-value {
+  font-size: 18px;
 }
 
 .list-style-dots {
