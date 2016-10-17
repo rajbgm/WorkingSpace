@@ -160,7 +160,7 @@
             <!-- /.sidebar -->
             <div data-ng-controller="ClinicalNotesController">
                 <div id="clinicalNotesDiv" class="clinical-notes-container display-none">
-                    <div class="row">
+                    <div class="row" id="clinicalNotesDivRow">
                         <div class="col-xs-12">
                             <button type="button" class="close" data-dismiss="modal" data-ng-click="slideClinicalNotes()">×</button>
                         </div>
@@ -1232,6 +1232,16 @@
             });
 
         });
+		
+		$("body").keydown(function(e) {
+				var code = (e.keyCode ? e.keyCode : e.which);
+				if (code == 67) {
+					if (e.altKey) {
+						$(".clinical-notes").trigger("click");
+					}
+				}
+		});
+		
     </script>
 </body>
 </html>
